@@ -8,13 +8,15 @@ const getAll = async () => {
 };
 
 const getById = async id => {
-  const user = await dbUsers.filter(i => i.id.toString() === id.toString());
+  try {
+    const user = await dbUsers.filter(
+      i => i.id.toString() === id.toString()
+    )[0];
 
-  if (!user) {
-    return null;
+    return user;
+  } catch (e) {
+    console.log(e);
   }
-
-  return user;
 };
 
 module.exports = { getAll, getById };
