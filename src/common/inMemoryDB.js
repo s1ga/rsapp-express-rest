@@ -1,7 +1,7 @@
-const User = require('../models/user.model');
+// const User = require('../models/user.model');
 
 const DB = {
-  Users: [new User(), new User()],
+  Users: [],
   Tasks: [],
   Boards: []
 };
