@@ -1,11 +1,10 @@
 const router = require('express').Router();
 const User = require('../models/user.model');
 const userService = require('../services/user.service');
-const usersService = require('../services/user.service');
 
 router.get('/', async (req, res) => {
   try {
-    const users = await usersService.getAll();
+    const users = await userService.getAll();
     // map user fields to exclude secret fields like "password"
     res.status(200).json(users.map(User.toResponse));
   } catch (e) {
@@ -15,7 +14,7 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
   try {
-    const user = await usersService.getById(req.params.id);
+    const user = await userService.getById(req.params.id);
 
     res.status(200).json(User.toResponse(user));
   } catch (e) {
@@ -26,7 +25,7 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
   try {
-    const user = await usersService.create(req.body);
+    const user = await userService.create(req.body);
 
     res.status(200).json({
       message: 'User created',
