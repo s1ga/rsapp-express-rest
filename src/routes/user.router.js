@@ -16,19 +16,26 @@ router.get('/:id', async (req, res) => {
   try {
     const user = await usersService.getById(req.params.id);
 
-    if (user) {
-      res.status(200).json(User.toResponse(user));
-    } else {
-      res.status(404).json({ message: 'User not found' });
-    }
+    res.status(200).json(User.toResponse(user));
   } catch (e) {
     console.log(e);
+    res.status(404).send('User not found');
   }
 });
 
-// router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
+  try {
+    const user = await usersService.create(req.body);
 
-// })
+    res.status(200).json({
+      message: 'User created',
+      user: User.toResponse(user)
+    });
+  } catch (e) {
+    res.status(400).send('Bad request');
+    console.log(e);
+  }
+});
 
 // router.put('/:id', (req, res) => {
 

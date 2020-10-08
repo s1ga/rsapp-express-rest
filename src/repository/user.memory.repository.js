@@ -1,6 +1,7 @@
+const DB = require('../common/inMemoryDB');
 const User = require('../models/user.model');
 
-const dbUsers = [new User(), new User()];
+const dbUsers = DB.Users;
 
 const getAll = async () => {
   // TODO: mock implementation. should be replaced during task development
@@ -13,10 +14,30 @@ const getById = async id => {
       i => i.id.toString() === id.toString()
     )[0];
 
+    if (!user) {
+      throw new Error('User not found');
+    }
+
     return user;
   } catch (e) {
     console.log(e);
   }
 };
 
-module.exports = { getAll, getById };
+const create = async body => {
+  try {
+    const user = User.fromRequest(body);
+    await dbUsers.push(user);
+    const dbUser = await getById(user.id);
+
+    if (!dbUser) {
+      throw new Error('User not created');
+    }
+
+    return dbUser;
+  } catch (e) {
+    console.log(e);
+  }
+};
+
+module.exports = { getAll, getById, create };
