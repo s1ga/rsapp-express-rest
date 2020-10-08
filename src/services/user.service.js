@@ -6,4 +6,6 @@ const getById = id => usersRepo.getById(id);
 
 const create = body => usersRepo.create(body);
 
-module.exports = { getAll, getById, create };
+const update = (id, body) => usersRepo.update(id, body);
+
+module.exports = { getAll, getById, create, update };

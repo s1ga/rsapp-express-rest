@@ -40,4 +40,22 @@ const create = async body => {
   }
 };
 
-module.exports = { getAll, getById, create };
+const update = async (id, body) => {
+  try {
+    const user = await getById(id);
+    for (const [key, value] of Object.entries(body)) {
+      user[key] = value;
+    }
+
+    if (!user) {
+      throw new Error('User not found');
+    }
+    dbUsers[id.toString()] = user;
+
+    return user;
+  } catch (e) {
+    console.log(e);
+  }
+};
+
+module.exports = { getAll, getById, create, update };
