@@ -1,7 +1,7 @@
 const DB = require('../common/inMemoryDB');
 const User = require('../models/user.model');
-
 const dbUsers = DB.Users;
+// const dbTasks = DB.Tasks;
 
 const getAll = async () => {
   // TODO: mock implementation. should be replaced during task development
@@ -58,4 +58,23 @@ const update = async (id, body) => {
   }
 };
 
-module.exports = { getAll, getById, create, update };
+const deleteById = async id => {
+  try {
+    const user = await getById(id);
+    const index = dbUsers.indexOf(user);
+
+    if (index < 0) {
+      throw new Error('User not found');
+    }
+
+    // const userTasks = dbTasks.filter(i => i.userId === id);
+    // userTasks.map(i => i.userId = null);
+
+    dbUsers.splice(index, 1);
+    return true;
+  } catch (e) {
+    console.log(e);
+  }
+};
+
+module.exports = { getAll, getById, create, update, deleteById };
