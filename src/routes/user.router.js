@@ -19,7 +19,7 @@ router.get('/:id', async (req, res) => {
     res.status(200).json(User.toResponse(user));
   } catch (e) {
     console.log(e);
-    res.status(404).send('User not found');
+    res.status(404).json('User not found');
   }
 });
 
@@ -30,7 +30,7 @@ router.post('/', async (req, res) => {
     res.status(200).json(User.toResponse(user));
   } catch (e) {
     console.log(e);
-    res.status(400).send('User not created');
+    res.status(400).json('User not created');
   }
 });
 
@@ -41,7 +41,7 @@ router.put('/:id', async (req, res) => {
     res.status(200).json(User.toResponse(user));
   } catch (e) {
     console.log(e);
-    res.status(400).send('User not changed');
+    res.status(400).json('User not changed');
   }
 });
 
@@ -52,7 +52,7 @@ router.delete('/:id', async (req, res) => {
     res.status(204).json('The user has been deleted');
   } catch (e) {
     console.log(e);
-    res.status(404).send('User not found');
+    res.status(404).json('User not found');
   }
 });
 

@@ -6,6 +6,7 @@ const YAML = require('yamljs');
 
 // require routes
 const userRouter = require('./routes/user.router');
+const boardRouter = require('./routes/board.router');
 const taskRouter = require('./routes/task.router');
 
 // create express app
@@ -31,6 +32,7 @@ app.use('/', (req, res, next) => {
 
 // using routes
 app.use('/users', userRouter);
+app.use('/boards', boardRouter);
 app.use('/tasks', taskRouter);
 
 module.exports = app;

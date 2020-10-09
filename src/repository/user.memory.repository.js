@@ -67,6 +67,7 @@ const deleteById = async id => {
       throw new Error('User not found');
     }
 
+    // logic of setting userId = null in Tasks
     // const userTasks = dbTasks.filter(i => i.userId === id);
     // userTasks.map(i => i.userId = null);
 
