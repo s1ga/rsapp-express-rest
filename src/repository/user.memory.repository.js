@@ -1,7 +1,7 @@
 const DB = require('../common/inMemoryDB');
 const User = require('../models/user.model');
 const dbUsers = DB.Users;
-// const dbTasks = DB.Tasks;
+const dbTasks = DB.Tasks;
 
 const getAll = async () => {
   // TODO: mock implementation. should be replaced during task development
@@ -68,8 +68,8 @@ const deleteById = async id => {
     }
 
     // logic of setting userId = null in Tasks
-    // const userTasks = dbTasks.filter(i => i.userId === id);
-    // userTasks.map(i => i.userId = null);
+    const userTasks = dbTasks.filter(i => i.userId === id);
+    userTasks.map(i => (i.userId = null));
 
     dbUsers.splice(index, 1);
     return true;

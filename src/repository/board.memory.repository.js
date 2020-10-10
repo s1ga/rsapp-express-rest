@@ -1,6 +1,7 @@
 const DB = require('../common/inMemoryDB');
 const Board = require('../models/board.model');
 const dbBoards = DB.Boards;
+const dbTasks = DB.Tasks;
 
 const getAll = async () => {
   return dbBoards;
@@ -41,12 +42,12 @@ const create = async body => {
 const update = async (id, body) => {
   try {
     const board = await getById(id);
-    for (const [key, value] of Object.entries(body)) {
-      board[key] = value;
-    }
-
     if (!board) {
       throw new Error('Board not found');
+    }
+
+    for (const [key, value] of Object.entries(body)) {
+      board[key] = value;
     }
     dbBoards[id.toString()] = board;
 
@@ -66,6 +67,12 @@ const deleteById = async id => {
     }
 
     // there should be a logic of deleting a Task
+    dbTasks.map((item, idx, arr) => {
+      if (item.boardId === id) {
+        dbTasks.splice(idx, 1);
+      }
+      return arr;
+    });
 
     dbBoards.splice(index, 1);
     return true;
