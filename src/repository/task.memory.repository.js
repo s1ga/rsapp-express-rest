@@ -26,6 +26,7 @@ const getById = async (boardId, id) => {
 const create = async (boardId, body) => {
   try {
     const task = Task.fromRequest(body);
+    task.boardId = boardId;
     await dbTasks.push(task);
     const dbTask = await getById(task.boardId, task.id);
 

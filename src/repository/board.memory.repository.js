@@ -13,9 +13,9 @@ const getById = async id => {
       i => i.id.toString() === id.toString()
     )[0];
 
-    if (!board) {
-      throw new Error('Board not found');
-    }
+    // if (!board) {
+    //   return null;
+    // }
 
     return board;
   } catch (e) {
@@ -42,9 +42,9 @@ const create = async body => {
 const update = async (id, body) => {
   try {
     const board = await getById(id);
-    if (!board) {
-      throw new Error('Board not found');
-    }
+    // if (!board) {
+    //   throw new Error('Board not found');
+    // }
 
     for (const [key, value] of Object.entries(body)) {
       board[key] = value;
@@ -63,7 +63,7 @@ const deleteById = async id => {
     const index = dbBoards.indexOf(board);
 
     if (index < 0) {
-      throw new Error('Board not found');
+      return null;
     }
 
     // there should be a logic of deleting a Task

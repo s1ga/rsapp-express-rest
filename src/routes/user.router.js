@@ -16,10 +16,13 @@ router.get('/:id', async (req, res) => {
   try {
     const user = await userService.getById(req.params.id);
 
-    res.status(200).json(User.toResponse(user));
+    if (user) {
+      res.status(200).json(User.toResponse(user));
+    } else {
+      res.status(404).send('User not found');
+    }
   } catch (e) {
     console.log(e);
-    res.status(404).json('User not found');
   }
 });
 
@@ -30,7 +33,7 @@ router.post('/', async (req, res) => {
     res.status(200).json(User.toResponse(user));
   } catch (e) {
     console.log(e);
-    res.status(400).json('User not created');
+    res.status(400).send('User not created');
   }
 });
 
@@ -41,7 +44,7 @@ router.put('/:id', async (req, res) => {
     res.status(200).json(User.toResponse(user));
   } catch (e) {
     console.log(e);
-    res.status(400).json('User not changed');
+    res.status(400).send('User not changed');
   }
 });
 
@@ -52,7 +55,7 @@ router.delete('/:id', async (req, res) => {
     if (isDelete) {
       res.status(204).json('The user has been deleted');
     } else {
-      res.status(404).json('User not found');
+      res.status(404).send('User not found');
     }
   } catch (e) {
     console.log(e);

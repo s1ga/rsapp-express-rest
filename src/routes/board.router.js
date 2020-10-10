@@ -16,9 +16,12 @@ router.get('/:id', async (req, res) => {
   try {
     const board = await boardService.getById(req.params.id);
 
-    res.status(200).json(board);
+    if (board) {
+      res.status(200).json(board);
+    } else {
+      res.status(404).send('Board not found');
+    }
   } catch (e) {
-    res.status(404).json('Board not found');
     console.log(e);
   }
 });
@@ -27,9 +30,12 @@ router.post('/', async (req, res) => {
   try {
     const board = await boardService.create(req.body);
 
-    res.status(200).json(board);
+    if (board) {
+      res.status(200).json(board);
+    } else {
+      res.status(400).send('Bad request');
+    }
   } catch (e) {
-    res.status(400).json('Bad request');
     console.log(e);
   }
 });
@@ -38,20 +44,26 @@ router.put('/:id', async (req, res) => {
   try {
     const board = await boardService.update(req.params.id, req.body);
 
-    res.status(200).json(board);
+    if (board) {
+      res.status(200).json(board);
+    } else {
+      res.status(400).send('Bad request');
+    }
   } catch (e) {
-    res.status(400).json('Bad request');
     console.log(e);
   }
 });
 
 router.delete('/:id', async (req, res) => {
   try {
-    await boardService.deleteById(req.params.id);
+    const isDelete = await boardService.deleteById(req.params.id);
 
-    res.status(204).json('The board has been deleted');
+    if (isDelete) {
+      res.status(204).send('The board has been deleted');
+    } else {
+      res.status(404).send('Board not found');
+    }
   } catch (e) {
-    res.status(404).json('Board not found');
     console.log(e);
   }
 });
