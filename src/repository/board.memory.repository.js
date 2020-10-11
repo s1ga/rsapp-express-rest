@@ -1,7 +1,7 @@
 const DB = require('../common/inMemoryDB');
 const Board = require('../models/board.model');
+const taskService = require('../services/task.service');
 const dbBoards = DB.Boards;
-const dbTasks = DB.Tasks;
 
 const getAll = async () => {
   return dbBoards;
@@ -65,7 +65,8 @@ const deleteById = async id => {
     }
 
     // there should be a logic of deleting a Task
-    dbTasks.filter(i => i.boardId !== board.id);
+    board.columns.length = 0;
+    await taskService.deleteByBoardId(board.id);
 
     dbBoards.splice(index, 1);
     return true;

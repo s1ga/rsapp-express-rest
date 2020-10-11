@@ -15,8 +15,11 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const task = await taskService.getById(req.params.boardid, req.params.id);
-
-    res.status(200).json(task);
+    if (task) {
+      res.status(200).json(task);
+    } else {
+      res.status(404).send('Not found');
+    }
   } catch (e) {
     console.log(e);
   }

@@ -1,6 +1,6 @@
 const DB = require('../common/inMemoryDB');
 const Task = require('../models/task.model');
-const dbTasks = DB.Tasks;
+let dbTasks = DB.Tasks;
 
 const getAll = async boardId => {
   const tasks = dbTasks.filter(i => i.boardId === boardId.toString());
@@ -74,4 +74,15 @@ const deleteById = async (boardId, id) => {
   }
 };
 
-module.exports = { getAll, getById, create, update, deleteById };
+const deleteByBoardId = async boardId => {
+  dbTasks = dbTasks.filter(i => i.boardId !== boardId);
+};
+
+module.exports = {
+  getAll,
+  getById,
+  create,
+  update,
+  deleteById,
+  deleteByBoardId
+};
