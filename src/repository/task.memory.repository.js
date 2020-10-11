@@ -78,11 +78,16 @@ const deleteByBoardId = async boardId => {
   dbTasks = dbTasks.filter(i => i.boardId !== boardId);
 };
 
+const nullUserTasks = async userId => {
+  dbTasks.filter(i => i.userId === userId).map(i => (i.userId = null));
+};
+
 module.exports = {
   getAll,
   getById,
   create,
   update,
   deleteById,
-  deleteByBoardId
+  deleteByBoardId,
+  nullUserTasks
 };

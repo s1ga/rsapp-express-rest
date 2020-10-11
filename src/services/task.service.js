@@ -6,6 +6,7 @@ const create = (boardId, body) => taskRepo.create(boardId, body);
 const update = (boardId, id, body) => taskRepo.update(boardId, id, body);
 const deleteById = (boardId, id) => taskRepo.deleteById(boardId, id);
 const deleteByBoardId = boardId => taskRepo.deleteByBoardId(boardId);
+const nullUserTasks = userId => taskRepo.nullUserTasks(userId);
 
 module.exports = {
   getAll,
@@ -13,5 +14,6 @@ module.exports = {
   create,
   update,
   deleteById,
-  deleteByBoardId
+  deleteByBoardId,
+  nullUserTasks
 };
