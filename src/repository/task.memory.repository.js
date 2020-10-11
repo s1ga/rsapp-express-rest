@@ -3,15 +3,15 @@ const Task = require('../models/task.model');
 const dbTasks = DB.Tasks;
 
 const getAll = async boardId => {
-  const tasks = dbTasks.filter(i => i.boardId === boardId);
+  const tasks = dbTasks.filter(i => i.boardId === boardId.toString());
 
   return tasks;
 };
 
 const getById = async (boardId, id) => {
   try {
-    const tasks = await getAll(boardId);
-    const tasksById = tasks.filter(i => i.id.toString() === id.toString())[0];
+    const tasks = await getAll(boardId.toString());
+    const tasksById = tasks.filter(i => i.id === id.toString())[0];
 
     // if (!tasksById) {
     //   return null;
@@ -26,7 +26,7 @@ const getById = async (boardId, id) => {
 const create = async (boardId, body) => {
   try {
     const task = Task.fromRequest(body);
-    task.boardId = boardId;
+    task.boardId = boardId.toString();
     await dbTasks.push(task);
     const dbTask = await getById(task.boardId, task.id);
 
@@ -42,7 +42,7 @@ const create = async (boardId, body) => {
 
 const update = async (boardId, id, body) => {
   try {
-    const task = await getById(boardId, id);
+    const task = await getById(boardId.toString(), id.toString());
     if (!task) {
       return null;
     }
@@ -60,7 +60,7 @@ const update = async (boardId, id, body) => {
 
 const deleteById = async (boardId, id) => {
   try {
-    const task = await getById(boardId, id);
+    const task = await getById(boardId.toString(), id.toString());
     const index = dbTasks.indexOf(task);
 
     if (index < 0) {

@@ -2,7 +2,7 @@ const uuid = require('uuid');
 
 class Board {
   constructor({
-    id = uuid(),
+    id = /* 'null',*/ uuid(),
     title = 'Board',
     columns = [
       {

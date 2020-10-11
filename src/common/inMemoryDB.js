@@ -4,7 +4,7 @@ const Board = require('../models/board.model');
 
 const DB = {
   Users: [new User(), new User()],
-  Boards: [new Board(), new Board()],
+  Boards: [new Board()],
   Tasks: [new Task(), new Task()]
 };
 

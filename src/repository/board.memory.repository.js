@@ -9,9 +9,7 @@ const getAll = async () => {
 
 const getById = async id => {
   try {
-    const board = await dbBoards.filter(
-      i => i.id.toString() === id.toString()
-    )[0];
+    const board = await dbBoards.filter(i => i.id === id.toString())[0];
 
     // if (!board) {
     //   return null;
@@ -41,7 +39,7 @@ const create = async body => {
 
 const update = async (id, body) => {
   try {
-    const board = await getById(id);
+    const board = await getById(id.toString());
     // if (!board) {
     //   throw new Error('Board not found');
     // }
@@ -59,7 +57,7 @@ const update = async (id, body) => {
 
 const deleteById = async id => {
   try {
-    const board = await getById(id);
+    const board = await getById(id.toString());
     const index = dbBoards.indexOf(board);
 
     if (index < 0) {
@@ -67,12 +65,7 @@ const deleteById = async id => {
     }
 
     // there should be a logic of deleting a Task
-    dbTasks.map((item, idx, arr) => {
-      if (item.boardId === id) {
-        dbTasks.splice(idx, 1);
-      }
-      return arr;
-    });
+    dbTasks.filter(i => i.boardId !== board.id);
 
     dbBoards.splice(index, 1);
     return true;

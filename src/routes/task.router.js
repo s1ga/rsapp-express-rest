@@ -29,7 +29,7 @@ router.post('/', async (req, res) => {
     if (task) {
       res.status(200).json(task);
     } else {
-      res.status(400).json('Bad request');
+      res.status(400).send('Bad request');
     }
   } catch (e) {
     console.log(e);
@@ -64,9 +64,9 @@ router.delete('/:id', async (req, res) => {
     );
 
     if (task) {
-      res.status(204).json('The task has been deleted');
+      res.status(204).send('The task has been deleted');
     } else {
-      res.status(404).json('Task not found');
+      res.status(404).send('Task not found');
     }
   } catch (e) {
     console.log(e);
