@@ -1,6 +1,6 @@
-const DB = require('../common/inMemoryDB');
-const User = require('../models/user.model');
-const taskService = require('../services/task.service');
+const DB = require('../../common/inMemoryDB');
+const User = require('./user.model');
+const taskService = require('../tasks/task.service');
 const dbUsers = DB.Users;
 
 const getAll = async () => {

@@ -5,9 +5,9 @@ const path = require('path');
 const YAML = require('yamljs');
 
 // require routes
-const userRouter = require('./routes/user.router');
-const boardRouter = require('./routes/board.router');
-const taskRouter = require('./routes/task.router');
+const userRouter = require('./resources/users/user.router');
+const boardRouter = require('./resources/boards/board.router');
+const taskRouter = require('./resources/tasks/task.router');
 
 // create express app
 const app = express();

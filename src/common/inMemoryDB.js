@@ -1,11 +1,11 @@
-const User = require('../models/user.model');
-const Task = require('../models/task.model');
-const Board = require('../models/board.model');
+const User = require('../resources/users/user.model');
+const Task = require('../resources/tasks/task.model');
+const Board = require('../resources/boards/board.model');
 
 const DB = {
   Users: [new User()],
   Boards: [new Board()],
-  Tasks: [new Task(), new Task()]
+  Tasks: [new Task()]
 };
 
 module.exports = DB;
