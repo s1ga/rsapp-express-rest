@@ -6,9 +6,9 @@ class Task {
     title = 'Task title',
     order = 'task',
     description = 'New Task',
-    userId = 'null', // usersDB[0].id,
-    boardId = 'null', // DB.Boards[0].id,
-    columnId = 'null' // DB.Boards[0].columns[0].id
+    userId = 'null',
+    boardId = 'null',
+    columnId = 'null'
   } = {}) {
     this.id = id;
     this.title = title;
@@ -18,11 +18,6 @@ class Task {
     this.boardId = boardId;
     this.columnId = columnId;
   }
-
-  //   static toResponse(user) {
-  //     const { id, name, login } = user;
-  //     return { id, name, login };
-  //   }
 
   static fromRequest(body) {
     return new Task(body);

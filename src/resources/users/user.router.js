@@ -5,7 +5,7 @@ const userService = require('./user.service');
 router.get('/', async (req, res) => {
   try {
     const users = await userService.getAll();
-    // map user fields to exclude secret fields like "password"
+
     res.status(200).json(users.map(User.toResponse));
   } catch (e) {
     console.log(e);

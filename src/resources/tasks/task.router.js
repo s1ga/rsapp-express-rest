@@ -14,6 +14,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const task = await taskService.getById(req.params.boardid, req.params.id);
+
     if (task) {
       res.status(200).json(task);
     } else {

@@ -11,10 +11,6 @@ const getById = async id => {
   try {
     const board = await dbBoards.filter(i => i.id === id.toString())[0];
 
-    // if (!board) {
-    //   return null;
-    // }
-
     return board;
   } catch (e) {
     console.log(e);
@@ -24,12 +20,9 @@ const getById = async id => {
 const create = async body => {
   try {
     const board = Board.fromRequest(body);
-    await dbBoards.push(board);
-    const dbBoard = await getById(board.id);
 
-    if (!dbBoard) {
-      throw new Error('Board not created');
-    }
+    dbBoards.push(board);
+    const dbBoard = await getById(board.id);
 
     return dbBoard;
   } catch (e) {
@@ -40,9 +33,6 @@ const create = async body => {
 const update = async (id, body) => {
   try {
     const board = await getById(id.toString());
-    // if (!board) {
-    //   throw new Error('Board not found');
-    // }
 
     for (const [key, value] of Object.entries(body)) {
       board[key] = value;
@@ -65,7 +55,6 @@ const deleteById = async id => {
     }
 
     // there should be a logic of deleting a Task
-    board.columns.length = 0;
     await taskService.deleteByBoardId(board.id);
 
     dbBoards.splice(index, 1);

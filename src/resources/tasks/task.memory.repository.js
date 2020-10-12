@@ -13,10 +13,6 @@ const getById = async (boardId, id) => {
     const tasks = await getAll(boardId.toString());
     const tasksById = tasks.filter(i => i.id === id.toString())[0];
 
-    // if (!tasksById) {
-    //   return null;
-    // }
-
     return tasksById;
   } catch (e) {
     console.log(e);
@@ -26,14 +22,11 @@ const getById = async (boardId, id) => {
 const create = async (boardId, body) => {
   try {
     const task = Task.fromRequest(body);
+
     task.boardId = boardId.toString();
-    await dbTasks.push(task);
+    dbTasks.push(task);
+
     const dbTask = await getById(task.boardId, task.id);
-
-    if (!dbTask) {
-      return null;
-    }
-
     return dbTask;
   } catch (e) {
     console.log(e);
@@ -43,9 +36,6 @@ const create = async (boardId, body) => {
 const update = async (boardId, id, body) => {
   try {
     const task = await getById(boardId.toString(), id.toString());
-    if (!task) {
-      return null;
-    }
 
     for (const [key, value] of Object.entries(body)) {
       task[key] = value;
@@ -64,7 +54,7 @@ const deleteById = async (boardId, id) => {
     const index = dbTasks.indexOf(task);
 
     if (index < 0) {
-      return false;
+      return null;
     }
 
     dbTasks.splice(index, 1);
