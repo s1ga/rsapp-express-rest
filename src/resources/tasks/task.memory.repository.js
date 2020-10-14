@@ -15,7 +15,7 @@ const getById = async (boardId, id) => {
 
     return tasksById;
   } catch (e) {
-    console.log(e);
+    console.log(e.message);
   }
 };
 
@@ -29,7 +29,7 @@ const create = async (boardId, body) => {
     const dbTask = await getById(task.boardId, task.id);
     return dbTask;
   } catch (e) {
-    console.log(e);
+    console.log(e.message);
   }
 };
 
@@ -44,7 +44,7 @@ const update = async (boardId, id, body) => {
 
     return task;
   } catch (e) {
-    console.log(e);
+    console.log(e.message);
   }
 };
 
@@ -60,7 +60,7 @@ const deleteById = async (boardId, id) => {
     dbTasks.splice(index, 1);
     return true;
   } catch (e) {
-    console.log(e);
+    console.log(e.message);
   }
 };
 

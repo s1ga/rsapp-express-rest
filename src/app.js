@@ -3,7 +3,11 @@ const express = require('express');
 const swaggerUI = require('swagger-ui-express');
 const path = require('path');
 const YAML = require('yamljs');
-const { reqLogger } = require('./utils/logger');
+const {
+  // logger,
+  reqLogger,
+  handler
+} = require('./utils/logger');
 
 // require routes
 const userRouter = require('./resources/users/user.router');
@@ -24,6 +28,7 @@ app.use('/doc', swaggerUI.serve, swaggerUI.setup(swaggerDocument));
 
 // req logger
 app.use(reqLogger);
+app.use(handler);
 
 // base url path
 app.use('/', (req, res, next) => {
@@ -39,7 +44,15 @@ app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 boardRouter.use('/:boardid/tasks', taskRouter);
 
+// setInterval(() => {
+//   console.log('Still working...');
+// }, 1000);
 // throw Error('Oops!');
 // Promise.reject(Error('Oops from Promise!'));
 
 module.exports = app;
+
+/*
+  1. Корректная обработка uncaught
+  2. Отправка response
+*/

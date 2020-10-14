@@ -13,7 +13,7 @@ const getById = async id => {
 
     return board;
   } catch (e) {
-    console.log(e);
+    console.log(e.message);
   }
 };
 
@@ -26,13 +26,17 @@ const create = async body => {
 
     return dbBoard;
   } catch (e) {
-    console.log(e);
+    console.log(e.message);
   }
 };
 
 const update = async (id, body) => {
   try {
     const board = await getById(id.toString());
+
+    if (!board) {
+      return null;
+    }
 
     for (const [key, value] of Object.entries(body)) {
       board[key] = value;
@@ -41,7 +45,7 @@ const update = async (id, body) => {
 
     return board;
   } catch (e) {
-    console.log(e);
+    console.log(e.message);
   }
 };
 
@@ -60,7 +64,7 @@ const deleteById = async id => {
     dbBoards.splice(index, 1);
     return true;
   } catch (e) {
-    console.log(e);
+    console.log(e.message);
   }
 };
 

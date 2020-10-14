@@ -2,22 +2,25 @@ const DB = require('../../common/inMemoryDB');
 const User = require('./user.model');
 const taskService = require('../tasks/task.service');
 const dbUsers = DB.Users;
+const { logger } = require('../../utils/logger');
 
 const getAll = async () => {
-  return dbUsers;
+  try {
+    // throw new Error('Error from getAllUsers');
+    return dbUsers;
+  } catch (e) {
+    logger.log(e);
+  }
 };
 
 const getById = async id => {
   try {
     const user = dbUsers.filter(i => i.id.toString() === id.toString())[0];
-
-    if (!user) {
-      throw new Error('User not found');
-    }
-
+    // throw new Error('Error from userID');
     return user;
   } catch (e) {
-    console.log(e);
+    console.log(e.message);
+    logger.error(e);
   }
 };
 
@@ -27,31 +30,30 @@ const create = async body => {
     dbUsers.push(user);
     const dbUser = await getById(user.id);
 
-    if (!dbUser) {
-      throw new Error('User not created');
-    }
-
     return dbUser;
   } catch (e) {
-    console.log(e);
+    logger.error(e);
+    console.log(e.message);
   }
 };
 
 const update = async (id, body) => {
   try {
     const user = await getById(id);
-    for (const [key, value] of Object.entries(body)) {
-      user[key] = value;
-    }
 
     if (!user) {
-      throw new Error('User not found');
+      return null;
+    }
+
+    for (const [key, value] of Object.entries(body)) {
+      user[key] = value;
     }
     dbUsers[id.toString()] = user;
 
     return user;
   } catch (e) {
-    console.log(e);
+    logger.error(e);
+    console.log(e.message);
   }
 };
 
@@ -70,7 +72,8 @@ const deleteById = async id => {
     dbUsers.splice(index, 1);
     return true;
   } catch (e) {
-    console.log(e);
+    logger.error(e);
+    console.log(e.message);
   }
 };
 
