@@ -3,6 +3,7 @@ const express = require('express');
 const swaggerUI = require('swagger-ui-express');
 const path = require('path');
 const YAML = require('yamljs');
+const { reqLogger } = require('./utils/logger');
 
 // require routes
 const userRouter = require('./resources/users/user.router');
@@ -21,6 +22,9 @@ app.use(express.json());
 // using swagger doc
 app.use('/doc', swaggerUI.serve, swaggerUI.setup(swaggerDocument));
 
+// req logger
+app.use(reqLogger);
+
 // base url path
 app.use('/', (req, res, next) => {
   if (req.originalUrl === '/') {
@@ -34,5 +38,8 @@ app.use('/', (req, res, next) => {
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 boardRouter.use('/:boardid/tasks', taskRouter);
+
+// throw Error('Oops!');
+// Promise.reject(Error('Oops from Promise!'));
 
 module.exports = app;

@@ -1,0 +1,5 @@
+URL:/users QUERY:{} BODY:{}
+URL:/login QUERY:{} BODY:{"login":"string","password":"string"}
+URL:/users/%D1%81 QUERY:{} BODY:{}
+URL:/users QUERY:{} BODY:{}
+URL:/users/a QUERY:{} BODY:{}
