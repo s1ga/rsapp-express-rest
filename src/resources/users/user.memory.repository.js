@@ -19,7 +19,6 @@ const getById = async id => {
     // throw new Error('Error from userID');
     return user;
   } catch (e) {
-    console.log(e.message);
     logger.error(e);
   }
 };
@@ -33,7 +32,6 @@ const create = async body => {
     return dbUser;
   } catch (e) {
     logger.error(e);
-    console.log(e.message);
   }
 };
 
@@ -53,7 +51,6 @@ const update = async (id, body) => {
     return user;
   } catch (e) {
     logger.error(e);
-    console.log(e.message);
   }
 };
 
@@ -73,7 +70,6 @@ const deleteById = async id => {
     return true;
   } catch (e) {
     logger.error(e);
-    console.log(e.message);
   }
 };
 

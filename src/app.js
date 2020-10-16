@@ -44,15 +44,13 @@ app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 boardRouter.use('/:boardid/tasks', taskRouter);
 
-// setInterval(() => {
-//   console.log('Still working...');
-// }, 1000);
 // throw Error('Oops!');
-// Promise.reject(Error('Oops from Promise!'));
+Promise.reject(Error('Oops from Promise!'));
 
 module.exports = app;
 
 /*
   1. Корректная обработка uncaught
   2. Отправка response
+  + data of logging
 */
