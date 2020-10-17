@@ -3,26 +3,13 @@ const { createWriteStream } = require('fs');
 const path = require('path');
 const winston = require('winston');
 
-// requests logging
-morgan.token('body', req => JSON.stringify(req.body));
-morgan.token('query', req => JSON.stringify(req.query));
-const reqLogger = morgan(
-  ':date[clf] :method :url — QUERY::query — BODY::body',
-  {
-    stream: createWriteStream(
-      path.join(__dirname, '../../', 'logs', 'requests.log'),
-      { flags: 'a' }
-    )
-  }
-);
+//
+// const handler = (err, req, res, next) => {
+//   console.error(err);
 
-// unhandled errors
-const handler = (err, req, res, next) => {
-  console.error(err);
-
-  res.status(500).send('Internal server error');
-  next();
-};
+//   res.status(500).send('Internal server error');
+//   next(err);
+// };
 
 const unHandlerFile = {
   file: {
@@ -32,6 +19,7 @@ const unHandlerFile = {
     maxFiles: 1,
     maxsize: 5242880
   },
+
   console: {
     level: 'error',
     json: true,
@@ -44,7 +32,13 @@ const logger = winston.createLogger({
     const msg = { Error: info.message.split('\n')[0] };
     return JSON.stringify(msg);
   }),
-  transports: [],
+  transports: [
+    new winston.transports.File({
+      filename: path.resolve(__dirname, '../../', 'logs', 'logs.log')
+    }),
+    new winston.transports.Console()
+  ],
+
   rejectionHandlers: [
     new winston.transports.File(unHandlerFile.file),
     new winston.transports.Console(unHandlerFile.console)
@@ -56,4 +50,24 @@ const logger = winston.createLogger({
   exitOnError: false
 });
 
-module.exports = { reqLogger, handler, /* errHandler*/ logger };
+// requests logging
+morgan.token('body', req => {
+  let body = req.body;
+  if (body.password) {
+    body = { ...body, password: '*'.repeat(body.password.length) };
+  }
+  return JSON.stringify(body);
+});
+morgan.token('query', req => JSON.stringify(req.query));
+
+const reqLogger = morgan(
+  ':date[clf] :method :status :url — QUERY::query — BODY::body :response-time ms',
+  {
+    stream: createWriteStream(
+      path.join(__dirname, '../../', 'logs', 'requests.log'),
+      { flags: 'a' }
+    )
+  }
+);
+
+module.exports = { reqLogger, /* errHandler*/ logger };

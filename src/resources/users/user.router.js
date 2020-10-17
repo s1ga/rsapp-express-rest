@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const user = await userService.getById(req.params.id);
-
+    // throw new Error();
     if (user) {
       res.status(200).json(User.toResponse(user));
     } else {

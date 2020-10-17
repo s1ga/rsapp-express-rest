@@ -5,8 +5,7 @@ const path = require('path');
 const YAML = require('yamljs');
 const {
   // logger,
-  reqLogger,
-  handler
+  reqLogger
 } = require('./utils/logger');
 
 // require routes
@@ -28,7 +27,7 @@ app.use('/doc', swaggerUI.serve, swaggerUI.setup(swaggerDocument));
 
 // req logger
 app.use(reqLogger);
-app.use(handler);
+// app.use(handler);
 
 // base url path
 app.use('/', (req, res, next) => {
@@ -44,13 +43,18 @@ app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 boardRouter.use('/:boardid/tasks', taskRouter);
 
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
+  next(err);
+});
+
 // throw Error('Oops!');
-Promise.reject(Error('Oops from Promise!'));
+// Promise.reject(Error('Oops from Promise!'));
 
 module.exports = app;
 
 /*
   1. Корректная обработка uncaught
   2. Отправка response
-  + data of logging
 */
