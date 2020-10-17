@@ -33,22 +33,29 @@ const logger = winston.createLogger({
     return JSON.stringify(msg);
   }),
   transports: [
-    new winston.transports.File({
-      filename: path.resolve(__dirname, '../../', 'logs', 'logs.log')
-    }),
-    new winston.transports.Console()
-  ],
-
-  rejectionHandlers: [
     new winston.transports.File(unHandlerFile.file),
     new winston.transports.Console(unHandlerFile.console)
   ],
-  exceptionHandlers: [
-    new winston.transports.File(unHandlerFile.file),
-    new winston.transports.Console(unHandlerFile.console)
-  ],
+  //   rejectionHandlers: [
+  //     new winston.transports.File(unHandlerFile.file),
+  //     new winston.transports.Console(unHandlerFile.console)
+  //   ],
+  //   exceptionHandlers: [
+  //     new winston.transports.File(unHandlerFile.file),
+  //     new winston.transports.Console(unHandlerFile.console)
+  //   ],
   exitOnError: false
 });
+
+process
+  .on('uncaughtException', err => {
+    logger.error(err);
+    // process.exit(1);
+  })
+  .on('unhandledRejection', promise => {
+    logger.error(promise);
+    // process.exit(1);
+  });
 
 // requests logging
 morgan.token('body', req => {
@@ -70,4 +77,4 @@ const reqLogger = morgan(
   }
 );
 
-module.exports = { reqLogger, /* errHandler*/ logger };
+module.exports = { reqLogger /* errHandler*/ };
