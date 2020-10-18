@@ -1,5 +1,5 @@
 const morgan = require('morgan');
-const { createWriteStream } = require('fs');
+// const { createWriteStream } = require('fs');
 const path = require('path');
 const winston = require('winston');
 
@@ -11,17 +11,22 @@ const winston = require('winston');
 //   next(err);
 // };
 
-const unHandlerFile = {
-  file: {
+const loggerFiles = {
+  errorFile: {
     level: 'error',
-    filename: path.resolve(__dirname, '../../', 'logs', 'unHandler.log'),
+    filename: path.resolve(__dirname, '../../', 'logs', 'errors.log'),
     json: true,
     maxFiles: 1,
     maxsize: 5242880
   },
-
+  infoFile: {
+    level: 'info',
+    filename: path.resolve(__dirname, '../../', 'logs', 'logs.log'),
+    json: true,
+    maxFiles: 1,
+    maxsize: 5242880
+  },
   console: {
-    level: 'error',
     json: true,
     colorize: true
   }
@@ -29,31 +34,30 @@ const unHandlerFile = {
 
 const logger = winston.createLogger({
   format: winston.format.printf(info => {
-    const msg = { Error: info.message.split('\n')[0] };
+    const msg = info.message.split('\n')[0];
     return JSON.stringify(msg);
   }),
   transports: [
-    new winston.transports.File(unHandlerFile.file),
-    new winston.transports.Console(unHandlerFile.console)
+    new winston.transports.File(loggerFiles.infoFile),
+    new winston.transports.File(loggerFiles.errorFile),
+    new winston.transports.Console(loggerFiles.console)
   ],
-  //   rejectionHandlers: [
-  //     new winston.transports.File(unHandlerFile.file),
-  //     new winston.transports.Console(unHandlerFile.console)
-  //   ],
-  //   exceptionHandlers: [
-  //     new winston.transports.File(unHandlerFile.file),
-  //     new winston.transports.Console(unHandlerFile.console)
-  //   ],
   exitOnError: false
 });
 
+logger.stream = {
+  write(msg) {
+    logger.info(msg);
+  }
+};
+
 process
   .on('uncaughtException', err => {
-    logger.error(err);
+    logger.error(`Uncaught ${err.stack}`);
     // process.exit(1);
   })
   .on('unhandledRejection', promise => {
-    logger.error(promise);
+    logger.error(`Promise ${promise.stack}`);
     // process.exit(1);
   });
 
@@ -70,11 +74,9 @@ morgan.token('query', req => JSON.stringify(req.query));
 const reqLogger = morgan(
   ':date[clf] :method :status :url — QUERY::query — BODY::body :response-time ms',
   {
-    stream: createWriteStream(
-      path.join(__dirname, '../../', 'logs', 'requests.log'),
-      { flags: 'a' }
-    )
+    stream: logger.stream
   }
 );
+// createWriteStream(path.join(__dirname, '../../', 'logs', 'requests.log'), { flags: 'a' })
 
-module.exports = { reqLogger /* errHandler*/ };
+module.exports = { reqLogger, logger };

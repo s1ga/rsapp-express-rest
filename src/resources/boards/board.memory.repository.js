@@ -2,9 +2,14 @@ const DB = require('../../common/inMemoryDB');
 const Board = require('./board.model');
 const taskService = require('../tasks/task.service');
 const dbBoards = DB.Boards;
+const { logger } = require('../../utils/logger');
 
 const getAll = async () => {
-  return dbBoards;
+  try {
+    return dbBoards;
+  } catch (e) {
+    logger.log('error', e.stack);
+  }
 };
 
 const getById = async id => {
@@ -13,7 +18,7 @@ const getById = async id => {
 
     return board;
   } catch (e) {
-    console.log(e.message);
+    logger.log('error', e.stack);
   }
 };
 
@@ -26,7 +31,7 @@ const create = async body => {
 
     return dbBoard;
   } catch (e) {
-    console.log(e.message);
+    logger.log('error', e.stack);
   }
 };
 
@@ -45,7 +50,7 @@ const update = async (id, body) => {
 
     return board;
   } catch (e) {
-    console.log(e.message);
+    logger.log('error', e.stack);
   }
 };
 
@@ -64,7 +69,7 @@ const deleteById = async id => {
     dbBoards.splice(index, 1);
     return true;
   } catch (e) {
-    console.log(e.message);
+    logger.log('error', e.stack);
   }
 };
 

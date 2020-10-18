@@ -6,10 +6,9 @@ const { logger } = require('../../utils/logger');
 
 const getAll = async () => {
   try {
-    // throw new Error('Error from getAllUsers');
     return dbUsers;
   } catch (e) {
-    logger.log(e);
+    logger.log('error', e.stack);
   }
 };
 
@@ -19,7 +18,7 @@ const getById = async id => {
     // throw new Error('Error from userID');
     return user;
   } catch (e) {
-    logger.error(e);
+    logger.log('error', e.stack);
   }
 };
 
@@ -31,7 +30,7 @@ const create = async body => {
 
     return dbUser;
   } catch (e) {
-    logger.error(e);
+    logger.log('error', e.stack);
   }
 };
 
@@ -50,7 +49,7 @@ const update = async (id, body) => {
 
     return user;
   } catch (e) {
-    logger.error(e);
+    logger.log('error', e.stack);
   }
 };
 
@@ -69,7 +68,7 @@ const deleteById = async id => {
     dbUsers.splice(index, 1);
     return true;
   } catch (e) {
-    logger.error(e);
+    logger.log('error', e.stack);
   }
 };
 

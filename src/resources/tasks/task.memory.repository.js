@@ -1,11 +1,16 @@
 const DB = require('../../common/inMemoryDB');
 const Task = require('./task.model');
 let dbTasks = DB.Tasks;
+const { logger } = require('../../utils/logger');
 
 const getAll = async boardId => {
-  const tasks = dbTasks.filter(i => i.boardId === boardId.toString());
+  try {
+    const tasks = dbTasks.filter(i => i.boardId === boardId.toString());
 
-  return tasks;
+    return tasks;
+  } catch (e) {
+    logger.log('error', e.stack);
+  }
 };
 
 const getById = async (boardId, id) => {
@@ -15,7 +20,7 @@ const getById = async (boardId, id) => {
 
     return tasksById;
   } catch (e) {
-    console.log(e.message);
+    logger.log('error', e.stack);
   }
 };
 
@@ -29,7 +34,7 @@ const create = async (boardId, body) => {
     const dbTask = await getById(task.boardId, task.id);
     return dbTask;
   } catch (e) {
-    console.log(e.message);
+    logger.log('error', e.stack);
   }
 };
 
@@ -44,7 +49,7 @@ const update = async (boardId, id, body) => {
 
     return task;
   } catch (e) {
-    console.log(e.message);
+    logger.log('error', e.stack);
   }
 };
 
@@ -60,16 +65,24 @@ const deleteById = async (boardId, id) => {
     dbTasks.splice(index, 1);
     return true;
   } catch (e) {
-    console.log(e.message);
+    logger.log('error', e.stack);
   }
 };
 
 const deleteByBoardId = async boardId => {
-  dbTasks = dbTasks.filter(i => i.boardId !== boardId);
+  try {
+    dbTasks = dbTasks.filter(i => i.boardId !== boardId);
+  } catch (e) {
+    logger.log('error', e.stack);
+  }
 };
 
 const nullUserTasks = async userId => {
-  dbTasks.filter(i => i.userId === userId).map(i => (i.userId = null));
+  try {
+    dbTasks.filter(i => i.userId === userId).map(i => (i.userId = null));
+  } catch (e) {
+    logger.log('error', e.stack);
+  }
 };
 
 module.exports = {

@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const boardService = require('./board.service');
+const { logger } = require('../../utils/logger');
 
 router.get('/', async (req, res) => {
   try {
@@ -7,7 +8,7 @@ router.get('/', async (req, res) => {
 
     res.status(200).json(boards);
   } catch (e) {
-    console.log(e);
+    logger.log('error', e.stack);
   }
 });
 
@@ -21,7 +22,7 @@ router.get('/:id', async (req, res) => {
       res.status(404).send('Board not found');
     }
   } catch (e) {
-    console.log(e);
+    logger.log('error', e.stack);
   }
 });
 
@@ -35,7 +36,7 @@ router.post('/', async (req, res) => {
       res.status(400).send('Bad request');
     }
   } catch (e) {
-    console.log(e);
+    logger.log('error', e.stack);
   }
 });
 
@@ -49,7 +50,7 @@ router.put('/:id', async (req, res) => {
       res.status(400).send('Bad request');
     }
   } catch (e) {
-    console.log(e);
+    logger.log('error', e.stack);
   }
 });
 
@@ -63,7 +64,7 @@ router.delete('/:id', async (req, res) => {
       res.status(404).send('Board not found');
     }
   } catch (e) {
-    console.log(e);
+    logger.log('error', e.stack);
   }
 });
 

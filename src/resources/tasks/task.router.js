@@ -1,5 +1,6 @@
 const router = require('express').Router({ mergeParams: true });
 const taskService = require('./task.service');
+const { logger } = require('../../utils/logger');
 
 router.get('/', async (req, res) => {
   try {
@@ -7,21 +8,20 @@ router.get('/', async (req, res) => {
 
     res.status(200).json(tasks);
   } catch (e) {
-    console.log(e);
+    logger.log('error', e.stack);
   }
 });
 
 router.get('/:id', async (req, res) => {
   try {
     const task = await taskService.getById(req.params.boardid, req.params.id);
-
     if (task) {
       res.status(200).json(task);
     } else {
       res.status(404).send('Not found');
     }
   } catch (e) {
-    console.log(e);
+    logger.log('error', e.stack);
   }
 });
 
@@ -35,7 +35,7 @@ router.post('/', async (req, res) => {
       res.status(400).send('Bad request');
     }
   } catch (e) {
-    console.log(e);
+    logger.log('error', e.stack);
   }
 });
 
@@ -55,7 +55,7 @@ router.put('/:id', async (req, res) => {
       res.status(400).send('Bad request');
     }
   } catch (e) {
-    console.log(e);
+    logger.log('error', e.stack);
   }
 });
 
@@ -72,7 +72,7 @@ router.delete('/:id', async (req, res) => {
       res.status(404).send('Task not found');
     }
   } catch (e) {
-    console.log(e);
+    logger.log('error', e.stack);
   }
 });
 

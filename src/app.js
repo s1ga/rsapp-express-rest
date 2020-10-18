@@ -40,17 +40,17 @@ app.use('/boards', boardRouter);
 boardRouter.use('/:boardid/tasks', taskRouter);
 
 app.use((err, req, res, next) => {
-  console.error(err.stack);
   res.status(500).send('Something broke!');
   next(err);
 });
 
 // throw Error('Oops!');
-Promise.reject(Error('Oops from Promise!'));
+// Promise.reject(Error('Oops!'));
 
 module.exports = app;
 
 /*
-  1. Корректная обработка uncaught
-  2. Отправка response
+  1. Доработка логов(правильная работа в разных кусках кода)
+  2. Обработка ошибок сервера(расширение класса ошибок как вариант)
+  3. Вместо console.log вставить logger()
 */
