@@ -27,16 +27,19 @@ const loggerFiles = {
     maxsize: 5242880
   },
   console: {
-    json: true,
     colorize: true
   }
 };
 
 const logger = winston.createLogger({
-  format: winston.format.printf(info => {
-    const msg = info.message.split('\n')[0];
-    return JSON.stringify(msg);
-  }),
+  format: winston.format.combine(
+    winston.format.timestamp(),
+    winston.format.printf(info => {
+      const ts = info.timestamp.slice(0, 19).replace('T', ' ');
+      const msg = info.message.split('\n')[0];
+      return `${ts} +0000 — ${msg}`;
+    })
+  ),
   transports: [
     new winston.transports.File(loggerFiles.infoFile),
     new winston.transports.File(loggerFiles.errorFile),

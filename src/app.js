@@ -45,7 +45,7 @@ app.use((err, req, res, next) => {
 });
 
 // throw Error('Oops!');
-// Promise.reject(Error('Oops!'));
+Promise.reject(Error('Oops!'));
 
 module.exports = app;
 
