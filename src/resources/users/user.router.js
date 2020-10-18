@@ -13,17 +13,18 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/:id', async (req, res) => {
+router.get('/:id', async (req, res, next) => {
   try {
+    // throw new Error('USER ID ERROR');
     const user = await userService.getById(req.params.id);
-    // throw new Error('user');
     if (user) {
       res.status(200).json(User.toResponse(user));
     } else {
       res.status(404).send('User not found');
     }
   } catch (e) {
-    logger.log('error', e.stack);
+    logger.log('error', e);
+    return next(e);
   }
 });
 

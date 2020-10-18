@@ -3,14 +3,6 @@ const morgan = require('morgan');
 const path = require('path');
 const winston = require('winston');
 
-//
-// const handler = (err, req, res, next) => {
-//   console.error(err);
-
-//   res.status(500).send('Internal server error');
-//   next(err);
-// };
-
 const loggerFiles = {
   errorFile: {
     level: 'error',
@@ -21,7 +13,7 @@ const loggerFiles = {
   },
   infoFile: {
     level: 'info',
-    filename: path.resolve(__dirname, '../../', 'logs', 'logs.log'),
+    filename: path.resolve(__dirname, '../../', 'logs', 'info.log'),
     json: true,
     maxFiles: 1,
     maxsize: 5242880
@@ -36,7 +28,7 @@ const logger = winston.createLogger({
     winston.format.timestamp(),
     winston.format.printf(info => {
       const ts = info.timestamp.slice(0, 19).replace('T', ' ');
-      const msg = info.message.split('\n')[0];
+      const msg = info.message; // + ' ' + info.error.split('\n')[0];
       return `${ts} +0000 — ${msg}`;
     })
   ),
@@ -82,4 +74,10 @@ const reqLogger = morgan(
 );
 // createWriteStream(path.join(__dirname, '../../', 'logs', 'requests.log'), { flags: 'a' })
 
-module.exports = { reqLogger, logger };
+//
+const handler = (err, req, res) => {
+  logger.log('error', `${err} broke with 500 status code`);
+  res.status(500).send('Internal server error');
+};
+
+module.exports = { reqLogger, logger, handler };
