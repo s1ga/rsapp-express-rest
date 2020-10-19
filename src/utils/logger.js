@@ -108,10 +108,11 @@ process
 
 // server errors
 const handler = (err, req, res, next) => {
-  logger.log('error', `${err.message}`);
+  console.error(err);
   if (err instanceof serverError) {
     res.status(err.serverStatus).send(err.message);
   } else {
+    logger.log('error', `500 Error: ${err.message}`);
     res.status(500).send('Internal server error');
   }
   next();
