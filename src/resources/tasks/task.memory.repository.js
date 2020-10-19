@@ -1,6 +1,7 @@
 const DB = require('../../common/inMemoryDB');
 const Task = require('./task.model');
 let dbTasks = DB.Tasks;
+const SERVER_ERROR = require('../../utils/errorsHandler');
 
 const getAll = async boardId => {
   const tasks = dbTasks.filter(i => i.boardId === boardId.toString());
@@ -9,59 +10,58 @@ const getAll = async boardId => {
 };
 
 const getById = async (boardId, id) => {
-  try {
-    const tasks = await getAll(boardId.toString());
-    const tasksById = tasks.filter(i => i.id === id.toString())[0];
+  const tasks = await getAll(boardId.toString());
+  const tasksById = tasks.filter(i => i.id === id.toString())[0];
 
-    return tasksById;
-  } catch (e) {
-    console.log(e);
+  if (!tasksById) {
+    throw new SERVER_ERROR({ status: 404, message: 'Task not found' });
   }
+
+  return tasksById;
 };
 
 const create = async (boardId, body) => {
-  try {
-    const task = Task.fromRequest(body);
+  const task = Task.fromRequest(body);
 
-    task.boardId = boardId.toString();
-    dbTasks.push(task);
+  task.boardId = boardId.toString();
+  dbTasks.push(task);
 
-    const dbTask = await getById(task.boardId, task.id);
-    return dbTask;
-  } catch (e) {
-    console.log(e);
+  const dbTask = await getById(task.boardId, task.id);
+  if (!dbTask) {
+    throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
   }
+
+  return dbTask;
 };
 
 const update = async (boardId, id, body) => {
-  try {
-    const task = await getById(boardId.toString(), id.toString());
-
-    for (const [key, value] of Object.entries(body)) {
-      task[key] = value;
-    }
-    dbTasks[id.toString()] = task;
-
-    return task;
-  } catch (e) {
-    console.log(e);
+  const task = await getById(boardId.toString(), id.toString());
+  if (!task) {
+    throw new SERVER_ERROR({ status: 404, message: 'Task not found' });
   }
+
+  for (const [key, value] of Object.entries(body)) {
+    task[key] = value;
+  }
+  let idTask = dbTasks[id.toString()];
+  idTask = task;
+
+  if (!idTask) {
+    throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
+  }
+
+  return task;
 };
 
 const deleteById = async (boardId, id) => {
-  try {
-    const task = await getById(boardId.toString(), id.toString());
-    const index = dbTasks.indexOf(task);
-
-    if (index < 0) {
-      return null;
-    }
-
-    dbTasks.splice(index, 1);
-    return true;
-  } catch (e) {
-    console.log(e);
+  const task = await getById(boardId.toString(), id.toString());
+  if (!task) {
+    throw new SERVER_ERROR({ status: 404, message: 'Task not found' });
   }
+  const index = dbTasks.indexOf(task);
+
+  dbTasks.splice(index, 1);
+  return true;
 };
 
 const deleteByBoardId = async boardId => {

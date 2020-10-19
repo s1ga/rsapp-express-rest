@@ -2,66 +2,60 @@ const DB = require('../../common/inMemoryDB');
 const Board = require('./board.model');
 const taskService = require('../tasks/task.service');
 const dbBoards = DB.Boards;
+const SERVER_ERROR = require('../../utils/errorsHandler');
 
 const getAll = async () => {
   return dbBoards;
 };
 
 const getById = async id => {
-  try {
-    const board = await dbBoards.filter(i => i.id === id.toString())[0];
+  const board = await dbBoards.filter(i => i.id === id.toString())[0];
 
-    return board;
-  } catch (e) {
-    console.log(e);
+  if (!board) {
+    throw new SERVER_ERROR({ status: 404, message: 'Board not found' });
   }
+
+  return board;
 };
 
 const create = async body => {
-  try {
-    const board = Board.fromRequest(body);
+  const board = Board.fromRequest(body);
 
-    dbBoards.push(board);
-    const dbBoard = await getById(board.id);
+  dbBoards.push(board);
+  const dbBoard = dbBoards.filter(i => i.id === board.id)[0];
 
-    return dbBoard;
-  } catch (e) {
-    console.log(e);
+  if (!dbBoard) {
+    throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
   }
+
+  return dbBoard;
 };
 
 const update = async (id, body) => {
-  try {
-    const board = await getById(id.toString());
+  const board = await getById(id.toString());
 
-    for (const [key, value] of Object.entries(body)) {
-      board[key] = value;
-    }
-    dbBoards[id.toString()] = board;
-
-    return board;
-  } catch (e) {
-    console.log(e);
+  for (const [key, value] of Object.entries(body)) {
+    board[key] = value;
   }
+  let idBoard = dbBoards[id.toString()];
+  idBoard = board;
+
+  if (!idBoard) {
+    throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
+  }
+
+  return board;
 };
 
 const deleteById = async id => {
-  try {
-    const board = await getById(id.toString());
-    const index = dbBoards.indexOf(board);
+  const board = await getById(id.toString());
+  const index = dbBoards.indexOf(board);
 
-    if (index < 0) {
-      return null;
-    }
+  // there should be a logic of deleting a Task
+  await taskService.deleteByBoardId(board.id);
 
-    // there should be a logic of deleting a Task
-    await taskService.deleteByBoardId(board.id);
-
-    dbBoards.splice(index, 1);
-    return true;
-  } catch (e) {
-    console.log(e);
-  }
+  dbBoards.splice(index, 1);
+  return true;
 };
 
 module.exports = { getAll, getById, create, update, deleteById };
