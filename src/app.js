@@ -39,20 +39,10 @@ app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 boardRouter.use('/:boardid/tasks', taskRouter);
 
-// app.use((err, req, res, next) => {
-//   logger.log('error', err + ' with 500 status code');
-//   res.status(500).send('Something broke!');
-//   // next();
-// });
-
+// unhandler errors
 app.use(handler);
 
 // throw Error('Oops!');
 // Promise.reject(Error('Oops!'));
 
 module.exports = app;
-
-/*
-  1. Добавка middleware во все места
-  2. вывод в файл
-*/

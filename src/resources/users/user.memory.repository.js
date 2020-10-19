@@ -2,74 +2,56 @@ const DB = require('../../common/inMemoryDB');
 const User = require('./user.model');
 const taskService = require('../tasks/task.service');
 const dbUsers = DB.Users;
-const { logger } = require('../../utils/logger');
+const SERVER_ERROR = require('../../utils/errorsHandler');
 
 const getAll = async () => {
-  try {
-    return dbUsers;
-  } catch (e) {
-    logger.log('error', e.stack);
-  }
+  return dbUsers;
 };
 
 const getById = async id => {
-  try {
-    const user = dbUsers.filter(i => i.id.toString() === id.toString())[0];
-    // throw new Error('Error from userID');
-    return user;
-  } catch (e) {
-    logger.log('error', e.stack);
+  const user = dbUsers.filter(i => i.id.toString() === id.toString())[0];
+  if (!user) {
+    throw new SERVER_ERROR({ status: 404, message: 'User not found' });
   }
+  return user;
 };
 
 const create = async body => {
-  try {
-    const user = User.fromRequest(body);
-    dbUsers.push(user);
-    const dbUser = await getById(user.id);
+  const user = User.fromRequest(body);
+  dbUsers.push(user);
+  const dbUser = dbUsers.filter(i => i.id === user.id)[0];
 
-    return dbUser;
-  } catch (e) {
-    logger.log('error', e.stack);
+  if (!dbUser) {
+    throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
   }
+
+  return dbUser;
 };
 
 const update = async (id, body) => {
-  try {
-    const user = await getById(id);
-
-    if (!user) {
-      return null;
-    }
-
-    for (const [key, value] of Object.entries(body)) {
-      user[key] = value;
-    }
-    dbUsers[id.toString()] = user;
-
-    return user;
-  } catch (e) {
-    logger.log('error', e.stack);
+  const user = dbUsers.filter(i => i.id === id)[0];
+  if (!user) {
+    throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
   }
+
+  console.log(user);
+  for (const [key, value] of Object.entries(body)) {
+    user[key] = value;
+  }
+  dbUsers[id.toString()] = user;
+
+  return user;
 };
 
 const deleteById = async id => {
-  try {
-    const user = await getById(id);
-    const index = dbUsers.indexOf(user);
+  const user = await getById(id);
+  const index = dbUsers.indexOf(user);
 
-    if (index < 0) {
-      throw new Error('User not found');
-    }
+  // logic of setting userId = null in Tasks
+  await taskService.nullUserTasks(user.id);
 
-    // logic of setting userId = null in Tasks
-    await taskService.nullUserTasks(user.id);
-
-    dbUsers.splice(index, 1);
-    return true;
-  } catch (e) {
-    logger.log('error', e.stack);
-  }
+  dbUsers.splice(index, 1);
+  return true;
 };
 
 module.exports = { getAll, getById, create, update, deleteById };

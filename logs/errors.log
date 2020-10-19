@@ -1,151 +1,5 @@
-2020-10-18 09:12:19 +0000 — Promise Error: Oops!
-2020-10-18 09:12:42 +0000 — Promise Error: Oops!
-2020-10-18 09:13:06 +0000 — Promise Error: Oops!
-2020-10-18 09:13:32 +0000 — Promise Error: Oops!
-2020-10-18 09:14:24 +0000 — Promise Error: Oops!
-2020-10-18 09:22:12 +0000 — Error: user
-2020-10-18 09:24:12 +0000 — Error: user
-2020-10-18 09:26:13 +0000 — Error: user
-2020-10-18 09:26:35 +0000 — Error: user
-2020-10-18 09:26:42 +0000 — Error: user
-2020-10-18 09:27:15 +0000 — Error: user
-2020-10-18 09:27:34 +0000 — Error: user
-2020-10-18 20:15:41 +0000 — Error: user
-2020-10-18 20:16:20 +0000 — Error: user
-    at C:\github\rsapp-express-rest\src\resources\users\user.router.js:19:11
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-2020-10-18 20:16:59 +0000 — [object Object]
-2020-10-18 20:17:11 +0000 — Error: user
-    at C:\github\rsapp-express-rest\src\resources\users\user.router.js:19:11
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-2020-10-18 20:24:00 +0000 — Error: USER ID ERROR
-    at C:\github\rsapp-express-rest\src\resources\users\user.router.js:18:11
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:281:22
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:354:14)
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:365:14)
-    at Function.process_params (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:410:3)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:275:10)
-2020-10-18 20:24:00 +0000 — Promise ReferenceError: next is not defined
-    at C:\github\rsapp-express-rest\src\resources\users\user.router.js:27:5
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:281:22
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:354:14)
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:365:14)
-    at Function.process_params (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:410:3)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:275:10)
-2020-10-18 20:24:31 +0000 — Error: USER ID ERROR
-    at C:\github\rsapp-express-rest\src\resources\users\user.router.js:18:11
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:281:22
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:354:14)
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:365:14)
-    at Function.process_params (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:410:3)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:275:10)
-2020-10-18 20:24:31 +0000 — Promise ReferenceError: err is not defined
-    at C:\github\rsapp-express-rest\src\resources\users\user.router.js:27:10
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:281:22
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:354:14)
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:365:14)
-    at Function.process_params (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:410:3)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:275:10)
-2020-10-18 20:25:02 +0000 — Error: USER ID ERROR
-    at C:\github\rsapp-express-rest\src\resources\users\user.router.js:18:11
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:281:22
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:354:14)
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:365:14)
-    at Function.process_params (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:410:3)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:275:10)
-2020-10-18 20:25:10 +0000 — Error: USER ID ERROR
-    at C:\github\rsapp-express-rest\src\resources\users\user.router.js:18:11
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:281:22
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:354:14)
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:365:14)
-    at Function.process_params (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:410:3)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:275:10)
-2020-10-18 20:26:45 +0000 — Error: USER ID ERROR
-    at C:\github\rsapp-express-rest\src\resources\users\user.router.js:18:11
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:281:22
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:354:14)
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:365:14)
-    at Function.process_params (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:410:3)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:275:10)
-2020-10-18 20:26:45 +0000 — Error: USER ID ERROR with 500 status code
-2020-10-18 20:27:46 +0000 — Error: USER ID ERROR
-2020-10-18 20:27:46 +0000 — Error: USER ID ERROR with 500 status code
-2020-10-18 20:27:56 +0000 — r
-2020-10-18 20:27:56 +0000 — r
-2020-10-18 20:28:27 +0000 — Error: USER ID ERROR,    at C:\github\rsapp-express-rest\src\resources\users\user.router.js:18:11,    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5),    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:137:13),    at Route.dispatch (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:112:3),    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5),    at C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:281:22,    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:354:14),    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:365:14),    at Function.process_params (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:410:3),    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:275:10)
-2020-10-18 20:28:27 +0000 — Error: USER ID ERROR with 500 status code
-2020-10-18 20:28:40 +0000 —     at C:\github\rsapp-express-rest\src\resources\users\user.router.js:18:11
-2020-10-18 20:28:40 +0000 — undefined
-2020-10-18 20:29:17 +0000 — Error: USER ID ERROR
-2020-10-18 20:29:17 +0000 — Error: USER ID ERROR with 500 status code
-2020-10-18 20:30:54 +0000 — Error: USER ID ERROR
-2020-10-18 20:32:00 +0000 — Error: USER ID ERROR
-    at C:\github\rsapp-express-rest\src\resources\users\user.router.js:18:11
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:281:22
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:354:14)
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:365:14)
-    at Function.process_params (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:410:3)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:275:10)
-2020-10-18 20:32:18 +0000 — Error: USER ID ERROR
-    at C:\github\rsapp-express-rest\src\resources\users\user.router.js:18:11
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:281:22
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:354:14)
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:365:14)
-    at Function.process_params (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:410:3)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:275:10)
-2020-10-18 20:32:19 +0000 — Error: USER ID ERROR
-    at C:\github\rsapp-express-rest\src\resources\users\user.router.js:18:11
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (C:\github\rsapp-express-rest\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (C:\github\rsapp-express-rest\node_modules\express\lib\router\layer.js:95:5)
-    at C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:281:22
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:354:14)
-    at param (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:365:14)
-    at Function.process_params (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:410:3)
-    at next (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:275:10)
-2020-10-18 20:34:30 +0000 — USER ID ERROR
-2020-10-18 20:34:30 +0000 — Error: USER ID ERROR with 500 status code
-2020-10-18 20:35:20 +0000 — USER ID ERROR E
-2020-10-18 20:35:46 +0000 — USER ID ERROR Error: USER ID ERROR
-2020-10-18 20:41:43 +0000 — Uncaught ReferenceError: handler is not defined
-    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:48:9)
+2020-10-19 17:51:34 +0000 — Promise Error: Oops!
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:46:16)
     at Module._compile (internal/modules/cjs/loader.js:1015:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
     at Module.load (internal/modules/cjs/loader.js:879:32)
@@ -155,6 +9,106 @@
     at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:2:13)
     at Module._compile (internal/modules/cjs/loader.js:1015:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
-2020-10-18 20:42:16 +0000 — USER ID ERROR
-2020-10-18 20:44:39 +0000 — USER ID ERROR
-2020-10-18 20:44:39 +0000 — Error: USER ID ERROR broke with 500 status code
+2020-10-19 17:51:52 +0000 — Promise Error: Oops!
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:46:16)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-19 17:52:15 +0000 — Promise Error: Oops!
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:46:16)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-19 17:56:43 +0000 — Uncaught TypeError: logger.requests is not a function
+    at Object.write (C:\github\rsapp-express-rest\src\utils\logger.js:63:12)
+    at Array.logRequest (C:\github\rsapp-express-rest\node_modules\morgan\index.js:130:14)
+    at listener (C:\github\rsapp-express-rest\node_modules\on-finished\index.js:169:15)
+    at onFinish (C:\github\rsapp-express-rest\node_modules\on-finished\index.js:100:5)
+    at callback (C:\github\rsapp-express-rest\node_modules\ee-first\index.js:55:10)
+    at ServerResponse.onevent (C:\github\rsapp-express-rest\node_modules\ee-first\index.js:93:5)
+    at ServerResponse.emit (events.js:326:22)
+    at onFinish (_http_outgoing.js:731:10)
+    at onCorkedFinish (_stream_writable.js:673:5)
+    at afterWrite (_stream_writable.js:490:5)
+2020-10-19 17:58:41 +0000 — Uncaught TypeError: logger.notice is not a function
+    at Object.write (C:\github\rsapp-express-rest\src\utils\logger.js:57:12)
+    at Array.logRequest (C:\github\rsapp-express-rest\node_modules\morgan\index.js:130:14)
+    at listener (C:\github\rsapp-express-rest\node_modules\on-finished\index.js:169:15)
+    at onFinish (C:\github\rsapp-express-rest\node_modules\on-finished\index.js:100:5)
+    at callback (C:\github\rsapp-express-rest\node_modules\ee-first\index.js:55:10)
+    at ServerResponse.onevent (C:\github\rsapp-express-rest\node_modules\ee-first\index.js:93:5)
+    at ServerResponse.emit (events.js:326:22)
+    at onFinish (_http_outgoing.js:731:10)
+    at onCorkedFinish (_stream_writable.js:673:5)
+    at afterWrite (_stream_writable.js:490:5)
+2020-10-19 18:04:05 +0000 — Uncaught TypeError: logger.requests is not a function
+    at Object.write (C:\github\rsapp-express-rest\src\utils\logger.js:78:12)
+    at Array.logRequest (C:\github\rsapp-express-rest\node_modules\morgan\index.js:130:14)
+    at listener (C:\github\rsapp-express-rest\node_modules\on-finished\index.js:169:15)
+    at onFinish (C:\github\rsapp-express-rest\node_modules\on-finished\index.js:100:5)
+    at callback (C:\github\rsapp-express-rest\node_modules\ee-first\index.js:55:10)
+    at ServerResponse.onevent (C:\github\rsapp-express-rest\node_modules\ee-first\index.js:93:5)
+    at ServerResponse.emit (events.js:326:22)
+    at onFinish (_http_outgoing.js:731:10)
+    at onCorkedFinish (_stream_writable.js:673:5)
+    at afterWrite (_stream_writable.js:490:5)
+2020-10-19 18:07:53 +0000 — Promise Error: Oops!
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:46:16)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-19 18:07:53 +0000 — Uncaught Error: Error: Oops!
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:46:16)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at process.<anonymous> (C:\github\rsapp-express-rest\src\utils\logger.js:107:11)
+    at process.emit (events.js:314:20)
+    at processPromiseRejections (internal/process/promises.js:209:33)
+    at processTicksAndRejections (internal/process/task_queues.js:98:32)
+2020-10-19 18:08:25 +0000 — Promise Error: Oops!
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:46:16)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-19 18:14:58 +0000 — Promise Error: Oops!
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:46:16)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
