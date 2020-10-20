@@ -1,4 +1,35 @@
 const uuid = require('uuid');
+// const {Schema, model} = require('mongoose')
+
+// const taskSchema = new Schema({
+//   title: {
+//     type: String,
+//     required: true
+//   },
+//   order: {
+//     type: Number,
+//     required: true
+//   },
+//   description: {
+//     type: String,
+//     required: true
+//   },
+//   userId: {
+//     type: Schema.Types.ObjectId,
+//     ref: 'User',
+//     required: true
+//   },
+//   boardId: {
+//     type: Schema.Types.ObjectId,
+//     ref: 'Board',
+//     required: true
+//   },
+//   columnId: {
+//     type: Schema.Types.ObjectId,
+//     ref: 'Column',
+//     required: true
+//   }
+// })
 
 class Task {
   constructor({
@@ -25,3 +56,4 @@ class Task {
 }
 
 module.exports = Task;
+// model('Task', taskSchema)

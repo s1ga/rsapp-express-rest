@@ -1,0 +1,538 @@
+2020-10-20 09:59:28 +0000 — Uncaught ReferenceError: model is not defined
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.model.js:43:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.router.js:2:14)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:9:20)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-20 10:09:16 +0000 — Uncaught ReferenceError: model is not defined
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.model.js:43:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.router.js:2:14)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:9:20)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-20 10:09:37 +0000 — Uncaught ReferenceError: model is not defined
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.model.js:43:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.router.js:2:14)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-20 12:06:36 +0000 — Uncaught C:\github\rsapp-express-rest\src\resources\boards\board.model.js:2
+const {}
+      ^^
+
+SyntaxError: Missing initializer in destructuring declaration
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\common\inMemoryDB.js:3:15)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-20 12:12:21 +0000 — Uncaught ReferenceError: model is not defined
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\tasks\task.model.js:58:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\common\inMemoryDB.js:2:14)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-20 12:20:53 +0000 — 20/Oct/2020:12:20:53 +0000 GET - /users — QUERY:{} — BODY:{} - ms
+
+2020-10-20 12:22:30 +0000 — undefined is not a function
+2020-10-20 12:22:30 +0000 — 20/Oct/2020:12:22:30 +0000 GET 500 /users — QUERY:{} — BODY:{} 18.157 ms
+
+2020-10-20 12:22:54 +0000 — 20/Oct/2020:12:22:54 +0000 GET 200 /users — QUERY:{} — BODY:{} 4.715 ms
+
+2020-10-20 14:41:04 +0000 — 
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 GET 500 /users — QUERY:{} — BODY:{} 7.781 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 1.355 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 GET 200 /users/38fbcf2f-27be-4856-bf8a-25427841a584 — QUERY:{} — BODY:{} 0.866 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 DELETE 204 /users/38fbcf2f-27be-4856-bf8a-25427841a584 — QUERY:{} — BODY:{} 1.135 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.600 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 DELETE 204 /users/13e2f0ad-2b58-4c45-9bb7-12a23b663bda — QUERY:{} — BODY:{} 0.701 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.364 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 PUT 200 /users/1f2dc7f9-7bdb-4e0d-8e58-12ad96f72841 — QUERY:{} — BODY:{"name":"Autotest updated TEST_USER","login":"test_user","password":"*************","id":"1f2dc7f9-7bdb-4e0d-8e58-12ad96f72841"} 17.041 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 GET 200 /users/1f2dc7f9-7bdb-4e0d-8e58-12ad96f72841 — QUERY:{} — BODY:{} 0.587 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 DELETE 204 /users/1f2dc7f9-7bdb-4e0d-8e58-12ad96f72841 — QUERY:{} — BODY:{} 0.672 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.482 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 DELETE 204 /users/a7d6d826-de32-4052-a236-651759d6a453 — QUERY:{} — BODY:{} 0.871 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.619 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 1.191 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 POST 200 /boards/67988fc5-4c08-4fa3-a943-b683be51582f/tasks — QUERY:{} — BODY:{"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"bebe65aa-e326-4fd2-9d44-3e60566fe6d5","boardId":"67988fc5-4c08-4fa3-a943-b683be51582f"} 1.929 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 POST 200 /boards/67988fc5-4c08-4fa3-a943-b683be51582f/tasks — QUERY:{} — BODY:{"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"bebe65aa-e326-4fd2-9d44-3e60566fe6d5","boardId":"67988fc5-4c08-4fa3-a943-b683be51582f"} 3.387 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 DELETE 204 /users/bebe65aa-e326-4fd2-9d44-3e60566fe6d5 — QUERY:{} — BODY:{} 1.611 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 GET 200 /boards/67988fc5-4c08-4fa3-a943-b683be51582f/tasks/b6abbf3b-4b8e-4c5a-87b7-a361195e4564 — QUERY:{} — BODY:{} 1.220 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 GET 200 /boards/67988fc5-4c08-4fa3-a943-b683be51582f/tasks/2925d1be-dd00-4deb-9d32-a909284d9d7c — QUERY:{} — BODY:{} 0.924 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 DELETE 204 /boards/67988fc5-4c08-4fa3-a943-b683be51582f/tasks/2925d1be-dd00-4deb-9d32-a909284d9d7c — QUERY:{} — BODY:{} 1.694 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 DELETE 204 /boards/67988fc5-4c08-4fa3-a943-b683be51582f/tasks/b6abbf3b-4b8e-4c5a-87b7-a361195e4564 — QUERY:{} — BODY:{} 0.692 ms
+
+2020-10-20 14:41:04 +0000 — 20/Oct/2020:14:41:04 +0000 DELETE 204 /boards/67988fc5-4c08-4fa3-a943-b683be51582f — QUERY:{} — BODY:{} 1.172 ms
+
+2020-10-20 14:41:38 +0000 — 20/Oct/2020:14:41:38 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 6.572 ms
+
+2020-10-20 14:41:38 +0000 — 20/Oct/2020:14:41:38 +0000 GET 200 /users — QUERY:{} — BODY:{} 1.830 ms
+
+2020-10-20 14:41:38 +0000 — 20/Oct/2020:14:41:38 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.509 ms
+
+2020-10-20 14:41:38 +0000 — 20/Oct/2020:14:41:38 +0000 GET 200 /boards — QUERY:{} — BODY:{} 0.577 ms
+
+2020-10-20 14:41:38 +0000 — 20/Oct/2020:14:41:38 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.901 ms
+
+2020-10-20 14:41:38 +0000 — 20/Oct/2020:14:41:38 +0000 POST 200 /boards/a1b112f1-2c3e-44a4-9ba4-d05ec5e00949/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 1.707 ms
+
+2020-10-20 14:41:38 +0000 — 20/Oct/2020:14:41:38 +0000 GET 200 /users/e29ae554-c0b1-474c-9c98-35647e391bd5 — QUERY:{} — BODY:{} 1.422 ms
+
+2020-10-20 14:41:38 +0000 — 20/Oct/2020:14:41:38 +0000 GET 200 /boards — QUERY:{} — BODY:{} 1.188 ms
+
+2020-10-20 14:41:38 +0000 — 20/Oct/2020:14:41:38 +0000 GET 200 /boards/a1b112f1-2c3e-44a4-9ba4-d05ec5e00949/tasks — QUERY:{} — BODY:{} 1.616 ms
+
+2020-10-20 14:41:38 +0000 — 20/Oct/2020:14:41:38 +0000 DELETE 204 /users/e29ae554-c0b1-474c-9c98-35647e391bd5 — QUERY:{} — BODY:{} 1.708 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 GET 200 /boards/81d749e0-24e8-4a03-8bb2-9e66343dc6c0 — QUERY:{} — BODY:{} 1.058 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 GET 200 /boards/a1b112f1-2c3e-44a4-9ba4-d05ec5e00949/tasks — QUERY:{} — BODY:{} 0.692 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.566 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 1.045 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 GET 200 /boards/a1b112f1-2c3e-44a4-9ba4-d05ec5e00949/tasks/151c3ddc-b0d5-48c9-91b5-339478f018e7 — QUERY:{} — BODY:{} 0.962 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 DELETE 204 /users/b0807c4e-74cf-47c3-86d4-2dd88bff808d — QUERY:{} — BODY:{} 0.810 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 DELETE 204 /boards/ce755cd7-6a25-4143-8994-bf8e430cf07d — QUERY:{} — BODY:{} 1.329 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /boards/a1b112f1-2c3e-44a4-9ba4-d05ec5e00949/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 0.903 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.597 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.830 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 DELETE 204 /boards/a1b112f1-2c3e-44a4-9ba4-d05ec5e00949/tasks/543788b7-c161-4483-b8c9-6577207ebaac — QUERY:{} — BODY:{} 1.114 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 PUT 200 /users/ac5e14eb-bf44-46b3-a4ca-650949800a63 — QUERY:{} — BODY:{"name":"Autotest updated TEST_USER","login":"test_user","password":"*************","id":"ac5e14eb-bf44-46b3-a4ca-650949800a63"} 27.820 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 PUT 200 /boards/a1073145-8135-4137-a1e1-f4de4ddd8ae9 — QUERY:{} — BODY:{"id":"a1073145-8135-4137-a1e1-f4de4ddd8ae9","title":"Autotest updated board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 1.119 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /boards/a1b112f1-2c3e-44a4-9ba4-d05ec5e00949/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 0.609 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 GET 200 /users/ac5e14eb-bf44-46b3-a4ca-650949800a63 — QUERY:{} — BODY:{} 0.651 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 GET 200 /boards/a1073145-8135-4137-a1e1-f4de4ddd8ae9 — QUERY:{} — BODY:{} 1.093 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 PUT 200 /boards/a1b112f1-2c3e-44a4-9ba4-d05ec5e00949/tasks/1c1250ff-f390-43f2-ad7a-8b3051fe0e1a — QUERY:{} — BODY:{"id":"1c1250ff-f390-43f2-ad7a-8b3051fe0e1a","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"a1b112f1-2c3e-44a4-9ba4-d05ec5e00949","columnId":null} 1.007 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 DELETE 204 /users/ac5e14eb-bf44-46b3-a4ca-650949800a63 — QUERY:{} — BODY:{} 1.077 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 DELETE 204 /boards/a1073145-8135-4137-a1e1-f4de4ddd8ae9 — QUERY:{} — BODY:{} 2.883 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 GET 200 /boards/a1b112f1-2c3e-44a4-9ba4-d05ec5e00949/tasks/1c1250ff-f390-43f2-ad7a-8b3051fe0e1a — QUERY:{} — BODY:{} 0.732 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.520 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.525 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 GET 200 /boards/a1b112f1-2c3e-44a4-9ba4-d05ec5e00949/tasks/151c3ddc-b0d5-48c9-91b5-339478f018e7 — QUERY:{} — BODY:{} 0.713 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 DELETE 204 /users/1e740123-44ce-40cd-92a7-228f9550dfc3 — QUERY:{} — BODY:{} 0.620 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 DELETE 204 /boards/f8f948e6-1b9d-4baa-99cc-07d50b8243d4 — QUERY:{} — BODY:{} 0.911 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 DELETE 204 /boards/a1b112f1-2c3e-44a4-9ba4-d05ec5e00949/tasks/151c3ddc-b0d5-48c9-91b5-339478f018e7 — QUERY:{} — BODY:{} 0.694 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.493 ms
+
+2020-10-20 14:41:39 +0000 — Board not found
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 GET 404 /boards/f8f948e6-1b9d-4baa-99cc-07d50b8243d4 — QUERY:{} — BODY:{} 3.286 ms
+
+2020-10-20 14:41:39 +0000 — Task not found
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 GET 404 /boards/a1b112f1-2c3e-44a4-9ba4-d05ec5e00949/tasks/151c3ddc-b0d5-48c9-91b5-339478f018e7 — QUERY:{} — BODY:{} 22.182 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.547 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.562 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 DELETE 204 /boards/a1b112f1-2c3e-44a4-9ba4-d05ec5e00949 — QUERY:{} — BODY:{} 0.590 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /boards/8f6f1daa-09da-4c7d-965f-1ca51b3d7914/tasks — QUERY:{} — BODY:{"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"4db0ca99-4970-4187-b04c-3db4d58d6d04","boardId":"8f6f1daa-09da-4c7d-965f-1ca51b3d7914"} 0.761 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /boards/8f6f1daa-09da-4c7d-965f-1ca51b3d7914/tasks — QUERY:{} — BODY:{"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"4db0ca99-4970-4187-b04c-3db4d58d6d04","boardId":"8f6f1daa-09da-4c7d-965f-1ca51b3d7914"} 0.587 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /boards/49edb12f-a011-4cd3-b235-6b4be4991b29/tasks — QUERY:{} — BODY:{"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"49edb12f-a011-4cd3-b235-6b4be4991b29","userId":null,"columnId":null} 0.817 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /boards/49edb12f-a011-4cd3-b235-6b4be4991b29/tasks — QUERY:{} — BODY:{"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"49edb12f-a011-4cd3-b235-6b4be4991b29","userId":null,"columnId":null} 0.594 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /boards/49edb12f-a011-4cd3-b235-6b4be4991b29/tasks — QUERY:{} — BODY:{"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"49edb12f-a011-4cd3-b235-6b4be4991b29","userId":null,"columnId":null} 0.685 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /boards/49edb12f-a011-4cd3-b235-6b4be4991b29/tasks — QUERY:{} — BODY:{"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"49edb12f-a011-4cd3-b235-6b4be4991b29","userId":null,"columnId":null} 0.636 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 POST 200 /boards/49edb12f-a011-4cd3-b235-6b4be4991b29/tasks — QUERY:{} — BODY:{"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"49edb12f-a011-4cd3-b235-6b4be4991b29","userId":null,"columnId":null} 1.109 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 DELETE 204 /users/4db0ca99-4970-4187-b04c-3db4d58d6d04 — QUERY:{} — BODY:{} 0.671 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 GET 200 /boards/49edb12f-a011-4cd3-b235-6b4be4991b29/tasks/2bca0c27-60f5-4fef-972f-ac6f91ca770f — QUERY:{} — BODY:{} 0.821 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 GET 200 /boards/49edb12f-a011-4cd3-b235-6b4be4991b29/tasks/118941ec-6e6b-4ad6-9e21-48b41f4520b2 — QUERY:{} — BODY:{} 0.937 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 GET 200 /boards/49edb12f-a011-4cd3-b235-6b4be4991b29/tasks/d1efdba7-4b38-43b0-a4c5-46e3125694f6 — QUERY:{} — BODY:{} 0.963 ms
+
+2020-10-20 14:41:39 +0000 — 20/Oct/2020:14:41:39 +0000 GET 200 /boards/49edb12f-a011-4cd3-b235-6b4be4991b29/tasks/7039b5e9-dfdf-4e57-ae2a-f55ab05107db — QUERY:{} — BODY:{} 0.629 ms
+
+2020-10-20 14:41:40 +0000 — 20/Oct/2020:14:41:40 +0000 GET 200 /boards/49edb12f-a011-4cd3-b235-6b4be4991b29/tasks/855fba7a-08c2-4261-87f4-6c9500e5a21a — QUERY:{} — BODY:{} 0.591 ms
+
+2020-10-20 14:41:40 +0000 — 20/Oct/2020:14:41:40 +0000 GET 200 /boards/8f6f1daa-09da-4c7d-965f-1ca51b3d7914/tasks/5e8f5e96-d782-4690-9a35-7b2e4a6ffedb — QUERY:{} — BODY:{} 0.909 ms
+
+2020-10-20 14:41:40 +0000 — 20/Oct/2020:14:41:40 +0000 DELETE 204 /boards/49edb12f-a011-4cd3-b235-6b4be4991b29 — QUERY:{} — BODY:{} 0.834 ms
+
+2020-10-20 14:41:40 +0000 — 20/Oct/2020:14:41:40 +0000 GET 200 /boards/8f6f1daa-09da-4c7d-965f-1ca51b3d7914/tasks/92c25651-dd36-4439-8038-2b5b4d481c68 — QUERY:{} — BODY:{} 0.870 ms
+
+2020-10-20 14:41:40 +0000 — 20/Oct/2020:14:41:40 +0000 DELETE 204 /boards/8f6f1daa-09da-4c7d-965f-1ca51b3d7914/tasks/5e8f5e96-d782-4690-9a35-7b2e4a6ffedb — QUERY:{} — BODY:{} 0.538 ms
+
+2020-10-20 14:41:40 +0000 — 20/Oct/2020:14:41:40 +0000 DELETE 204 /boards/8f6f1daa-09da-4c7d-965f-1ca51b3d7914/tasks/92c25651-dd36-4439-8038-2b5b4d481c68 — QUERY:{} — BODY:{} 0.828 ms
+
+2020-10-20 14:41:40 +0000 — Task not found
+2020-10-20 14:41:40 +0000 — 20/Oct/2020:14:41:40 +0000 GET 404 /boards/49edb12f-a011-4cd3-b235-6b4be4991b29/tasks/2bca0c27-60f5-4fef-972f-ac6f91ca770f — QUERY:{} — BODY:{} 30.527 ms
+
+2020-10-20 14:41:40 +0000 — Task not found
+2020-10-20 14:41:40 +0000 — 20/Oct/2020:14:41:40 +0000 GET 404 /boards/49edb12f-a011-4cd3-b235-6b4be4991b29/tasks/118941ec-6e6b-4ad6-9e21-48b41f4520b2 — QUERY:{} — BODY:{} 55.250 ms
+
+2020-10-20 14:41:40 +0000 — Task not found
+2020-10-20 14:41:40 +0000 — 20/Oct/2020:14:41:40 +0000 GET 404 /boards/49edb12f-a011-4cd3-b235-6b4be4991b29/tasks/d1efdba7-4b38-43b0-a4c5-46e3125694f6 — QUERY:{} — BODY:{} 61.391 ms
+
+2020-10-20 14:41:40 +0000 — Task not found
+2020-10-20 14:41:40 +0000 — 20/Oct/2020:14:41:40 +0000 GET 404 /boards/49edb12f-a011-4cd3-b235-6b4be4991b29/tasks/7039b5e9-dfdf-4e57-ae2a-f55ab05107db — QUERY:{} — BODY:{} 89.215 ms
+
+2020-10-20 14:41:40 +0000 — Task not found
+2020-10-20 14:41:40 +0000 — 20/Oct/2020:14:41:40 +0000 GET 404 /boards/49edb12f-a011-4cd3-b235-6b4be4991b29/tasks/855fba7a-08c2-4261-87f4-6c9500e5a21a — QUERY:{} — BODY:{} 93.183 ms
+
+2020-10-20 14:41:40 +0000 — 20/Oct/2020:14:41:40 +0000 DELETE 204 /boards/8f6f1daa-09da-4c7d-965f-1ca51b3d7914 — QUERY:{} — BODY:{} 0.659 ms
+
+2020-10-20 14:41:40 +0000 — 20/Oct/2020:14:41:40 +0000 DELETE 204 /boards/730aacdd-3534-46a4-a18f-ea1c9c97c53b — QUERY:{} — BODY:{} 0.765 ms
+
+2020-10-20 15:12:37 +0000 — Uncaught Error: Cannot find module '../../common/inMemoryDB'
+Require stack:
+- C:\github\rsapp-express-rest\src\resources\users\user.memory.repository.js
+- C:\github\rsapp-express-rest\src\resources\users\user.service.js
+- C:\github\rsapp-express-rest\src\resources\users\user.router.js
+- C:\github\rsapp-express-rest\src\app.js
+- C:\github\rsapp-express-rest\src\server.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.memory.repository.js:1:12)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+2020-10-20 15:13:56 +0000 — Uncaught Error: Cannot find module '../../common/inMemoryDB'
+Require stack:
+- C:\github\rsapp-express-rest\src\resources\users\user.memory.repository.js
+- C:\github\rsapp-express-rest\src\resources\users\user.service.js
+- C:\github\rsapp-express-rest\src\resources\users\user.router.js
+- C:\github\rsapp-express-rest\src\app.js
+- C:\github\rsapp-express-rest\src\server.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.memory.repository.js:1:12)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+2020-10-20 15:14:02 +0000 — Uncaught Error: Cannot find module '../../common/inMemoryDB'
+Require stack:
+- C:\github\rsapp-express-rest\src\resources\boards\board.memory.repository.js
+- C:\github\rsapp-express-rest\src\resources\boards\board.service.js
+- C:\github\rsapp-express-rest\src\resources\boards\board.router.js
+- C:\github\rsapp-express-rest\src\app.js
+- C:\github\rsapp-express-rest\src\server.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\boards\board.memory.repository.js:1:12)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+2020-10-20 15:18:17 +0000 — Promise TypeError: logger.log is not a function
+    at start (C:\github\rsapp-express-rest\src\server.js:17:12)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:21:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:18:29 +0000 — Cannot read property 'connect' of undefined
+2020-10-20 15:20:32 +0000 — 20/Oct/2020:15:20:32 +0000 GET 200 /users — QUERY:{} — BODY:{} 3.708 ms
+
+2020-10-20 15:26:57 +0000 — Uncaught C:\github\rsapp-express-rest\src\common\clientDb.js:13
+  await mongoose.connect(
+  ^^^^^
+
+SyntaxError: await is only valid in async function
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.memory.repository.js:1:12)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-20 15:26:57 +0000 — Uncaught C:\github\rsapp-express-rest\src\common\clientDb.js:13
+  await mongoose.connect(
+  ^^^^^
+
+SyntaxError: await is only valid in async function
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.memory.repository.js:1:12)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-20 15:26:58 +0000 — Uncaught C:\github\rsapp-express-rest\src\common\clientDb.js:13
+  await mongoose.connect(
+  ^^^^^
+
+SyntaxError: await is only valid in async function
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.memory.repository.js:1:12)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-20 15:27:09 +0000 — Uncaught ReferenceError: mongoose is not defined
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:13:3)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:27:33 +0000 — Uncaught ReferenceError: MONGO_CONNECTION_STRING is not defined
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:15:5)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:27:44 +0000 — Uncaught ReferenceError: MONGO_CONNECTION_STRING is not defined
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:15:5)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:28:55 +0000 — Uncaught ReferenceError: err is not defined
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:21:61)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:29:15 +0000 — Uncaught TypeError: logger.error is not a function
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:21:25)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:29:22 +0000 — Uncaught TypeError: logger.log is not a function
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:21:25)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:29:34 +0000 — Uncaught TypeError: logger.error is not a function
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:21:25)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:30:09 +0000 — Connection error
+2020-10-20 15:30:09 +0000 — Uncaught TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type function. Received an instance of DerivedLogger
+    at checkListener (events.js:110:11)
+    at _addListener (events.js:347:3)
+    at NativeConnection.addListener (events.js:405:10)
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:21:6)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:30:45 +0000 — Connection error
+2020-10-20 15:30:45 +0000 — Uncaught TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type function. Received an instance of DerivedLogger
+    at checkListener (events.js:110:11)
+    at _addListener (events.js:347:3)
+    at NativeConnection.addListener (events.js:405:10)
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:21:6)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:31:11 +0000 — Connection error
+2020-10-20 15:31:11 +0000 — Uncaught TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type function. Received an instance of DerivedLogger
+    at checkListener (events.js:110:11)
+    at _addListener (events.js:347:3)
+    at NativeConnection.addListener (events.js:405:10)
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:21:6)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:33:00 +0000 — Uncaught TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type function. Received undefined
+    at checkListener (events.js:110:11)
+    at _addListener (events.js:347:3)
+    at NativeConnection.addListener (events.js:405:10)
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:21:6)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:33:33 +0000 — MongoDB connected
+2020-10-20 15:35:52 +0000 — Uncaught ReferenceError: model is not defined
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.model.js:48:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.router.js:2:14)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-20 15:36:03 +0000 — MongoDB connected
+2020-10-20 15:37:38 +0000 — MongoDB connected
+2020-10-20 15:37:38 +0000 — Promise MongoError: user is not allowed to do action [dropDatabase] on [rsapp-trello.]
+    at MessageStream.messageHandler (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:314:20)
+    at processIncomingData (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:403:12)
+    at writeOrBuffer (_stream_writable.js:387:5)
+    at MessageStream.Writable.write (_stream_writable.js:318:11)
+    at TLSSocket.ondata (_stream_readable.js:719:22)
+    at TLSSocket.emit (events.js:314:20)
+    at addChunk (_stream_readable.js:298:12)
+    at readableAddChunk (_stream_readable.js:273:9)
+    at TLSSocket.Readable.push (_stream_readable.js:214:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+2020-10-20 15:37:59 +0000 — MongoDB connected
+2020-10-20 15:38:33 +0000 — MongoDB connected
+2020-10-20 15:39:48 +0000 — Uncaught C:\github\rsapp-express-rest\src\resources\users\user.model.js:9
+  name: {
+  ^^^^
+
+SyntaxError: Unexpected identifier
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.router.js:2:14)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-20 15:39:55 +0000 — MongoDB connected
+2020-10-20 15:40:13 +0000 — MongoDB connected
+2020-10-20 15:40:26 +0000 — MongoDB connected
+2020-10-20 15:40:34 +0000 — MongoDB connected
+2020-10-20 15:41:17 +0000 — MongoDB connected
+2020-10-20 15:41:28 +0000 — MongoDB connected
+2020-10-20 15:42:18 +0000 — MongoDB connected

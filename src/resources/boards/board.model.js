@@ -1,4 +1,28 @@
 const uuid = require('uuid');
+// const { Schema, model } = require('mongoose');
+
+// const boardSchema = new Schema({
+//   title: {
+//     type: String,
+//     required: true
+//   },
+//   columns: [
+//     {
+//       id: {
+//         type: Schema.Types.ObjectId,
+//         ref: 'Tasks'
+//       },
+//       title: {
+//         type: Schema.Types.String,
+//         ref: 'Tasks'
+//       },
+//       order: {
+//         type: Schema.Types.Number,
+//         ref: 'Tasks'
+//       }
+//     }
+//   ]
+// })
 
 class Board {
   constructor({

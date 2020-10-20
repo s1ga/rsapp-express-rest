@@ -1,0 +1,340 @@
+2020-10-20 09:59:28 +0000 — Uncaught ReferenceError: model is not defined
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.model.js:43:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.router.js:2:14)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:9:20)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-20 10:09:16 +0000 — Uncaught ReferenceError: model is not defined
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.model.js:43:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.router.js:2:14)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:9:20)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-20 10:09:37 +0000 — Uncaught ReferenceError: model is not defined
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.model.js:43:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.router.js:2:14)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-20 12:06:36 +0000 — Uncaught C:\github\rsapp-express-rest\src\resources\boards\board.model.js:2
+const {}
+      ^^
+
+SyntaxError: Missing initializer in destructuring declaration
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\common\inMemoryDB.js:3:15)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-20 12:12:21 +0000 — Uncaught ReferenceError: model is not defined
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\tasks\task.model.js:58:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\common\inMemoryDB.js:2:14)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-20 12:22:30 +0000 — undefined is not a function
+2020-10-20 14:41:04 +0000 — 
+2020-10-20 14:41:39 +0000 — Board not found
+2020-10-20 14:41:39 +0000 — Task not found
+2020-10-20 14:41:40 +0000 — Task not found
+2020-10-20 14:41:40 +0000 — Task not found
+2020-10-20 14:41:40 +0000 — Task not found
+2020-10-20 14:41:40 +0000 — Task not found
+2020-10-20 14:41:40 +0000 — Task not found
+2020-10-20 15:12:37 +0000 — Uncaught Error: Cannot find module '../../common/inMemoryDB'
+Require stack:
+- C:\github\rsapp-express-rest\src\resources\users\user.memory.repository.js
+- C:\github\rsapp-express-rest\src\resources\users\user.service.js
+- C:\github\rsapp-express-rest\src\resources\users\user.router.js
+- C:\github\rsapp-express-rest\src\app.js
+- C:\github\rsapp-express-rest\src\server.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.memory.repository.js:1:12)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+2020-10-20 15:13:56 +0000 — Uncaught Error: Cannot find module '../../common/inMemoryDB'
+Require stack:
+- C:\github\rsapp-express-rest\src\resources\users\user.memory.repository.js
+- C:\github\rsapp-express-rest\src\resources\users\user.service.js
+- C:\github\rsapp-express-rest\src\resources\users\user.router.js
+- C:\github\rsapp-express-rest\src\app.js
+- C:\github\rsapp-express-rest\src\server.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.memory.repository.js:1:12)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+2020-10-20 15:14:02 +0000 — Uncaught Error: Cannot find module '../../common/inMemoryDB'
+Require stack:
+- C:\github\rsapp-express-rest\src\resources\boards\board.memory.repository.js
+- C:\github\rsapp-express-rest\src\resources\boards\board.service.js
+- C:\github\rsapp-express-rest\src\resources\boards\board.router.js
+- C:\github\rsapp-express-rest\src\app.js
+- C:\github\rsapp-express-rest\src\server.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\boards\board.memory.repository.js:1:12)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+2020-10-20 15:18:17 +0000 — Promise TypeError: logger.log is not a function
+    at start (C:\github\rsapp-express-rest\src\server.js:17:12)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:21:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:18:29 +0000 — Cannot read property 'connect' of undefined
+2020-10-20 15:26:57 +0000 — Uncaught C:\github\rsapp-express-rest\src\common\clientDb.js:13
+  await mongoose.connect(
+  ^^^^^
+
+SyntaxError: await is only valid in async function
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.memory.repository.js:1:12)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-20 15:26:57 +0000 — Uncaught C:\github\rsapp-express-rest\src\common\clientDb.js:13
+  await mongoose.connect(
+  ^^^^^
+
+SyntaxError: await is only valid in async function
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.memory.repository.js:1:12)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-20 15:26:58 +0000 — Uncaught C:\github\rsapp-express-rest\src\common\clientDb.js:13
+  await mongoose.connect(
+  ^^^^^
+
+SyntaxError: await is only valid in async function
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.memory.repository.js:1:12)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-20 15:27:09 +0000 — Uncaught ReferenceError: mongoose is not defined
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:13:3)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:27:33 +0000 — Uncaught ReferenceError: MONGO_CONNECTION_STRING is not defined
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:15:5)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:27:44 +0000 — Uncaught ReferenceError: MONGO_CONNECTION_STRING is not defined
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:15:5)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:28:55 +0000 — Uncaught ReferenceError: err is not defined
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:21:61)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:29:15 +0000 — Uncaught TypeError: logger.error is not a function
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:21:25)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:29:22 +0000 — Uncaught TypeError: logger.log is not a function
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:21:25)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:29:34 +0000 — Uncaught TypeError: logger.error is not a function
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:21:25)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:30:09 +0000 — Connection error
+2020-10-20 15:30:09 +0000 — Uncaught TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type function. Received an instance of DerivedLogger
+    at checkListener (events.js:110:11)
+    at _addListener (events.js:347:3)
+    at NativeConnection.addListener (events.js:405:10)
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:21:6)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:30:45 +0000 — Connection error
+2020-10-20 15:30:45 +0000 — Uncaught TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type function. Received an instance of DerivedLogger
+    at checkListener (events.js:110:11)
+    at _addListener (events.js:347:3)
+    at NativeConnection.addListener (events.js:405:10)
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:21:6)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:31:11 +0000 — Connection error
+2020-10-20 15:31:11 +0000 — Uncaught TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type function. Received an instance of DerivedLogger
+    at checkListener (events.js:110:11)
+    at _addListener (events.js:347:3)
+    at NativeConnection.addListener (events.js:405:10)
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:21:6)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:33:00 +0000 — Uncaught TypeError [ERR_INVALID_ARG_TYPE]: The "listener" argument must be of type function. Received undefined
+    at checkListener (events.js:110:11)
+    at _addListener (events.js:347:3)
+    at NativeConnection.addListener (events.js:405:10)
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:21:6)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-20 15:35:52 +0000 — Uncaught ReferenceError: model is not defined
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.model.js:48:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.router.js:2:14)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-20 15:37:38 +0000 — Promise MongoError: user is not allowed to do action [dropDatabase] on [rsapp-trello.]
+    at MessageStream.messageHandler (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:314:20)
+    at processIncomingData (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:403:12)
+    at writeOrBuffer (_stream_writable.js:387:5)
+    at MessageStream.Writable.write (_stream_writable.js:318:11)
+    at TLSSocket.ondata (_stream_readable.js:719:22)
+    at TLSSocket.emit (events.js:314:20)
+    at addChunk (_stream_readable.js:298:12)
+    at readableAddChunk (_stream_readable.js:273:9)
+    at TLSSocket.Readable.push (_stream_readable.js:214:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+2020-10-20 15:39:48 +0000 — Uncaught C:\github\rsapp-express-rest\src\resources\users\user.model.js:9
+  name: {
+  ^^^^
+
+SyntaxError: Unexpected identifier
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.router.js:2:14)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)

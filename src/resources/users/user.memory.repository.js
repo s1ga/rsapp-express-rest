@@ -1,4 +1,4 @@
-const DB = require('../../common/inMemoryDB');
+const DB = require('../../common/clientDb');
 const User = require('./user.model');
 const taskService = require('../tasks/task.service');
 const dbUsers = DB.Users;

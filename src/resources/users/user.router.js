@@ -5,8 +5,10 @@ const userService = require('./user.service');
 router.get('/', async (req, res, next) => {
   try {
     const users = await userService.getAll();
+    // const users = await User.find().lean();
 
     res.status(200).json(users.map(User.toResponse));
+    // res.status(200).json(users.map(User.toResponse));
   } catch (e) {
     return next(e);
   }
