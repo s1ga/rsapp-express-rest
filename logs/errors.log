@@ -338,3 +338,94 @@ SyntaxError: Unexpected identifier
     at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.router.js:2:14)
     at Module._compile (internal/modules/cjs/loader.js:1015:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-10-20 17:59:39 +0000 — Cannot read property 'map' of undefined
+2020-10-20 18:00:41 +0000 — User.fromRequest is not a function
+2020-10-20 18:01:14 +0000 — User.fromRequest is not a function
+2020-10-20 18:02:05 +0000 — Promise MongoError: user is not allowed to do action [dropDatabase] on [rsapp-trello.]
+    at MessageStream.messageHandler (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:314:20)
+    at processIncomingData (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:403:12)
+    at writeOrBuffer (_stream_writable.js:387:5)
+    at MessageStream.Writable.write (_stream_writable.js:318:11)
+    at TLSSocket.ondata (_stream_readable.js:719:22)
+    at TLSSocket.emit (events.js:314:20)
+    at addChunk (_stream_readable.js:298:12)
+    at readableAddChunk (_stream_readable.js:273:9)
+    at TLSSocket.Readable.push (_stream_readable.js:214:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+2020-10-20 18:02:45 +0000 — User.fromRequest is not a function
+2020-10-20 18:03:23 +0000 — dbUser is not defined
+2020-10-20 18:05:04 +0000 — undefined is not a function
+2020-10-20 18:05:56 +0000 — Unexpected token S in JSON at position 12
+2020-10-20 18:06:24 +0000 — Unexpected token S in JSON at position 12
+2020-10-20 18:07:57 +0000 — Uncaught C:\github\rsapp-express-rest\src\resources\users\user.db.repository.js:7
+  return await User.find().populate('_id' 'name' 'login');
+                                    ^^^^^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.service.js:1:19)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.router.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-20 18:09:03 +0000 — Schema hasn't been registered for model "login".
+Use mongoose.model(name, schema)
+2020-10-20 18:10:15 +0000 — User.find(...).toResponse is not a function
+2020-10-20 18:10:35 +0000 — undefined is not a function
+2020-10-20 18:11:47 +0000 — i.toResponse is not a function
+2020-10-20 18:12:06 +0000 — User.toResponse is not a function
+2020-10-20 18:12:55 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "52dc1340-c8f5-4091-88b5-c18ea54d5eae" }
+2020-10-20 18:12:55 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "52dc1340-c8f5-4091-88b5-c18ea54d5eae" }
+2020-10-20 18:12:55 +0000 — dbUsers is not defined
+2020-10-20 18:12:55 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "52dc1340-c8f5-4091-88b5-c18ea54d5eae" }
+2020-10-20 18:12:55 +0000 — dbUsers is not defined
+2020-10-20 18:12:55 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "52dc1340-c8f5-4091-88b5-c18ea54d5eae" }
+2020-10-20 18:25:09 +0000 — Uncaught C:\github\rsapp-express-rest\src\resources\users\user.db.repository.js:58
+  return await User.deleteOne(_id: id);
+                              ^^^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.service.js:1:19)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.router.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-20 18:25:40 +0000 — User not found
+2020-10-20 18:26:00 +0000 — User not found
+2020-10-20 18:27:23 +0000 — User not found
+2020-10-20 18:28:06 +0000 — User not found
+2020-10-20 18:28:34 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "86aaa4f0-db16-417c-93a3-ce4316645263" }
+2020-10-20 18:28:34 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "86aaa4f0-db16-417c-93a3-ce4316645263" }
+2020-10-20 18:28:34 +0000 — dbUsers is not defined
+2020-10-20 18:28:34 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "86aaa4f0-db16-417c-93a3-ce4316645263" }
+2020-10-20 18:28:35 +0000 — User not found
+2020-10-20 18:28:35 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "86aaa4f0-db16-417c-93a3-ce4316645263" }
+2020-10-20 18:35:16 +0000 — User not found
+2020-10-20 18:41:37 +0000 — Cannot read property 'push' of undefined
+2020-10-20 18:42:22 +0000 — User not found
+2020-10-20 18:42:47 +0000 — Bad request
+2020-10-20 19:02:18 +0000 — Cannot read property 'push' of undefined

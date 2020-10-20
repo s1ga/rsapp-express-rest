@@ -536,3 +536,357 @@ SyntaxError: Unexpected identifier
 2020-10-20 15:41:17 +0000 — MongoDB connected
 2020-10-20 15:41:28 +0000 — MongoDB connected
 2020-10-20 15:42:18 +0000 — MongoDB connected
+2020-10-20 15:42:45 +0000 — MongoDB connected
+2020-10-20 17:59:15 +0000 — MongoDB connected
+2020-10-20 17:59:39 +0000 — Cannot read property 'map' of undefined
+2020-10-20 17:59:39 +0000 — 20/Oct/2020:17:59:39 +0000 GET 500 /users — QUERY:{} — BODY:{} 3.507 ms
+
+2020-10-20 18:00:41 +0000 — User.fromRequest is not a function
+2020-10-20 18:00:41 +0000 — 20/Oct/2020:18:00:41 +0000 POST 500 /users — QUERY:{} — BODY:{"name":"string","login":"string","password":"******"} 2.965 ms
+
+2020-10-20 18:01:10 +0000 — MongoDB connected
+2020-10-20 18:01:14 +0000 — User.fromRequest is not a function
+2020-10-20 18:01:14 +0000 — 20/Oct/2020:18:01:14 +0000 POST 500 /users — QUERY:{} — BODY:{"name":"string","login":"string","password":"******"} 12.137 ms
+
+2020-10-20 18:02:05 +0000 — MongoDB connected
+2020-10-20 18:02:05 +0000 — Promise MongoError: user is not allowed to do action [dropDatabase] on [rsapp-trello.]
+    at MessageStream.messageHandler (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:314:20)
+    at processIncomingData (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:403:12)
+    at writeOrBuffer (_stream_writable.js:387:5)
+    at MessageStream.Writable.write (_stream_writable.js:318:11)
+    at TLSSocket.ondata (_stream_readable.js:719:22)
+    at TLSSocket.emit (events.js:314:20)
+    at addChunk (_stream_readable.js:298:12)
+    at readableAddChunk (_stream_readable.js:273:9)
+    at TLSSocket.Readable.push (_stream_readable.js:214:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+2020-10-20 18:02:17 +0000 — MongoDB connected
+2020-10-20 18:02:45 +0000 — User.fromRequest is not a function
+2020-10-20 18:02:45 +0000 — 20/Oct/2020:18:02:45 +0000 POST 500 /users — QUERY:{} — BODY:{"name":"string","login":"string","password":"******"} 11.132 ms
+
+2020-10-20 18:03:19 +0000 — MongoDB connected
+2020-10-20 18:03:23 +0000 — dbUser is not defined
+2020-10-20 18:03:23 +0000 — 20/Oct/2020:18:03:23 +0000 POST 500 /users — QUERY:{} — BODY:{"name":"string","login":"string","password":"******"} 186.745 ms
+
+2020-10-20 18:04:22 +0000 — MongoDB connected
+2020-10-20 18:04:25 +0000 — 20/Oct/2020:18:04:25 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"string","login":"string","password":"******"} 161.562 ms
+
+2020-10-20 18:05:04 +0000 — undefined is not a function
+2020-10-20 18:05:04 +0000 — 20/Oct/2020:18:05:04 +0000 GET 500 /users — QUERY:{} — BODY:{} 150.481 ms
+
+2020-10-20 18:05:56 +0000 — Unexpected token S in JSON at position 12
+2020-10-20 18:06:20 +0000 — MongoDB connected
+2020-10-20 18:06:24 +0000 — Unexpected token S in JSON at position 12
+2020-10-20 18:07:09 +0000 — 20/Oct/2020:18:07:09 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"Sergey","login":"s1ga","password":"********"} 186.883 ms
+
+2020-10-20 18:07:57 +0000 — Uncaught C:\github\rsapp-express-rest\src\resources\users\user.db.repository.js:7
+  return await User.find().populate('_id' 'name' 'login');
+                                    ^^^^^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.service.js:1:19)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.router.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-20 18:08:48 +0000 — MongoDB connected
+2020-10-20 18:09:03 +0000 — Schema hasn't been registered for model "login".
+Use mongoose.model(name, schema)
+2020-10-20 18:09:03 +0000 — 20/Oct/2020:18:09:03 +0000 GET 500 /users — QUERY:{} — BODY:{} 193.368 ms
+
+2020-10-20 18:10:08 +0000 — MongoDB connected
+2020-10-20 18:10:15 +0000 — User.find(...).toResponse is not a function
+2020-10-20 18:10:15 +0000 — 20/Oct/2020:18:10:15 +0000 GET 500 /users — QUERY:{} — BODY:{} 10.552 ms
+
+2020-10-20 18:10:30 +0000 — MongoDB connected
+2020-10-20 18:10:35 +0000 — undefined is not a function
+2020-10-20 18:10:35 +0000 — 20/Oct/2020:18:10:35 +0000 GET 500 /users — QUERY:{} — BODY:{} 209.501 ms
+
+2020-10-20 18:10:46 +0000 — MongoDB connected
+2020-10-20 18:11:00 +0000 — 20/Oct/2020:18:11:00 +0000 GET 200 /users — QUERY:{} — BODY:{} 203.271 ms
+
+2020-10-20 18:11:44 +0000 — MongoDB connected
+2020-10-20 18:11:47 +0000 — i.toResponse is not a function
+2020-10-20 18:11:47 +0000 — 20/Oct/2020:18:11:47 +0000 GET 500 /users — QUERY:{} — BODY:{} 113.755 ms
+
+2020-10-20 18:11:59 +0000 — MongoDB connected
+2020-10-20 18:12:06 +0000 — User.toResponse is not a function
+2020-10-20 18:12:06 +0000 — 20/Oct/2020:18:12:06 +0000 GET 500 /users — QUERY:{} — BODY:{} 207.604 ms
+
+2020-10-20 18:12:20 +0000 — MongoDB connected
+2020-10-20 18:12:24 +0000 — 20/Oct/2020:18:12:24 +0000 GET 200 /users — QUERY:{} — BODY:{} 178.571 ms
+
+2020-10-20 18:12:54 +0000 — 20/Oct/2020:18:12:54 +0000 GET 200 /users — QUERY:{} — BODY:{} 122.717 ms
+
+2020-10-20 18:12:55 +0000 — 20/Oct/2020:18:12:55 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 110.067 ms
+
+2020-10-20 18:12:55 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "52dc1340-c8f5-4091-88b5-c18ea54d5eae" }
+2020-10-20 18:12:55 +0000 — 20/Oct/2020:18:12:55 +0000 POST 500 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 244.353 ms
+
+2020-10-20 18:12:55 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "52dc1340-c8f5-4091-88b5-c18ea54d5eae" }
+2020-10-20 18:12:55 +0000 — 20/Oct/2020:18:12:55 +0000 POST 500 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 105.896 ms
+
+2020-10-20 18:12:55 +0000 — dbUsers is not defined
+2020-10-20 18:12:55 +0000 — 20/Oct/2020:18:12:55 +0000 PUT 500 /users/undefined — QUERY:{} — BODY:{"name":"Autotest updated TEST_USER","login":"test_user","password":"*************"} 4.280 ms
+
+2020-10-20 18:12:55 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "52dc1340-c8f5-4091-88b5-c18ea54d5eae" }
+2020-10-20 18:12:55 +0000 — 20/Oct/2020:18:12:55 +0000 POST 500 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 178.718 ms
+
+2020-10-20 18:12:55 +0000 — dbUsers is not defined
+2020-10-20 18:12:55 +0000 — 20/Oct/2020:18:12:55 +0000 DELETE 500 /users/undefined — QUERY:{} — BODY:{} 3.139 ms
+
+2020-10-20 18:12:55 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "52dc1340-c8f5-4091-88b5-c18ea54d5eae" }
+2020-10-20 18:12:55 +0000 — 20/Oct/2020:18:12:55 +0000 POST 500 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 181.987 ms
+
+2020-10-20 18:17:52 +0000 — MongoDB connected
+2020-10-20 18:18:09 +0000 — 20/Oct/2020:18:18:09 +0000 GET 200 /users — QUERY:{} — BODY:{} 167.484 ms
+
+2020-10-20 18:21:11 +0000 — MongoDB connected
+2020-10-20 18:21:23 +0000 — 20/Oct/2020:18:21:23 +0000 GET 304 /users — QUERY:{} — BODY:{} 151.847 ms
+
+2020-10-20 18:21:38 +0000 — 20/Oct/2020:18:21:38 +0000 DELETE 204 /users/52dc1340-c8f5-4091-88b5-c18ea54d5eae — QUERY:{} — BODY:{} 116.284 ms
+
+2020-10-20 18:22:06 +0000 — 20/Oct/2020:18:22:06 +0000 GET 200 /users — QUERY:{} — BODY:{} 90.936 ms
+
+2020-10-20 18:22:14 +0000 — 20/Oct/2020:18:22:14 +0000 DELETE 204 /users/52dc1340-c8f5-4091-88b5-c18ea54d5eae — QUERY:{} — BODY:{} 162.350 ms
+
+2020-10-20 18:22:16 +0000 — 20/Oct/2020:18:22:16 +0000 DELETE 204 /users/52dc1340-c8f5-4091-88b5-c18ea54d5eae — QUERY:{} — BODY:{} 152.231 ms
+
+2020-10-20 18:22:17 +0000 — 20/Oct/2020:18:22:17 +0000 DELETE 204 /users/52dc1340-c8f5-4091-88b5-c18ea54d5eae — QUERY:{} — BODY:{} 146.465 ms
+
+2020-10-20 18:25:09 +0000 — Uncaught C:\github\rsapp-express-rest\src\resources\users\user.db.repository.js:58
+  return await User.deleteOne(_id: id);
+                              ^^^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.service.js:1:19)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.router.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-20 18:25:34 +0000 — MongoDB connected
+2020-10-20 18:25:40 +0000 — User not found
+2020-10-20 18:25:40 +0000 — 20/Oct/2020:18:25:40 +0000 DELETE 404 /users/52dc1340-c8f5-4091-88b5-c18ea54d5eae — QUERY:{} — BODY:{} 141.379 ms
+
+2020-10-20 18:25:46 +0000 — 20/Oct/2020:18:25:46 +0000 GET 304 /users — QUERY:{} — BODY:{} 97.341 ms
+
+2020-10-20 18:25:58 +0000 — 20/Oct/2020:18:25:58 +0000 DELETE 204 /users/45abcf41-8448-4a02-8504-d90f4d469632 — QUERY:{} — BODY:{} 190.734 ms
+
+2020-10-20 18:26:00 +0000 — User not found
+2020-10-20 18:26:00 +0000 — 20/Oct/2020:18:26:00 +0000 DELETE 404 /users/45abcf41-8448-4a02-8504-d90f4d469632 — QUERY:{} — BODY:{} 133.603 ms
+
+2020-10-20 18:26:03 +0000 — 20/Oct/2020:18:26:03 +0000 GET 200 /users — QUERY:{} — BODY:{} 121.501 ms
+
+2020-10-20 18:26:45 +0000 — MongoDB connected
+2020-10-20 18:27:12 +0000 — 20/Oct/2020:18:27:12 +0000 GET 304 /users — QUERY:{} — BODY:{} 239.024 ms
+
+2020-10-20 18:27:23 +0000 — User not found
+2020-10-20 18:27:23 +0000 — 20/Oct/2020:18:27:23 +0000 GET 404 /users/%227a4efe4f-2740-4853-ba14-56c925dc1867%22 — QUERY:{} — BODY:{} 105.969 ms
+
+2020-10-20 18:27:31 +0000 — 20/Oct/2020:18:27:31 +0000 GET 200 /users/7a4efe4f-2740-4853-ba14-56c925dc1867 — QUERY:{} — BODY:{} 129.803 ms
+
+2020-10-20 18:27:43 +0000 — 20/Oct/2020:18:27:43 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"Sergey","login":"s1ga","password":"********"} 121.377 ms
+
+2020-10-20 18:28:06 +0000 — User not found
+2020-10-20 18:28:06 +0000 — 20/Oct/2020:18:28:06 +0000 DELETE 404 /users/7a4efe4f-2740-4853-ba14-56c925dc186 — QUERY:{} — BODY:{} 77.188 ms
+
+2020-10-20 18:28:10 +0000 — 20/Oct/2020:18:28:10 +0000 DELETE 204 /users/7a4efe4f-2740-4853-ba14-56c925dc1867 — QUERY:{} — BODY:{} 202.777 ms
+
+2020-10-20 18:28:27 +0000 — MongoDB connected
+2020-10-20 18:28:34 +0000 — 20/Oct/2020:18:28:34 +0000 GET 200 /users — QUERY:{} — BODY:{} 132.257 ms
+
+2020-10-20 18:28:34 +0000 — 20/Oct/2020:18:28:34 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 201.450 ms
+
+2020-10-20 18:28:34 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "86aaa4f0-db16-417c-93a3-ce4316645263" }
+2020-10-20 18:28:34 +0000 — 20/Oct/2020:18:28:34 +0000 POST 500 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 78.230 ms
+
+2020-10-20 18:28:34 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "86aaa4f0-db16-417c-93a3-ce4316645263" }
+2020-10-20 18:28:34 +0000 — 20/Oct/2020:18:28:34 +0000 POST 500 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 88.776 ms
+
+2020-10-20 18:28:34 +0000 — dbUsers is not defined
+2020-10-20 18:28:34 +0000 — 20/Oct/2020:18:28:34 +0000 PUT 500 /users/undefined — QUERY:{} — BODY:{"name":"Autotest updated TEST_USER","login":"test_user","password":"*************"} 4.302 ms
+
+2020-10-20 18:28:34 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "86aaa4f0-db16-417c-93a3-ce4316645263" }
+2020-10-20 18:28:34 +0000 — 20/Oct/2020:18:28:34 +0000 POST 500 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 118.827 ms
+
+2020-10-20 18:28:35 +0000 — User not found
+2020-10-20 18:28:35 +0000 — 20/Oct/2020:18:28:35 +0000 DELETE 404 /users/undefined — QUERY:{} — BODY:{} 166.413 ms
+
+2020-10-20 18:28:35 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "86aaa4f0-db16-417c-93a3-ce4316645263" }
+2020-10-20 18:28:35 +0000 — 20/Oct/2020:18:28:35 +0000 POST 500 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 168.715 ms
+
+2020-10-20 18:30:12 +0000 — MongoDB connected
+2020-10-20 18:31:48 +0000 — MongoDB connected
+2020-10-20 18:32:20 +0000 — MongoDB connected
+2020-10-20 18:34:31 +0000 — MongoDB connected
+2020-10-20 18:34:42 +0000 — 20/Oct/2020:18:34:42 +0000 GET 200 /users — QUERY:{} — BODY:{} 220.460 ms
+
+2020-10-20 18:35:15 +0000 — 20/Oct/2020:18:35:15 +0000 DELETE 204 /users/3e63cd79-bd3a-45ee-b222-cf9bba795cf1 — QUERY:{} — BODY:{} 255.168 ms
+
+2020-10-20 18:35:16 +0000 — User not found
+2020-10-20 18:35:16 +0000 — 20/Oct/2020:18:35:16 +0000 DELETE 404 /users/3e63cd79-bd3a-45ee-b222-cf9bba795cf1 — QUERY:{} — BODY:{} 137.399 ms
+
+2020-10-20 18:35:21 +0000 — 20/Oct/2020:18:35:21 +0000 GET 200 /users — QUERY:{} — BODY:{} 142.737 ms
+
+2020-10-20 18:35:28 +0000 — MongoDB connected
+2020-10-20 18:35:44 +0000 — 20/Oct/2020:18:35:44 +0000 GET 304 /users — QUERY:{} — BODY:{} 155.636 ms
+
+2020-10-20 18:35:55 +0000 — 20/Oct/2020:18:35:55 +0000 PUT 200 /users/86aaa4f0-db16-417c-93a3-ce4316645263 — QUERY:{} — BODY:{"name":"string","login":"string","password":"******"} 95.684 ms
+
+2020-10-20 18:36:00 +0000 — 20/Oct/2020:18:36:00 +0000 PUT 200 /users/86aaa4f0-db16-417c-93a3-ce4316645263 — QUERY:{} — BODY:{"name":"string","login":"string","password":"******"} 146.835 ms
+
+2020-10-20 18:36:05 +0000 — 20/Oct/2020:18:36:05 +0000 GET 200 /users — QUERY:{} — BODY:{} 125.709 ms
+
+2020-10-20 18:36:21 +0000 — 20/Oct/2020:18:36:21 +0000 PUT 200 /users/86aaa4f0-db16-417c-93a3-ce4316645263 — QUERY:{} — BODY:{"name":"vsdvsdvs","login":"sdvsdv"} 153.385 ms
+
+2020-10-20 18:36:37 +0000 — 20/Oct/2020:18:36:37 +0000 GET 200 /users — QUERY:{} — BODY:{} 140.689 ms
+
+2020-10-20 18:37:38 +0000 — 20/Oct/2020:18:37:38 +0000 PUT 200 /users/86aaa4f0-db16-417c-93a3-ce4316645263 — QUERY:{} — BODY:{"name":"1","login":"1"} 90.893 ms
+
+2020-10-20 18:37:43 +0000 — 20/Oct/2020:18:37:43 +0000 GET 200 /users — QUERY:{} — BODY:{} 101.523 ms
+
+2020-10-20 18:37:46 +0000 — 20/Oct/2020:18:37:46 +0000 PUT 200 /users/86aaa4f0-db16-417c-93a3-ce4316645263 — QUERY:{} — BODY:{"name":"1","login":"1"} 157.971 ms
+
+2020-10-20 18:41:35 +0000 — 20/Oct/2020:18:41:35 +0000 GET 200 /users — QUERY:{} — BODY:{} 148.209 ms
+
+2020-10-20 18:41:35 +0000 — 20/Oct/2020:18:41:35 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 138.928 ms
+
+2020-10-20 18:41:35 +0000 — 20/Oct/2020:18:41:35 +0000 GET 200 /users/8f87f6b3-1d95-40fd-8ab1-0d9b1fd9c80e — QUERY:{} — BODY:{} 93.066 ms
+
+2020-10-20 18:41:35 +0000 — 20/Oct/2020:18:41:35 +0000 DELETE 204 /users/8f87f6b3-1d95-40fd-8ab1-0d9b1fd9c80e — QUERY:{} — BODY:{} 195.335 ms
+
+2020-10-20 18:41:35 +0000 — 20/Oct/2020:18:41:35 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 94.057 ms
+
+2020-10-20 18:41:36 +0000 — 20/Oct/2020:18:41:36 +0000 DELETE 204 /users/8f87f6b3-1d95-40fd-8ab1-0d9b1fd9c80e — QUERY:{} — BODY:{} 185.528 ms
+
+2020-10-20 18:41:36 +0000 — 20/Oct/2020:18:41:36 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 94.169 ms
+
+2020-10-20 18:41:36 +0000 — 20/Oct/2020:18:41:36 +0000 PUT 200 /users/8f87f6b3-1d95-40fd-8ab1-0d9b1fd9c80e — QUERY:{} — BODY:{"name":"Autotest updated TEST_USER","login":"test_user","password":"*************","id":"8f87f6b3-1d95-40fd-8ab1-0d9b1fd9c80e"} 95.750 ms
+
+2020-10-20 18:41:36 +0000 — 20/Oct/2020:18:41:36 +0000 GET 200 /users/8f87f6b3-1d95-40fd-8ab1-0d9b1fd9c80e — QUERY:{} — BODY:{} 71.593 ms
+
+2020-10-20 18:41:36 +0000 — 20/Oct/2020:18:41:36 +0000 DELETE 204 /users/8f87f6b3-1d95-40fd-8ab1-0d9b1fd9c80e — QUERY:{} — BODY:{} 191.988 ms
+
+2020-10-20 18:41:36 +0000 — 20/Oct/2020:18:41:36 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 196.354 ms
+
+2020-10-20 18:41:37 +0000 — 20/Oct/2020:18:41:37 +0000 DELETE 204 /users/8f87f6b3-1d95-40fd-8ab1-0d9b1fd9c80e — QUERY:{} — BODY:{} 187.159 ms
+
+2020-10-20 18:41:37 +0000 — 20/Oct/2020:18:41:37 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 92.001 ms
+
+2020-10-20 18:41:37 +0000 — Cannot read property 'push' of undefined
+2020-10-20 18:41:37 +0000 — 20/Oct/2020:18:41:37 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 18.980 ms
+
+2020-10-20 18:42:22 +0000 — User not found
+2020-10-20 18:42:22 +0000 — 20/Oct/2020:18:42:22 +0000 GET 404 /users/7a4efe4f-2740-4853-ba14-56c925dc1867 — QUERY:{} — BODY:{} 71.709 ms
+
+2020-10-20 18:42:32 +0000 — 20/Oct/2020:18:42:32 +0000 GET 200 /users — QUERY:{} — BODY:{} 84.372 ms
+
+2020-10-20 18:42:47 +0000 — Bad request
+2020-10-20 18:42:47 +0000 — 20/Oct/2020:18:42:47 +0000 PUT 400 /users/8f87f6b3-1d95-40fd-8ab1-0d9b1fd9c80 — QUERY:{} — BODY:{"name":"1","login":"1"} 157.569 ms
+
+2020-10-20 18:42:55 +0000 — 20/Oct/2020:18:42:55 +0000 PUT 200 /users/8f87f6b3-1d95-40fd-8ab1-0d9b1fd9c80e — QUERY:{} — BODY:{"name":"1","login":"1"} 105.927 ms
+
+2020-10-20 18:44:34 +0000 — MongoDB connected
+2020-10-20 18:45:03 +0000 — 20/Oct/2020:18:45:03 +0000 GET 200 /users — QUERY:{} — BODY:{} 210.634 ms
+
+2020-10-20 18:45:13 +0000 — 20/Oct/2020:18:45:13 +0000 DELETE 204 /users/8f87f6b3-1d95-40fd-8ab1-0d9b1fd9c80e — QUERY:{} — BODY:{} 202.611 ms
+
+2020-10-20 18:45:19 +0000 — 20/Oct/2020:18:45:19 +0000 GET 200 /users — QUERY:{} — BODY:{} 96.662 ms
+
+2020-10-20 18:45:28 +0000 — 20/Oct/2020:18:45:28 +0000 GET 200 /users/86aaa4f0-db16-417c-93a3-ce4316645263 — QUERY:{} — BODY:{} 152.282 ms
+
+2020-10-20 18:45:40 +0000 — 20/Oct/2020:18:45:40 +0000 PUT 200 /users/86aaa4f0-db16-417c-93a3-ce4316645263 — QUERY:{} — BODY:{"name":"stivf","login":"1sioebv"} 182.524 ms
+
+2020-10-20 18:45:51 +0000 — 20/Oct/2020:18:45:51 +0000 GET 200 /users — QUERY:{} — BODY:{} 112.969 ms
+
+2020-10-20 18:46:08 +0000 — MongoDB connected
+2020-10-20 18:46:16 +0000 — MongoDB connected
+2020-10-20 18:47:42 +0000 — MongoDB connected
+2020-10-20 18:47:52 +0000 — 20/Oct/2020:18:47:52 +0000 GET 304 /users — QUERY:{} — BODY:{} 195.545 ms
+
+2020-10-20 18:48:27 +0000 — 20/Oct/2020:18:48:27 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"Sergey","login":"s1ga","password":"********"} 113.653 ms
+
+2020-10-20 18:48:32 +0000 — 20/Oct/2020:18:48:32 +0000 GET 200 /users — QUERY:{} — BODY:{} 145.258 ms
+
+2020-10-20 18:48:51 +0000 — 20/Oct/2020:18:48:51 +0000 PUT 200 /users/63557fd8-bae3-4280-97ba-b61c467e86c6 — QUERY:{} — BODY:{"name":"string","login":"string"} 130.816 ms
+
+2020-10-20 18:49:52 +0000 — MongoDB connected
+2020-10-20 18:50:11 +0000 — 20/Oct/2020:18:50:11 +0000 GET 200 /users — QUERY:{} — BODY:{} 102.926 ms
+
+2020-10-20 18:50:32 +0000 — 20/Oct/2020:18:50:32 +0000 PUT 200 /users/63557fd8-bae3-4280-97ba-b61c467e86c6 — QUERY:{} — BODY:{"name":"uyfuy","login":"uc"} 189.393 ms
+
+2020-10-20 18:59:19 +0000 — 20/Oct/2020:18:59:19 +0000 GET 200 /users — QUERY:{} — BODY:{} 811.180 ms
+
+2020-10-20 18:59:50 +0000 — 20/Oct/2020:18:59:50 +0000 PUT 200 /users/63557fd8-bae3-4280-97ba-b61c467e86c6 — QUERY:{} — BODY:{"name":"4","login":"4"} 183.865 ms
+
+2020-10-20 19:00:25 +0000 — 20/Oct/2020:19:00:25 +0000 GET 200 /users — QUERY:{} — BODY:{} 70.750 ms
+
+2020-10-20 19:01:22 +0000 — MongoDB connected
+2020-10-20 19:01:29 +0000 — MongoDB connected
+2020-10-20 19:01:47 +0000 — 20/Oct/2020:19:01:47 +0000 GET 304 /users — QUERY:{} — BODY:{} 175.206 ms
+
+2020-10-20 19:02:02 +0000 — 20/Oct/2020:19:02:02 +0000 PUT 200 /users/63557fd8-bae3-4280-97ba-b61c467e86c6 — QUERY:{} — BODY:{"name":"0","login":"0"} 225.702 ms
+
+2020-10-20 19:02:06 +0000 — 20/Oct/2020:19:02:06 +0000 GET 200 /users — QUERY:{} — BODY:{} 83.555 ms
+
+2020-10-20 19:02:15 +0000 — 20/Oct/2020:19:02:15 +0000 GET 200 /users — QUERY:{} — BODY:{} 114.068 ms
+
+2020-10-20 19:02:15 +0000 — 20/Oct/2020:19:02:15 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 328.541 ms
+
+2020-10-20 19:02:15 +0000 — 20/Oct/2020:19:02:15 +0000 GET 200 /users/4081f452-11f2-4d6a-8674-c25226522f00 — QUERY:{} — BODY:{} 185.581 ms
+
+2020-10-20 19:02:16 +0000 — 20/Oct/2020:19:02:16 +0000 DELETE 204 /users/4081f452-11f2-4d6a-8674-c25226522f00 — QUERY:{} — BODY:{} 493.584 ms
+
+2020-10-20 19:02:16 +0000 — 20/Oct/2020:19:02:16 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 64.948 ms
+
+2020-10-20 19:02:16 +0000 — 20/Oct/2020:19:02:16 +0000 DELETE 204 /users/4081f452-11f2-4d6a-8674-c25226522f00 — QUERY:{} — BODY:{} 216.852 ms
+
+2020-10-20 19:02:16 +0000 — 20/Oct/2020:19:02:16 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 65.567 ms
+
+2020-10-20 19:02:16 +0000 — 20/Oct/2020:19:02:16 +0000 PUT 200 /users/4081f452-11f2-4d6a-8674-c25226522f00 — QUERY:{} — BODY:{"name":"Autotest updated TEST_USER","login":"test_user","password":"*************","id":"4081f452-11f2-4d6a-8674-c25226522f00"} 401.385 ms
+
+2020-10-20 19:02:17 +0000 — 20/Oct/2020:19:02:17 +0000 GET 200 /users/4081f452-11f2-4d6a-8674-c25226522f00 — QUERY:{} — BODY:{} 87.696 ms
+
+2020-10-20 19:02:17 +0000 — 20/Oct/2020:19:02:17 +0000 DELETE 204 /users/4081f452-11f2-4d6a-8674-c25226522f00 — QUERY:{} — BODY:{} 292.401 ms
+
+2020-10-20 19:02:17 +0000 — 20/Oct/2020:19:02:17 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 104.490 ms
+
+2020-10-20 19:02:17 +0000 — 20/Oct/2020:19:02:17 +0000 DELETE 204 /users/4081f452-11f2-4d6a-8674-c25226522f00 — QUERY:{} — BODY:{} 511.137 ms
+
+2020-10-20 19:02:18 +0000 — 20/Oct/2020:19:02:18 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 167.731 ms
+
+2020-10-20 19:02:18 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:02:18 +0000 — 20/Oct/2020:19:02:18 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 25.273 ms
+
+2020-10-20 19:07:16 +0000 — MongoDB connected
+2020-10-20 19:07:57 +0000 — MongoDB connected
+2020-10-20 19:08:33 +0000 — MongoDB connected
+2020-10-20 19:19:08 +0000 — MongoDB connected
+2020-10-20 19:19:36 +0000 — MongoDB connected
+2020-10-20 19:19:58 +0000 — MongoDB connected
+2020-10-20 19:20:47 +0000 — MongoDB connected
