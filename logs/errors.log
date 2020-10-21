@@ -488,3 +488,208 @@ SyntaxError: Unexpected token '='
     at require (internal/modules/cjs/helpers.js:74:18)
     at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\boards\board.router.js:2:22)
     at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-21 13:07:06 +0000 — Connection error querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+2020-10-21 13:07:06 +0000 — Promise Error: querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)
+2020-10-21 13:08:23 +0000 — Connection error querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+2020-10-21 13:08:23 +0000 — Promise Error: querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)
+2020-10-21 13:08:50 +0000 — Connection error querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+2020-10-21 13:08:50 +0000 — Promise Error: querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)
+2020-10-21 13:09:43 +0000 — Uncaught ReferenceError: Task is not defined
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\tasks\task.model.js:62:18)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\tasks\task.db.repository.js:1:14)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\tasks\task.service.js:1:18)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-21 13:10:07 +0000 — Connection error querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+2020-10-21 13:10:07 +0000 — Promise Error: querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)
+2020-10-21 13:12:46 +0000 — Uncaught C:\github\rsapp-express-rest\src\resources\tasks\task.db.repository.js:6
+  const tasks = await Task.find({ boardId });
+        ^
+
+SyntaxError: Identifier 'tasks' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\tasks\task.service.js:1:18)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\tasks\task.router.js:2:21)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-21 13:12:52 +0000 — Connection error querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+2020-10-21 13:12:52 +0000 — Promise Error: querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)
+2020-10-21 13:13:58 +0000 — Connection error querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+2020-10-21 13:13:58 +0000 — Promise Error: querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)
+2020-10-21 13:16:59 +0000 — Connection error querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+2020-10-21 13:16:59 +0000 — Promise Error: querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)
+2020-10-21 13:20:28 +0000 — Connection error querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+2020-10-21 13:20:28 +0000 — Promise Error: querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)
+2020-10-21 13:24:54 +0000 — Connection error querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+2020-10-21 13:24:54 +0000 — Promise Error: querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)
+2020-10-21 13:24:57 +0000 — Connection error querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+2020-10-21 13:24:57 +0000 — Promise Error: querySrv ECONNREFUSED _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)
+2020-10-21 14:18:04 +0000 — User not found
+2020-10-21 14:18:42 +0000 — User not found
+2020-10-21 14:18:45 +0000 — Promise CastError: Cast to ObjectId failed for value "63557fd8-bae3-4280-97ba-b61c467e86c6" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 14:18:54 +0000 — User not found
+2020-10-21 14:19:10 +0000 — Promise CastError: Cast to ObjectId failed for value "0225baa2-27ed-43ed-9456-016e169b8cd6" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 14:23:20 +0000 — Task.fromRequest is not a function
+2020-10-21 14:26:01 +0000 — Cast to ObjectId failed for value "null" at path "boardId" for model "Task"
+2020-10-21 14:26:20 +0000 — Cast to ObjectId failed for value "c5763442-a388-476e-8ed0-2d85a7478c00" at path "boardId" for model "Task"
+2020-10-21 14:26:36 +0000 — Board not found
+2020-10-21 14:27:08 +0000 — Cast to embedded failed for value "{ id: 'string', title: 'string', order: 0 }" at path "columns"
+2020-10-21 14:30:36 +0000 — Board not found
+2020-10-21 14:31:05 +0000 — Board not found
+2020-10-21 14:31:14 +0000 — Cast to embedded failed for value "{ id: 'string', title: 'string', order: 0 }" at path "columns"
+2020-10-21 14:31:58 +0000 — Promise CastError: Cast to ObjectId failed for value "7149765d-8666-49cc-ba15-09653a3bf892" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 14:31:58 +0000 — Promise CastError: Cast to ObjectId failed for value "7149765d-8666-49cc-ba15-09653a3bf892" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 14:31:59 +0000 — Promise CastError: Cast to ObjectId failed for value "7149765d-8666-49cc-ba15-09653a3bf892" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 14:31:59 +0000 — Promise CastError: Cast to ObjectId failed for value "7149765d-8666-49cc-ba15-09653a3bf892" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 14:31:59 +0000 — Task.fromRequest is not a function
+2020-10-21 14:31:59 +0000 — Task.fromRequest is not a function
+2020-10-21 14:32:00 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "55a8a360-7a87-45d8-aff0-6df72102bf73" }
+2020-10-21 14:32:00 +0000 — Board not found
+2020-10-21 14:32:01 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "55a8a360-7a87-45d8-aff0-6df72102bf73" }
+2020-10-21 14:32:01 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "55a8a360-7a87-45d8-aff0-6df72102bf73" }
+2020-10-21 14:32:01 +0000 — Bad request
+2020-10-21 14:32:01 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "55a8a360-7a87-45d8-aff0-6df72102bf73" }
+2020-10-21 14:32:01 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "55a8a360-7a87-45d8-aff0-6df72102bf73" }
+2020-10-21 14:32:02 +0000 — Board not found
+2020-10-21 14:32:02 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "55a8a360-7a87-45d8-aff0-6df72102bf73" }
+2020-10-21 14:32:02 +0000 — Task.fromRequest is not a function
+2020-10-21 14:32:02 +0000 — Cast to ObjectId failed for value "undefined" at path "boardId" for model "Task"
+2020-10-21 14:32:02 +0000 — Cast to ObjectId failed for value "undefined" at path "boardId" for model "Task"
+2020-10-21 14:32:02 +0000 — Task.fromRequest is not a function
+2020-10-21 14:32:02 +0000 — Task.fromRequest is not a function
+2020-10-21 14:32:02 +0000 — Cast to ObjectId failed for value "undefined" at path "boardId" for model "Task"
+2020-10-21 14:32:02 +0000 — Cast to ObjectId failed for value "undefined" at path "boardId" for model "Task"
+2020-10-21 14:32:03 +0000 — Board not found
+2020-10-21 14:32:36 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "7149765d-8666-49cc-ba15-09653a3bf892" }
+2020-10-21 14:32:36 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "7149765d-8666-49cc-ba15-09653a3bf892" }
+2020-10-21 14:32:36 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "7149765d-8666-49cc-ba15-09653a3bf892" }
+2020-10-21 14:32:36 +0000 — Bad request
+2020-10-21 14:32:36 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "7149765d-8666-49cc-ba15-09653a3bf892" }
+2020-10-21 14:32:36 +0000 — User not found
+2020-10-21 14:32:37 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "7149765d-8666-49cc-ba15-09653a3bf892" }
+2020-10-21 14:32:56 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "7149765d-8666-49cc-ba15-09653a3bf892" }
+2020-10-21 14:36:16 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "7149765d-8666-49cc-ba15-09653a3bf892" }
+2020-10-21 14:37:13 +0000 — Promise CastError: Cast to ObjectId failed for value "7149765d-8666-49cc-ba15-09653a3bf892" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 14:37:30 +0000 — Promise CastError: Cast to ObjectId failed for value "59e22fb1-eb3b-4df1-8993-c9cb4113307b" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 14:41:34 +0000 — Cast to ObjectId failed for value "c5763442-a388-476e-8ed0-2d85a7478c00" at path "boardId" for model "Task"
+2020-10-21 14:41:56 +0000 — Cast to ObjectId failed for value "55a8a360-7a87-45d8-aff0-6df72102bf73" at path "boardId" for model "Task"
+2020-10-21 14:43:11 +0000 — Cast to ObjectId failed for value "55a8a360-7a87-45d8-aff0-6df72102bf73" at path "boardId" for model "Task"
+2020-10-21 14:47:11 +0000 — Promise CastError: Cast to ObjectId failed for value "38929dce-2d1d-4694-911c-45d6e5ea6c37" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 14:47:12 +0000 — Promise CastError: Cast to ObjectId failed for value "38929dce-2d1d-4694-911c-45d6e5ea6c37" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 14:47:13 +0000 — Promise CastError: Cast to ObjectId failed for value "38929dce-2d1d-4694-911c-45d6e5ea6c37" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 14:47:13 +0000 — Promise CastError: Cast to ObjectId failed for value "38929dce-2d1d-4694-911c-45d6e5ea6c37" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 14:47:13 +0000 — Task.fromRequest is not a function
+2020-10-21 14:47:13 +0000 — Task.fromRequest is not a function
+2020-10-21 14:47:41 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "38929dce-2d1d-4694-911c-45d6e5ea6c37" }
+2020-10-21 14:47:41 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "38929dce-2d1d-4694-911c-45d6e5ea6c37" }
+2020-10-21 14:47:41 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "38929dce-2d1d-4694-911c-45d6e5ea6c37" }
+2020-10-21 14:47:42 +0000 — Bad request
+2020-10-21 14:47:42 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "38929dce-2d1d-4694-911c-45d6e5ea6c37" }
+2020-10-21 14:47:42 +0000 — User not found
+2020-10-21 14:47:42 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "38929dce-2d1d-4694-911c-45d6e5ea6c37" }
+2020-10-21 14:48:12 +0000 — Promise MongoError: user is not allowed to do action [dropDatabase] on [rsapp-trello.]
+    at MessageStream.messageHandler (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:314:20)
+    at processIncomingData (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:403:12)
+    at writeOrBuffer (_stream_writable.js:387:5)
+    at MessageStream.Writable.write (_stream_writable.js:318:11)
+    at TLSSocket.ondata (_stream_readable.js:719:22)
+    at TLSSocket.emit (events.js:314:20)
+    at addChunk (_stream_readable.js:298:12)
+    at readableAddChunk (_stream_readable.js:273:9)
+    at TLSSocket.Readable.push (_stream_readable.js:214:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)

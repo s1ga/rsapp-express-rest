@@ -22,7 +22,7 @@ const connectToDB = cb => {
   db.on('error', logger.error.bind(logger, 'Connection error'));
   db.once('open', () => {
     logger.log('info', 'MongoDB connected');
-    // db.dropDatabase();
+    db.dropDatabase();
     cb();
   });
 };

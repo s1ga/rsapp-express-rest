@@ -1,5 +1,5 @@
 const User = require('./user.model');
-// const taskService = require('../tasks/task.service');
+const taskService = require('../tasks/task.service');
 const SERVER_ERROR = require('../../utils/errorsHandler');
 
 const getAll = async () => {
@@ -45,6 +45,9 @@ const deleteById = async id => {
   if (!user) {
     throw new SERVER_ERROR({ status: 404, message: 'User not found' });
   }
+
+  // unasignee users in task
+  taskService.nullUserTasks(id);
 
   return await User.deleteOne({ _id: id });
 };

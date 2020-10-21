@@ -1,5 +1,6 @@
 const Board = require('./board.model');
 const SERVER_ERROR = require('../../utils/errorsHandler');
+const taskService = require('../tasks/task.service');
 
 const getAll = async () => {
   return Board.find();
@@ -39,12 +40,16 @@ const update = async (id, body) => {
 };
 
 const deleteById = async id => {
-  /* const board =*/ await Board.findById(id);
+  const board = await Board.findById(id);
+
+  if (!board) {
+    throw new SERVER_ERROR({ status: 404, message: 'Board not found' });
+  }
 
   // there should be a logic of deleting a Task
-  // await taskService.deleteByBoardId(board.id);
+  await taskService.deleteByBoardId(board.id);
 
-  return await Board.deleteOne({ _id: id });
+  return board.remove();
 };
 
 module.exports = { getAll, getById, create, update, deleteById };

@@ -1,59 +1,63 @@
 const uuid = require('uuid');
-// const {Schema, model} = require('mongoose')
+const { Schema, model } = require('mongoose');
 
-// const taskSchema = new Schema({
-//   title: {
-//     type: String,
-//     required: true
-//   },
-//   order: {
-//     type: Number,
-//     required: true
-//   },
-//   description: {
-//     type: String,
-//     required: true
-//   },
-//   userId: {
-//     type: Schema.Types.ObjectId,
-//     ref: 'User',
-//     required: true
-//   },
-//   boardId: {
-//     type: Schema.Types.ObjectId,
-//     ref: 'Board',
-//     required: true
-//   },
-//   columnId: {
-//     type: Schema.Types.ObjectId,
-//     ref: 'Column',
-//     required: true
+const taskSchema = new Schema({
+  _id: {
+    type: String,
+    default: uuid()
+  },
+  title: {
+    type: String,
+    required: true
+  },
+  order: {
+    type: Number,
+    required: true
+  },
+  description: {
+    type: String,
+    required: true
+  },
+  userId: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+    default: null,
+    required: true
+  },
+  boardId: {
+    type: Schema.Types.ObjectId,
+    ref: 'Board',
+    required: true
+  },
+  columnId: {
+    type: Schema.Types.ObjectId,
+    ref: 'Column',
+    required: true
+  }
+});
+
+// class Task {
+//   constructor({
+//     id = uuid(),
+//     title = 'Task title',
+//     order = 'task',
+//     description = 'New Task',
+//     userId = 'null',
+//     boardId = 'null',
+//     columnId = 'null'
+//   } = {}) {
+//     this.id = id;
+//     this.title = title;
+//     this.order = order;
+//     this.description = description;
+//     this.userId = userId;
+//     this.boardId = boardId;
+//     this.columnId = columnId;
 //   }
-// })
 
-class Task {
-  constructor({
-    id = uuid(),
-    title = 'Task title',
-    order = 'task',
-    description = 'New Task',
-    userId = 'null',
-    boardId = 'null',
-    columnId = 'null'
-  } = {}) {
-    this.id = id;
-    this.title = title;
-    this.order = order;
-    this.description = description;
-    this.userId = userId;
-    this.boardId = boardId;
-    this.columnId = columnId;
-  }
+//   static fromRequest(body) {
+//     return new Task(body);
+//   }
+// }
 
-  static fromRequest(body) {
-    return new Task(body);
-  }
-}
-
-module.exports = Task;
-// model('Task', taskSchema)
+module.exports = model('Task', taskSchema);

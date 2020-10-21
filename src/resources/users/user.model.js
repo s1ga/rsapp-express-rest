@@ -1,26 +1,23 @@
 const uuid = require('uuid');
 const { Schema, model } = require('mongoose');
 
-const userSchema = new Schema(
-  {
-    _id: {
-      type: String,
-      default: uuid()
-    },
-    name: {
-      type: String
-    },
-    login: {
-      type: String,
-      required: true
-    },
-    password: {
-      type: String,
-      required: true
-    }
+const userSchema = new Schema({
+  _id: {
+    type: String,
+    default: uuid()
   },
-  { versionKey: false }
-);
+  name: {
+    type: String
+  },
+  login: {
+    type: String,
+    required: true
+  },
+  password: {
+    type: String,
+    required: true
+  }
+});
 
 userSchema.statics.toResponse = user => {
   const { id, name, login } = user;
