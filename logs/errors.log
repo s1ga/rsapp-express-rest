@@ -429,3 +429,62 @@ SyntaxError: missing ) after argument list
 2020-10-20 18:42:22 +0000 — User not found
 2020-10-20 18:42:47 +0000 — Bad request
 2020-10-20 19:02:18 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:45 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:45 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:45 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:45 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:45 +0000 — Cannot read property 'filter' of undefined
+2020-10-20 19:21:45 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:45 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:45 +0000 — Cannot read property 'filter' of undefined
+2020-10-20 19:21:46 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:46 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:46 +0000 — Cannot read property 'filter' of undefined
+2020-10-20 19:21:46 +0000 — Cannot read property 'filter' of undefined
+2020-10-20 19:21:46 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:46 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:46 +0000 — Cannot read property 'filter' of undefined
+2020-10-20 19:21:46 +0000 — Cannot read property 'filter' of undefined
+2020-10-20 19:21:46 +0000 — Cannot read property 'filter' of undefined
+2020-10-21 11:32:06 +0000 — dbBoard is not defined
+2020-10-21 11:32:07 +0000 — dbBoard is not defined
+2020-10-21 11:32:07 +0000 — dbBoard is not defined
+2020-10-21 11:32:07 +0000 — dbBoard is not defined
+2020-10-21 11:32:07 +0000 — Cast to ObjectId failed for value "undefined" at path "_id" for model "Board"
+2020-10-21 11:32:07 +0000 — dbBoard is not defined
+2020-10-21 11:32:07 +0000 — dbBoard is not defined
+2020-10-21 11:32:07 +0000 — Cast to ObjectId failed for value "undefined" at path "_id" for model "Board"
+2020-10-21 11:32:07 +0000 — dbBoard is not defined
+2020-10-21 11:32:07 +0000 — Cannot read property 'push' of undefined
+2020-10-21 11:32:07 +0000 — Cannot read property 'filter' of undefined
+2020-10-21 11:32:07 +0000 — Cannot read property 'filter' of undefined
+2020-10-21 11:32:07 +0000 — Cannot read property 'push' of undefined
+2020-10-21 11:32:07 +0000 — Cannot read property 'push' of undefined
+2020-10-21 11:32:07 +0000 — Cannot read property 'filter' of undefined
+2020-10-21 11:32:07 +0000 — Cannot read property 'filter' of undefined
+2020-10-21 11:32:07 +0000 — Cast to ObjectId failed for value "undefined" at path "_id" for model "Board"
+2020-10-21 11:35:13 +0000 — User not found
+2020-10-21 11:35:20 +0000 — User not found
+2020-10-21 11:35:28 +0000 — User not found
+2020-10-21 11:35:52 +0000 — dbBoard is not defined
+2020-10-21 11:39:02 +0000 — Uncaught C:\github\rsapp-express-rest\src\resources\boards\board.db.repository.js:42
+  /*const board*/ = await Board.findById(id);
+                  ^
+
+SyntaxError: Unexpected token '='
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\boards\board.service.js:1:20)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\boards\board.router.js:2:22)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)

@@ -890,3 +890,223 @@ SyntaxError: missing ) after argument list
 2020-10-20 19:19:36 +0000 — MongoDB connected
 2020-10-20 19:19:58 +0000 — MongoDB connected
 2020-10-20 19:20:47 +0000 — MongoDB connected
+2020-10-20 19:21:43 +0000 — 20/Oct/2020:19:21:43 +0000 GET 200 /users — QUERY:{} — BODY:{} 168.156 ms
+
+2020-10-20 19:21:43 +0000 — 20/Oct/2020:19:21:43 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 119.039 ms
+
+2020-10-20 19:21:43 +0000 — 20/Oct/2020:19:21:43 +0000 GET 200 /users/59e22fb1-eb3b-4df1-8993-c9cb4113307b — QUERY:{} — BODY:{} 91.233 ms
+
+2020-10-20 19:21:43 +0000 — 20/Oct/2020:19:21:43 +0000 DELETE 204 /users/59e22fb1-eb3b-4df1-8993-c9cb4113307b — QUERY:{} — BODY:{} 192.359 ms
+
+2020-10-20 19:21:43 +0000 — 20/Oct/2020:19:21:43 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 91.281 ms
+
+2020-10-20 19:21:44 +0000 — 20/Oct/2020:19:21:44 +0000 DELETE 204 /users/59e22fb1-eb3b-4df1-8993-c9cb4113307b — QUERY:{} — BODY:{} 187.499 ms
+
+2020-10-20 19:21:44 +0000 — 20/Oct/2020:19:21:44 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 92.335 ms
+
+2020-10-20 19:21:44 +0000 — 20/Oct/2020:19:21:44 +0000 PUT 200 /users/59e22fb1-eb3b-4df1-8993-c9cb4113307b — QUERY:{} — BODY:{"name":"Autotest updated TEST_USER","login":"test_user","password":"*************","id":"59e22fb1-eb3b-4df1-8993-c9cb4113307b"} 194.604 ms
+
+2020-10-20 19:21:44 +0000 — 20/Oct/2020:19:21:44 +0000 GET 200 /users/59e22fb1-eb3b-4df1-8993-c9cb4113307b — QUERY:{} — BODY:{} 74.147 ms
+
+2020-10-20 19:21:44 +0000 — 20/Oct/2020:19:21:44 +0000 DELETE 204 /users/59e22fb1-eb3b-4df1-8993-c9cb4113307b — QUERY:{} — BODY:{} 150.994 ms
+
+2020-10-20 19:21:44 +0000 — 20/Oct/2020:19:21:44 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 255.039 ms
+
+2020-10-20 19:21:45 +0000 — 20/Oct/2020:19:21:45 +0000 DELETE 204 /users/59e22fb1-eb3b-4df1-8993-c9cb4113307b — QUERY:{} — BODY:{} 176.979 ms
+
+2020-10-20 19:21:45 +0000 — 20/Oct/2020:19:21:45 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 89.683 ms
+
+2020-10-20 19:21:45 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:45 +0000 — 20/Oct/2020:19:21:45 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 22.459 ms
+
+2020-10-20 19:21:45 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:45 +0000 — 20/Oct/2020:19:21:45 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 1.839 ms
+
+2020-10-20 19:21:45 +0000 — 20/Oct/2020:19:21:45 +0000 GET 200 /boards — QUERY:{} — BODY:{} 0.704 ms
+
+2020-10-20 19:21:45 +0000 — 20/Oct/2020:19:21:45 +0000 GET 200 /boards — QUERY:{} — BODY:{} 0.462 ms
+
+2020-10-20 19:21:45 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:45 +0000 — 20/Oct/2020:19:21:45 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 1.663 ms
+
+2020-10-20 19:21:45 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:45 +0000 — 20/Oct/2020:19:21:45 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 22.848 ms
+
+2020-10-20 19:21:45 +0000 — Cannot read property 'filter' of undefined
+2020-10-20 19:21:45 +0000 — 20/Oct/2020:19:21:45 +0000 PUT 500 /boards/undefined — QUERY:{} — BODY:{"title":"Autotest updated board"} 2.371 ms
+
+2020-10-20 19:21:45 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:45 +0000 — 20/Oct/2020:19:21:45 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 17.188 ms
+
+2020-10-20 19:21:45 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:45 +0000 — 20/Oct/2020:19:21:45 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 2.048 ms
+
+2020-10-20 19:21:45 +0000 — Cannot read property 'filter' of undefined
+2020-10-20 19:21:45 +0000 — 20/Oct/2020:19:21:45 +0000 DELETE 500 /boards/undefined — QUERY:{} — BODY:{} 20.507 ms
+
+2020-10-20 19:21:46 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:46 +0000 — 20/Oct/2020:19:21:46 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 2.071 ms
+
+2020-10-20 19:21:46 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:46 +0000 — 20/Oct/2020:19:21:46 +0000 POST 500 /boards/undefined/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 39.898 ms
+
+2020-10-20 19:21:46 +0000 — Cannot read property 'filter' of undefined
+2020-10-20 19:21:46 +0000 — 20/Oct/2020:19:21:46 +0000 GET 500 /boards/undefined/tasks — QUERY:{} — BODY:{} 2.430 ms
+
+2020-10-20 19:21:46 +0000 — Cannot read property 'filter' of undefined
+2020-10-20 19:21:46 +0000 — 20/Oct/2020:19:21:46 +0000 GET 500 /boards/undefined/tasks — QUERY:{} — BODY:{} 16.969 ms
+
+2020-10-20 19:21:46 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:46 +0000 — 20/Oct/2020:19:21:46 +0000 POST 500 /boards/undefined/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 2.035 ms
+
+2020-10-20 19:21:46 +0000 — Cannot read property 'push' of undefined
+2020-10-20 19:21:46 +0000 — 20/Oct/2020:19:21:46 +0000 POST 500 /boards/undefined/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 2.038 ms
+
+2020-10-20 19:21:46 +0000 — Cannot read property 'filter' of undefined
+2020-10-20 19:21:46 +0000 — 20/Oct/2020:19:21:46 +0000 PUT 500 /boards/undefined/tasks/undefined — QUERY:{} — BODY:{"title":"Autotest updated task"} 19.990 ms
+
+2020-10-20 19:21:46 +0000 — Cannot read property 'filter' of undefined
+2020-10-20 19:21:46 +0000 — 20/Oct/2020:19:21:46 +0000 GET 500 /boards/undefined/tasks/undefined — QUERY:{} — BODY:{} 2.673 ms
+
+2020-10-20 19:21:46 +0000 — Cannot read property 'filter' of undefined
+2020-10-20 19:21:46 +0000 — 20/Oct/2020:19:21:46 +0000 DELETE 500 /boards/undefined — QUERY:{} — BODY:{} 37.426 ms
+
+2020-10-20 19:27:09 +0000 — 20/Oct/2020:19:27:09 +0000 GET 200 /users — QUERY:{} — BODY:{} 489.876 ms
+
+2020-10-20 19:27:22 +0000 — 20/Oct/2020:19:27:22 +0000 DELETE 204 /users/4081f452-11f2-4d6a-8674-c25226522f00 — QUERY:{} — BODY:{} 249.454 ms
+
+2020-10-20 19:28:18 +0000 — MongoDB connected
+2020-10-20 19:30:25 +0000 — MongoDB connected
+2020-10-20 19:33:20 +0000 — MongoDB connected
+2020-10-20 19:33:58 +0000 — MongoDB connected
+2020-10-20 19:35:16 +0000 — MongoDB connected
+2020-10-21 11:31:51 +0000 — MongoDB connected
+2020-10-21 11:32:05 +0000 — 21/Oct/2020:11:32:05 +0000 GET 200 /users — QUERY:{} — BODY:{} 110.186 ms
+
+2020-10-21 11:32:05 +0000 — 21/Oct/2020:11:32:05 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 90.456 ms
+
+2020-10-21 11:32:05 +0000 — 21/Oct/2020:11:32:05 +0000 GET 200 /users/832f4727-f097-478d-b583-986f23db6910 — QUERY:{} — BODY:{} 54.175 ms
+
+2020-10-21 11:32:05 +0000 — 21/Oct/2020:11:32:05 +0000 DELETE 204 /users/832f4727-f097-478d-b583-986f23db6910 — QUERY:{} — BODY:{} 213.382 ms
+
+2020-10-21 11:32:05 +0000 — 21/Oct/2020:11:32:05 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 58.023 ms
+
+2020-10-21 11:32:05 +0000 — 21/Oct/2020:11:32:05 +0000 DELETE 204 /users/832f4727-f097-478d-b583-986f23db6910 — QUERY:{} — BODY:{} 237.061 ms
+
+2020-10-21 11:32:06 +0000 — 21/Oct/2020:11:32:06 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 96.794 ms
+
+2020-10-21 11:32:06 +0000 — 21/Oct/2020:11:32:06 +0000 PUT 200 /users/832f4727-f097-478d-b583-986f23db6910 — QUERY:{} — BODY:{"name":"Autotest updated TEST_USER","login":"test_user","password":"*************","id":"832f4727-f097-478d-b583-986f23db6910"} 196.532 ms
+
+2020-10-21 11:32:06 +0000 — 21/Oct/2020:11:32:06 +0000 GET 200 /users/832f4727-f097-478d-b583-986f23db6910 — QUERY:{} — BODY:{} 98.353 ms
+
+2020-10-21 11:32:06 +0000 — 21/Oct/2020:11:32:06 +0000 DELETE 204 /users/832f4727-f097-478d-b583-986f23db6910 — QUERY:{} — BODY:{} 197.456 ms
+
+2020-10-21 11:32:06 +0000 — 21/Oct/2020:11:32:06 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 97.931 ms
+
+2020-10-21 11:32:06 +0000 — 21/Oct/2020:11:32:06 +0000 DELETE 204 /users/832f4727-f097-478d-b583-986f23db6910 — QUERY:{} — BODY:{} 199.590 ms
+
+2020-10-21 11:32:06 +0000 — 21/Oct/2020:11:32:06 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 96.249 ms
+
+2020-10-21 11:32:06 +0000 — dbBoard is not defined
+2020-10-21 11:32:06 +0000 — 21/Oct/2020:11:32:06 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 4.324 ms
+
+2020-10-21 11:32:07 +0000 — dbBoard is not defined
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 7.474 ms
+
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 GET 200 /boards — QUERY:{} — BODY:{} 124.584 ms
+
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 GET 200 /boards — QUERY:{} — BODY:{} 54.505 ms
+
+2020-10-21 11:32:07 +0000 — dbBoard is not defined
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 1.170 ms
+
+2020-10-21 11:32:07 +0000 — dbBoard is not defined
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 1.171 ms
+
+2020-10-21 11:32:07 +0000 — Cast to ObjectId failed for value "undefined" at path "_id" for model "Board"
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 PUT 500 /boards/undefined — QUERY:{} — BODY:{"title":"Autotest updated board"} 1.998 ms
+
+2020-10-21 11:32:07 +0000 — dbBoard is not defined
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 11.655 ms
+
+2020-10-21 11:32:07 +0000 — dbBoard is not defined
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 10.855 ms
+
+2020-10-21 11:32:07 +0000 — Cast to ObjectId failed for value "undefined" at path "_id" for model "Board"
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 DELETE 500 /boards/undefined — QUERY:{} — BODY:{} 9.116 ms
+
+2020-10-21 11:32:07 +0000 — dbBoard is not defined
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 1.244 ms
+
+2020-10-21 11:32:07 +0000 — Cannot read property 'push' of undefined
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 POST 500 /boards/undefined/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 1.177 ms
+
+2020-10-21 11:32:07 +0000 — Cannot read property 'filter' of undefined
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 GET 500 /boards/undefined/tasks — QUERY:{} — BODY:{} 10.770 ms
+
+2020-10-21 11:32:07 +0000 — Cannot read property 'filter' of undefined
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 GET 500 /boards/undefined/tasks — QUERY:{} — BODY:{} 0.954 ms
+
+2020-10-21 11:32:07 +0000 — Cannot read property 'push' of undefined
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 POST 500 /boards/undefined/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 1.606 ms
+
+2020-10-21 11:32:07 +0000 — Cannot read property 'push' of undefined
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 POST 500 /boards/undefined/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 1.064 ms
+
+2020-10-21 11:32:07 +0000 — Cannot read property 'filter' of undefined
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 PUT 500 /boards/undefined/tasks/undefined — QUERY:{} — BODY:{"title":"Autotest updated task"} 1.131 ms
+
+2020-10-21 11:32:07 +0000 — Cannot read property 'filter' of undefined
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 GET 500 /boards/undefined/tasks/undefined — QUERY:{} — BODY:{} 1.165 ms
+
+2020-10-21 11:32:07 +0000 — Cast to ObjectId failed for value "undefined" at path "_id" for model "Board"
+2020-10-21 11:32:07 +0000 — 21/Oct/2020:11:32:07 +0000 DELETE 500 /boards/undefined — QUERY:{} — BODY:{} 1.161 ms
+
+2020-10-21 11:33:27 +0000 — MongoDB connected
+2020-10-21 11:34:57 +0000 — 21/Oct/2020:11:34:57 +0000 GET 200 /users — QUERY:{} — BODY:{} 166.277 ms
+
+2020-10-21 11:35:10 +0000 — 21/Oct/2020:11:35:10 +0000 GET 200 /users/832f4727-f097-478d-b583-986f23db6910 — QUERY:{} — BODY:{} 147.901 ms
+
+2020-10-21 11:35:13 +0000 — User not found
+2020-10-21 11:35:13 +0000 — 21/Oct/2020:11:35:13 +0000 GET 404 /users/832f4727-f097-478d-b583-986f23db691 — QUERY:{} — BODY:{} 72.820 ms
+
+2020-10-21 11:35:15 +0000 — 21/Oct/2020:11:35:15 +0000 GET 304 /users/832f4727-f097-478d-b583-986f23db6910 — QUERY:{} — BODY:{} 106.021 ms
+
+2020-10-21 11:35:20 +0000 — User not found
+2020-10-21 11:35:20 +0000 — 21/Oct/2020:11:35:20 +0000 DELETE 404 /users/832f4727-f097-478d-b583-986f23db691 — QUERY:{} — BODY:{} 120.608 ms
+
+2020-10-21 11:35:22 +0000 — 21/Oct/2020:11:35:22 +0000 DELETE 204 /users/832f4727-f097-478d-b583-986f23db6910 — QUERY:{} — BODY:{} 265.756 ms
+
+2020-10-21 11:35:28 +0000 — User not found
+2020-10-21 11:35:28 +0000 — 21/Oct/2020:11:35:28 +0000 GET 404 /users/832f4727-f097-478d-b583-986f23db6910 — QUERY:{} — BODY:{} 106.334 ms
+
+2020-10-21 11:35:34 +0000 — 21/Oct/2020:11:35:34 +0000 GET 200 /boards — QUERY:{} — BODY:{} 81.736 ms
+
+2020-10-21 11:35:52 +0000 — dbBoard is not defined
+2020-10-21 11:35:52 +0000 — 21/Oct/2020:11:35:52 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"string","columns":[{"title":"string","order":0}]} 8.203 ms
+
+2020-10-21 11:37:25 +0000 — MongoDB connected
+2020-10-21 11:38:02 +0000 — MongoDB connected
+2020-10-21 11:38:36 +0000 — MongoDB connected
+2020-10-21 11:39:02 +0000 — Uncaught C:\github\rsapp-express-rest\src\resources\boards\board.db.repository.js:42
+  /*const board*/ = await Board.findById(id);
+                  ^
+
+SyntaxError: Unexpected token '='
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\boards\board.service.js:1:20)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\boards\board.router.js:2:22)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-21 11:39:11 +0000 — MongoDB connected

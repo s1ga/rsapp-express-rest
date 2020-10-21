@@ -8,8 +8,7 @@ const userSchema = new Schema(
       default: uuid()
     },
     name: {
-      type: String,
-      required: true
+      type: String
     },
     login: {
       type: String,

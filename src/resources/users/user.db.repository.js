@@ -30,7 +30,7 @@ const create = async body => {
 
 const update = async (id, body) => {
   await User.findByIdAndUpdate(id, body);
-  const user = User.findById(id);
+  const user = await User.findById(id);
 
   if (!user) {
     throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
