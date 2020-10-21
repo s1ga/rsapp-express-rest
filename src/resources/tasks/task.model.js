@@ -4,7 +4,7 @@ const { Schema, model } = require('mongoose');
 const taskSchema = new Schema({
   _id: {
     type: String,
-    default: uuid()
+    default: uuid
   },
   title: {
     type: String,
@@ -19,19 +19,21 @@ const taskSchema = new Schema({
     required: true
   },
   userId: {
-    type: Schema.Types.ObjectId,
-    ref: 'User',
-    default: null,
+    // type: Schema.Types.ObjectId,
+    // ref: 'User',
+    type: String,
     required: true
   },
   boardId: {
-    type: Schema.Types.ObjectId,
-    ref: 'Board',
+    // type: Schema.Types.ObjectId,
+    // ref: 'Board',
+    type: String,
     required: true
   },
   columnId: {
-    type: Schema.Types.ObjectId,
-    ref: 'Column',
+    // type: Schema.Types.ObjectId,
+    // ref: 'Column',
+    type: String,
     required: true
   }
 });

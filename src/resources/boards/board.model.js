@@ -4,7 +4,7 @@ const { Schema, model } = require('mongoose');
 const boardSchema = new Schema({
   _id: {
     type: String,
-    default: uuid()
+    default: uuid
   },
   title: {
     type: String,

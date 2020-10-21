@@ -693,3 +693,189 @@ SyntaxError: Identifier 'tasks' has already been declared
     at readableAddChunk (_stream_readable.js:273:9)
     at TLSSocket.Readable.push (_stream_readable.js:214:10)
     at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+2020-10-21 15:09:30 +0000 — Promise CastError: Cast to ObjectId failed for value "df78fb43-6a17-42f0-bcd6-1e1c7143f44a" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 15:09:30 +0000 — Promise CastError: Cast to ObjectId failed for value "df78fb43-6a17-42f0-bcd6-1e1c7143f44a" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 15:09:31 +0000 — Promise CastError: Cast to ObjectId failed for value "df78fb43-6a17-42f0-bcd6-1e1c7143f44a" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 15:09:31 +0000 — Promise CastError: Cast to ObjectId failed for value "df78fb43-6a17-42f0-bcd6-1e1c7143f44a" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 15:09:32 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "undefined" at path "boardId", columnId: Path `columnId` is required., userId: Path `userId` is required.
+2020-10-21 15:09:32 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "undefined" at path "boardId", columnId: Path `columnId` is required., userId: Path `userId` is required.
+2020-10-21 15:09:32 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "2fb80372-3593-422e-8dd3-da2026e965b4" }
+2020-10-21 15:09:32 +0000 — Board not found
+2020-10-21 15:09:33 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "2fb80372-3593-422e-8dd3-da2026e965b4" }
+2020-10-21 15:09:33 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "2fb80372-3593-422e-8dd3-da2026e965b4" }
+2020-10-21 15:09:33 +0000 — Bad request
+2020-10-21 15:09:33 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "2fb80372-3593-422e-8dd3-da2026e965b4" }
+2020-10-21 15:09:33 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "2fb80372-3593-422e-8dd3-da2026e965b4" }
+2020-10-21 15:09:33 +0000 — Board not found
+2020-10-21 15:09:34 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "2fb80372-3593-422e-8dd3-da2026e965b4" }
+2020-10-21 15:09:34 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "undefined" at path "boardId", columnId: Path `columnId` is required., userId: Path `userId` is required.
+2020-10-21 15:09:34 +0000 — Cast to ObjectId failed for value "undefined" at path "boardId" for model "Task"
+2020-10-21 15:09:34 +0000 — Cast to ObjectId failed for value "undefined" at path "boardId" for model "Task"
+2020-10-21 15:09:34 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "undefined" at path "boardId", columnId: Path `columnId` is required., userId: Path `userId` is required.
+2020-10-21 15:09:34 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "undefined" at path "boardId", columnId: Path `columnId` is required., userId: Path `userId` is required.
+2020-10-21 15:09:34 +0000 — Cast to ObjectId failed for value "undefined" at path "boardId" for model "Task"
+2020-10-21 15:09:34 +0000 — Cast to ObjectId failed for value "undefined" at path "boardId" for model "Task"
+2020-10-21 15:09:34 +0000 — Board not found
+2020-10-21 15:09:49 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "df78fb43-6a17-42f0-bcd6-1e1c7143f44a" }
+2020-10-21 15:09:49 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "df78fb43-6a17-42f0-bcd6-1e1c7143f44a" }
+2020-10-21 15:09:49 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "df78fb43-6a17-42f0-bcd6-1e1c7143f44a" }
+2020-10-21 15:09:49 +0000 — Bad request
+2020-10-21 15:09:49 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "df78fb43-6a17-42f0-bcd6-1e1c7143f44a" }
+2020-10-21 15:09:49 +0000 — User not found
+2020-10-21 15:09:49 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "df78fb43-6a17-42f0-bcd6-1e1c7143f44a" }
+2020-10-21 15:13:19 +0000 — E11000 duplicate key error collection: rsapp-trello.users index: _id_ dup key: { _id: "df78fb43-6a17-42f0-bcd6-1e1c7143f44a" }
+2020-10-21 15:15:09 +0000 — Promise CastError: Cast to ObjectId failed for value "79c12463-a1ac-454d-95e3-a77891f46dae" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 15:15:09 +0000 — Promise CastError: Cast to ObjectId failed for value "79c12463-a1ac-454d-95e3-a77891f46dae" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 15:15:10 +0000 — Promise CastError: Cast to ObjectId failed for value "79c12463-a1ac-454d-95e3-a77891f46dae" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 15:15:10 +0000 — Promise CastError: Cast to ObjectId failed for value "79c12463-a1ac-454d-95e3-a77891f46dae" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 15:15:11 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "undefined" at path "boardId", columnId: Path `columnId` is required., userId: Path `userId` is required.
+2020-10-21 15:15:11 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "undefined" at path "boardId", columnId: Path `columnId` is required., userId: Path `userId` is required.
+2020-10-21 15:15:11 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "4563a4b6-bc3d-4fa1-8284-2362e685e37b" }
+2020-10-21 15:15:12 +0000 — Board not found
+2020-10-21 15:15:12 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "4563a4b6-bc3d-4fa1-8284-2362e685e37b" }
+2020-10-21 15:15:12 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "4563a4b6-bc3d-4fa1-8284-2362e685e37b" }
+2020-10-21 15:15:12 +0000 — Bad request
+2020-10-21 15:15:12 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "4563a4b6-bc3d-4fa1-8284-2362e685e37b" }
+2020-10-21 15:15:12 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "4563a4b6-bc3d-4fa1-8284-2362e685e37b" }
+2020-10-21 15:15:12 +0000 — Board not found
+2020-10-21 15:15:13 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "4563a4b6-bc3d-4fa1-8284-2362e685e37b" }
+2020-10-21 15:15:13 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "undefined" at path "boardId", columnId: Path `columnId` is required., userId: Path `userId` is required.
+2020-10-21 15:15:13 +0000 — Cast to ObjectId failed for value "undefined" at path "boardId" for model "Task"
+2020-10-21 15:15:13 +0000 — Cast to ObjectId failed for value "undefined" at path "boardId" for model "Task"
+2020-10-21 15:15:13 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "undefined" at path "boardId", columnId: Path `columnId` is required., userId: Path `userId` is required.
+2020-10-21 15:15:13 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "undefined" at path "boardId", columnId: Path `columnId` is required., userId: Path `userId` is required.
+2020-10-21 15:15:13 +0000 — Cast to ObjectId failed for value "undefined" at path "boardId" for model "Task"
+2020-10-21 15:15:13 +0000 — Cast to ObjectId failed for value "undefined" at path "boardId" for model "Task"
+2020-10-21 15:15:13 +0000 — Board not found
+2020-10-21 15:15:29 +0000 — Board not found
+2020-10-21 15:15:29 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "0ca2d3b8-3c19-4fd0-a7ac-423d68a7b984" }
+2020-10-21 15:15:29 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "0ca2d3b8-3c19-4fd0-a7ac-423d68a7b984" }
+2020-10-21 15:15:29 +0000 — Bad request
+2020-10-21 15:15:30 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "0ca2d3b8-3c19-4fd0-a7ac-423d68a7b984" }
+2020-10-21 15:15:30 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "0ca2d3b8-3c19-4fd0-a7ac-423d68a7b984" }
+2020-10-21 15:15:30 +0000 — Board not found
+2020-10-21 15:16:51 +0000 — Board not found
+2020-10-21 15:16:51 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "2ae89815-dfae-4d1c-bb3a-b5e3996c5027" }
+2020-10-21 15:16:51 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "2ae89815-dfae-4d1c-bb3a-b5e3996c5027" }
+2020-10-21 15:16:51 +0000 — Bad request
+2020-10-21 15:16:51 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "2ae89815-dfae-4d1c-bb3a-b5e3996c5027" }
+2020-10-21 15:16:51 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "2ae89815-dfae-4d1c-bb3a-b5e3996c5027" }
+2020-10-21 15:16:52 +0000 — Board not found
+2020-10-21 15:19:34 +0000 — Board.fromRequest is not a function
+2020-10-21 15:19:34 +0000 — Board.fromRequest is not a function
+2020-10-21 15:19:34 +0000 — Board.fromRequest is not a function
+2020-10-21 15:19:34 +0000 — Cannot read property 'filter' of undefined
+2020-10-21 15:19:34 +0000 — Board.fromRequest is not a function
+2020-10-21 15:19:34 +0000 — Board.fromRequest is not a function
+2020-10-21 15:19:34 +0000 — Cannot read property 'filter' of undefined
+2020-10-21 15:20:35 +0000 — Board not found
+2020-10-21 15:20:35 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "4830f96b-9eb3-4c7f-b6f9-2aafadfc7982" }
+2020-10-21 15:20:36 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "4830f96b-9eb3-4c7f-b6f9-2aafadfc7982" }
+2020-10-21 15:20:36 +0000 — Bad request
+2020-10-21 15:20:36 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "4830f96b-9eb3-4c7f-b6f9-2aafadfc7982" }
+2020-10-21 15:20:36 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "4830f96b-9eb3-4c7f-b6f9-2aafadfc7982" }
+2020-10-21 15:20:36 +0000 — Board not found
+2020-10-21 15:29:22 +0000 — Board not found
+2020-10-21 15:29:22 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "d2f29373-3fae-4714-abf6-85535feb5950" }
+2020-10-21 15:29:22 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "d2f29373-3fae-4714-abf6-85535feb5950" }
+2020-10-21 15:29:23 +0000 — Bad request
+2020-10-21 15:29:23 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "d2f29373-3fae-4714-abf6-85535feb5950" }
+2020-10-21 15:29:23 +0000 — E11000 duplicate key error collection: rsapp-trello.boards index: _id_ dup key: { _id: "d2f29373-3fae-4714-abf6-85535feb5950" }
+2020-10-21 15:29:23 +0000 — Board not found
+2020-10-21 17:11:07 +0000 — Board not found
+2020-10-21 17:11:07 +0000 — Bad request
+2020-10-21 17:11:07 +0000 — Board not found
+2020-10-21 17:11:07 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "undefined" at path "boardId", columnId: Path `columnId` is required., userId: Path `userId` is required.
+2020-10-21 17:11:07 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "undefined" at path "boardId", columnId: Path `columnId` is required., userId: Path `userId` is required.
+2020-10-21 17:11:07 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "undefined" at path "boardId", columnId: Path `columnId` is required., userId: Path `userId` is required.
+2020-10-21 17:11:07 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "undefined" at path "boardId", columnId: Path `columnId` is required., userId: Path `userId` is required.
+2020-10-21 17:11:07 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "undefined" at path "boardId", columnId: Path `columnId` is required., userId: Path `userId` is required.
+2020-10-21 17:11:07 +0000 — Board not found
+2020-10-21 17:15:55 +0000 — Board not found
+2020-10-21 17:16:18 +0000 — Promise CastError: Cast to ObjectId failed for value "0a017223-eaba-494d-b617-eece120f32f1" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 17:16:19 +0000 — Promise CastError: Cast to ObjectId failed for value "3a27ad5d-e7fb-455d-b8d0-a22452ccb1fa" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 17:16:19 +0000 — Promise CastError: Cast to ObjectId failed for value "f692c956-9a6d-4fb8-994b-e17d99a826b7" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 17:16:20 +0000 — Promise CastError: Cast to ObjectId failed for value "3a259c8e-d852-435a-8a57-2cc58defb36e" at path "userId" for model "Task"
+    at model.Query.exec (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4380:21)
+    at model.Query.Query.then (C:\github\rsapp-express-rest\node_modules\mongoose\lib\query.js:4472:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at runNextTicks (internal/process/task_queues.js:66:3)
+    at processImmediate (internal/timers.js:434:9)
+2020-10-21 17:16:20 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "undefined" at path "boardId", columnId: Path `columnId` is required., userId: Path `userId` is required.
+2020-10-21 17:16:20 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "undefined" at path "boardId", columnId: Path `columnId` is required., userId: Path `userId` is required.
+2020-10-21 17:25:52 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "145e3ffb-b6a9-411b-92ae-77eaae6fc8ea" at path "boardId", columnId: Cast to ObjectId failed for value "string" at path "columnId", userId: Path `userId` is required.
+2020-10-21 17:27:11 +0000 — Task validation failed: boardId: Cast to ObjectId failed for value "5026afe0-8699-43c6-9fa4-4f60b0b2e920" at path "boardId", columnId: Cast to ObjectId failed for value "string" at path "columnId"
+2020-10-21 17:28:48 +0000 — Task validation failed: userId: Path `userId` is required.
+2020-10-21 17:30:46 +0000 — Task not found
+2020-10-21 17:30:50 +0000 — Task not found
+2020-10-21 17:31:09 +0000 — Bad request
+2020-10-21 17:31:44 +0000 — Board not found
+2020-10-21 17:31:45 +0000 — Bad request
+2020-10-21 17:31:45 +0000 — Board not found
+2020-10-21 17:31:45 +0000 — Task validation failed: userId: Path `userId` is required., columnId: Path `columnId` is required.
+2020-10-21 17:31:45 +0000 — Task validation failed: userId: Path `userId` is required., columnId: Path `columnId` is required.
+2020-10-21 17:31:45 +0000 — Task validation failed: userId: Path `userId` is required., columnId: Path `columnId` is required.
+2020-10-21 17:31:45 +0000 — Task validation failed: userId: Path `userId` is required., columnId: Path `columnId` is required.
+2020-10-21 17:31:45 +0000 — Task validation failed: userId: Path `userId` is required., columnId: Path `columnId` is required.
+2020-10-21 17:31:46 +0000 — Board not found
+2020-10-21 17:32:09 +0000 — Task validation failed: userId: Path `userId` is required., columnId: Path `columnId` is required.
+2020-10-21 17:32:09 +0000 — Task validation failed: userId: Path `userId` is required., columnId: Path `columnId` is required.
+2020-10-21 17:32:09 +0000 — Task validation failed: userId: Path `userId` is required., columnId: Path `columnId` is required.
+2020-10-21 17:32:09 +0000 — Bad request
+2020-10-21 17:32:09 +0000 — Task not found
+2020-10-21 17:32:10 +0000 — Board not found

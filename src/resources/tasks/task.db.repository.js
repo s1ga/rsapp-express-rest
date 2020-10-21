@@ -21,12 +21,13 @@ const getById = async (boardId, id) => {
 };
 
 const create = async (boardId, body) => {
-  const { title, order, description, columnId } = body;
+  const { title, order, description, userId, columnId } = body;
   const task = new Task({
     title,
     order,
     description,
     boardId,
+    userId,
     columnId
   });
 

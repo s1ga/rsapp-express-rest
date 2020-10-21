@@ -17,6 +17,7 @@ const connectToDB = cb => {
     useUnifiedTopology: true,
     useFindAndModify: false
   });
+  mongoose.set('useCreateIndex', true);
 
   const db = mongoose.connection;
   db.on('error', logger.error.bind(logger, 'Connection error'));
