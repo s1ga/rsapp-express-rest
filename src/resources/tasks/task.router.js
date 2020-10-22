@@ -1,11 +1,12 @@
 const router = require('express').Router({ mergeParams: true });
 const taskService = require('./task.service');
+const Task = require('./task.model');
 
 router.get('/', async (req, res, next) => {
   try {
     const tasks = await taskService.getAll(req.params.boardid);
 
-    res.status(200).json(tasks);
+    res.status(200).json(tasks.map(i => Task.toResponse(i)));
   } catch (e) {
     return next(e);
   }
@@ -15,7 +16,7 @@ router.get('/:id', async (req, res, next) => {
   try {
     const task = await taskService.getById(req.params.boardid, req.params.id);
 
-    res.status(200).json(task);
+    res.status(200).json(Task.toResponse(task));
   } catch (e) {
     return next(e);
   }
@@ -25,7 +26,7 @@ router.post('/', async (req, res, next) => {
   try {
     const task = await taskService.create(req.params.boardid, req.body);
 
-    res.status(200).json(task);
+    res.status(200).json(Task.toResponse(task));
   } catch (e) {
     return next(e);
   }
@@ -39,7 +40,7 @@ router.put('/:id', async (req, res, next) => {
       req.body
     );
 
-    res.status(200).json(task);
+    res.status(200).json(Task.toResponse(task));
   } catch (e) {
     return next(e);
   }

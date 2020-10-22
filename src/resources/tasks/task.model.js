@@ -21,8 +21,8 @@ const taskSchema = new Schema({
   userId: {
     // type: Schema.Types.ObjectId,
     // ref: 'User',
-    type: String,
-    required: true
+    type: String
+    // required: true
   },
   boardId: {
     // type: Schema.Types.ObjectId,
@@ -33,10 +33,15 @@ const taskSchema = new Schema({
   columnId: {
     // type: Schema.Types.ObjectId,
     // ref: 'Column',
-    type: String,
-    required: true
+    type: String
+    // required: true
   }
 });
+
+taskSchema.statics.toResponse = task => {
+  const { id, title, order, description, userId, boardId, columnId } = task;
+  return { id, title, order, description, userId, boardId, columnId };
+};
 
 // class Task {
 //   constructor({

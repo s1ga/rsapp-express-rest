@@ -49,7 +49,7 @@ const create = async (boardId, body) => {
 };
 
 const update = async (boardId, id, body) => {
-  const task = await Task.findOneAndUpdate(
+  let task = await Task.findOneAndUpdate(
     {
       _id: id,
       boardId
@@ -57,6 +57,7 @@ const update = async (boardId, id, body) => {
     body
   );
 
+  task = Task.findById(id);
   //   const task = await getById(boardId.toString(), id.toString());
   //   if (!task) {
   //     throw new SERVER_ERROR({ status: 404, message: 'Task not found' });

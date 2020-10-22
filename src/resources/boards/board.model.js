@@ -28,6 +28,11 @@ const boardSchema = new Schema({
   ]
 });
 
+boardSchema.statics.toResponse = board => {
+  const { id, title, columns } = board;
+  return { id, title, columns };
+};
+
 // class Board {
 //   constructor({
 //     id = uuid(),
