@@ -3,6 +3,7 @@ const express = require('express');
 const swaggerUI = require('swagger-ui-express');
 const path = require('path');
 const YAML = require('yamljs');
+const helmet = require('helmet');
 const { reqLogger, handler } = require('./utils/logger');
 
 // require routes
@@ -18,6 +19,9 @@ const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
 
 // using json
 app.use(express.json());
+
+// using helmet
+app.use(helmet());
 
 // using swagger doc
 app.use('/doc', swaggerUI.serve, swaggerUI.setup(swaggerDocument));
@@ -41,8 +45,5 @@ boardRouter.use('/:boardid/tasks', taskRouter);
 
 // unhandler errors
 app.use(handler);
-
-// throw Error('Oops!');
-// Promise.reject(Error('Oops!'));
 
 module.exports = app;
