@@ -2,7 +2,7 @@ const Task = require('./task.model');
 const SERVER_ERROR = require('../../utils/errorsHandler');
 
 const getAll = async boardId => {
-  const tasks = await Task.find({ boardId });
+  const tasks = Task.find({ boardId });
 
   return tasks;
 };
@@ -35,17 +35,8 @@ const create = async (boardId, body) => {
     throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
   }
 
-  await task.save();
+  task.save();
   return task;
-
-  //   const task = Task.fromRequest(body);
-  //   task.boardId = boardId.toString();
-  //   dbTasks.push(task);
-  //   const dbTask = await getById(task.boardId, task.id);
-  //   if (!dbTask) {
-  //     throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
-  //   }
-  //   return dbTask;
 };
 
 const update = async (boardId, id, body) => {
@@ -58,17 +49,6 @@ const update = async (boardId, id, body) => {
   );
 
   task = Task.findById(id);
-  //   const task = await getById(boardId.toString(), id.toString());
-  //   if (!task) {
-  //     throw new SERVER_ERROR({ status: 404, message: 'Task not found' });
-  //   }
-
-  //   for (const [key, value] of Object.entries(body)) {
-  //     task[key] = value;
-  //   }
-  //   let idTask = dbTasks[id.toString()];
-  //   idTask = task;
-
   if (!task) {
     throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
   }
@@ -86,7 +66,7 @@ const deleteById = async (boardId, id) => {
     throw new SERVER_ERROR({ status: 404, message: 'Task not found' });
   }
 
-  return await Task.deleteOne({
+  return Task.deleteOne({
     _id: id,
     boardId
   });
@@ -94,7 +74,7 @@ const deleteById = async (boardId, id) => {
 
 const deleteByBoardId = async boardId => {
   const boardTasks = await Task.find({ boardId });
-  console.log(boardTasks);
+
   boardTasks.map(i => i.delete());
 };
 
