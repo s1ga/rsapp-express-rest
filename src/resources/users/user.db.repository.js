@@ -47,7 +47,7 @@ const deleteById = async id => {
   }
 
   // unasignee users in task
-  taskService.nullUserTasks(id);
+  await taskService.nullUserTasks(id);
 
   return User.deleteOne({ _id: id });
 };
