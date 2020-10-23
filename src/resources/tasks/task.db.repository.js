@@ -93,12 +93,18 @@ const deleteById = async (boardId, id) => {
 };
 
 const deleteByBoardId = async boardId => {
-  Task.deleteMany({ boardId });
+  const boardTasks = await Task.find({ boardId });
+  console.log(boardTasks);
+  boardTasks.map(i => i.delete());
 };
 
 const nullUserTasks = async userId => {
   const userTasks = await Task.find({ userId });
-  userTasks.map(i => (i.userId = null));
+
+  userTasks.map(i => {
+    i.userId = null;
+    return i.save();
+  });
 };
 
 module.exports = {

@@ -918,3 +918,125 @@ SyntaxError: Identifier 'tasks' has already been declared
 2020-10-22 19:00:20 +0000 — Cannot destructure property 'id' of 'task' as it is null.
 2020-10-22 19:00:21 +0000 — Task not found
 2020-10-22 19:03:38 +0000 — Task not found
+2020-10-22 19:07:10 +0000 — Board not found
+2020-10-23 05:44:49 +0000 — Connection error querySrv ESERVFAIL _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+2020-10-23 05:44:49 +0000 — Promise Error: querySrv ESERVFAIL _mongodb._tcp.cluster-rsapp.187y6.mongodb.net
+    at QueryReqWrap.onresolve [as oncomplete] (dns.js:203:19)
+2020-10-23 06:09:12 +0000 — Connection error Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2020-10-23 06:09:12 +0000 — Promise MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at NativeConnection.Connection.openUri (C:\github\rsapp-express-rest\node_modules\mongoose\lib\connection.js:800:32)
+    at C:\github\rsapp-express-rest\node_modules\mongoose\lib\index.js:342:10
+    at C:\github\rsapp-express-rest\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\github\rsapp-express-rest\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at Mongoose.connect (C:\github\rsapp-express-rest\node_modules\mongoose\lib\index.js:341:10)
+    at connectToDB (C:\github\rsapp-express-rest\src\common\clientDb.js:15:12)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:5:1)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-23 09:23:20 +0000 — Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2020-10-23 09:38:46 +0000 — Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+2020-10-23 09:40:04 +0000 — Promise TypeError: Task.unasigneeUser is not a function
+    at C:\github\rsapp-express-rest\src\resources\tasks\task.db.repository.js:102:27
+    at Array.map (<anonymous>)
+    at Object.nullUserTasks (C:\github\rsapp-express-rest\src\resources\tasks\task.db.repository.js:102:13)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-10-23 09:47:16 +0000 — Task not found
+2020-10-23 09:47:32 +0000 — Board not found
+2020-10-23 09:56:10 +0000 — Promise TypeError: i.unassigneeUser is not a function
+    at C:\github\rsapp-express-rest\src\resources\tasks\task.db.repository.js:102:24
+    at Array.map (<anonymous>)
+    at Object.nullUserTasks (C:\github\rsapp-express-rest\src\resources\tasks\task.db.repository.js:102:13)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-10-23 09:56:50 +0000 — Promise TypeError: i.unassigneeUser is not a function
+    at C:\github\rsapp-express-rest\src\resources\tasks\task.db.repository.js:102:24
+    at Array.map (<anonymous>)
+    at Object.nullUserTasks (C:\github\rsapp-express-rest\src\resources\tasks\task.db.repository.js:102:13)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020-10-23 09:57:52 +0000 — Board not found
+2020-10-23 09:57:58 +0000 — Task not found
+2020-10-23 09:59:32 +0000 — Board not found
+2020-10-23 09:59:39 +0000 — Task not found
+2020-10-23 14:05:29 +0000 — i.delete is not a function
+2020-10-23 14:05:31 +0000 — i.delete is not a function
+2020-10-23 14:05:32 +0000 — i.delete is not a function
+2020-10-23 14:05:33 +0000 — i.delete is not a function
+2020-10-23 14:05:33 +0000 — i.delete is not a function
+2020-10-23 14:05:36 +0000 — i.delete is not a function
+2020-10-23 14:05:37 +0000 — Task not found
+2020-10-23 14:05:37 +0000 — i.delete is not a function
+2020-10-23 14:06:39 +0000 — Board not found
+2020-10-23 14:06:45 +0000 — Task not found
+2020-10-23 14:07:58 +0000 — Board not found
+2020-10-23 14:08:03 +0000 — Task not found
+2020-10-23 14:08:25 +0000 — Task not found
+2020-10-23 14:08:26 +0000 — Board not found
+2020-10-23 14:08:33 +0000 — Task not found
+2020-10-23 14:08:33 +0000 — Board not found
+2020-10-23 14:17:36 +0000 — Task not found
+2020-10-23 14:17:37 +0000 — Board not found
+2020-10-23 14:17:37 +0000 — Task not found
+2020-10-23 14:17:37 +0000 — Task not found
+2020-10-23 14:17:37 +0000 — Task not found
+2020-10-23 14:17:37 +0000 — Task not found
+2020-10-23 14:17:37 +0000 — Task not found
+2020-10-23 14:20:19 +0000 — Uncaught C:\github\rsapp-express-rest\src\resources\tasks\task.db.repository.js:107
+  }
+  ^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\tasks\task.service.js:1:18)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.db.repository.js:2:21)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-23 14:20:55 +0000 — Task not found
+2020-10-23 14:20:55 +0000 — Board not found
+2020-10-23 14:20:56 +0000 — Task not found
+2020-10-23 14:20:56 +0000 — Task not found
+2020-10-23 14:20:56 +0000 — Task not found
+2020-10-23 14:20:56 +0000 — Task not found
+2020-10-23 14:20:56 +0000 — Task not found
+2020-10-23 14:21:02 +0000 — Task not found
+2020-10-23 14:21:03 +0000 — Board not found
+2020-10-23 14:21:03 +0000 — Task not found
+2020-10-23 14:21:03 +0000 — Task not found
+2020-10-23 14:21:03 +0000 — Task not found
+2020-10-23 14:21:03 +0000 — Task not found
+2020-10-23 14:21:03 +0000 — Task not found
+2020-10-23 14:21:09 +0000 — Task not found
+2020-10-23 14:21:10 +0000 — Board not found
+2020-10-23 14:21:10 +0000 — Task not found
+2020-10-23 14:21:10 +0000 — Task not found
+2020-10-23 14:21:10 +0000 — Task not found
+2020-10-23 14:21:10 +0000 — Task not found
+2020-10-23 14:21:10 +0000 — Task not found
+2020-10-23 14:21:17 +0000 — Task not found
+2020-10-23 14:21:17 +0000 — Board not found
+2020-10-23 14:21:17 +0000 — Task not found
+2020-10-23 14:21:17 +0000 — Task not found
+2020-10-23 14:21:17 +0000 — Task not found
+2020-10-23 14:21:17 +0000 — Task not found
+2020-10-23 14:21:17 +0000 — Task not found
+2020-10-23 14:21:23 +0000 — Task not found
+2020-10-23 14:21:24 +0000 — Board not found
+2020-10-23 14:21:24 +0000 — Task not found
+2020-10-23 14:21:24 +0000 — Task not found
+2020-10-23 14:21:24 +0000 — Task not found
+2020-10-23 14:21:24 +0000 — Task not found
+2020-10-23 14:21:24 +0000 — Task not found

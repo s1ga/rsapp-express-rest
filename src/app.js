@@ -50,4 +50,6 @@ module.exports = app;
 
 /*
   1. handle mongo errors
+  2. clean code
+  3. test suites
 */
