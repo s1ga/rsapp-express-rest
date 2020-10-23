@@ -49,7 +49,7 @@ const deleteById = async id => {
   // unasignee users in task
   taskService.nullUserTasks(id);
 
-  return await User.deleteOne({ _id: id });
+  return User.deleteOne({ _id: id });
 };
 
 module.exports = { getAll, getById, create, update, deleteById };

@@ -33,26 +33,4 @@ boardSchema.statics.toResponse = board => {
   return { id, title, columns };
 };
 
-// class Board {
-//   constructor({
-//     id = uuid(),
-//     title = 'Board',
-//     columns = [
-//       {
-//         id: null,
-//         title: 'Column',
-//         order: 0
-//       }
-//     ]
-//   } = {}) {
-//     this.id = id;
-//     this.title = title;
-//     this.columns = columns;
-//   }
-
-//   static fromRequest(body) {
-//     return new Board(body);
-//   }
-// }
-
 module.exports = model('Board', boardSchema);
