@@ -50,7 +50,6 @@ module.exports = app;
 
 /*
   1. _id to id on columns
-  2. check validation in boards
-  3. mongoose errors
-  4. clean code
+  2. mongoose errors
+  3. clean code
 */
