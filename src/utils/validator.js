@@ -16,9 +16,12 @@ exports.validationUser = [
 ];
 
 exports.validationBoard = [
+  body('title')
+    .isLength(3)
+    .withMessage('Board title should be minimum 3 character'),
   body('columns.title')
     .isLength(3)
-    .withMessage('Title should be minimum 3 character'),
+    .withMessage('Column title should be minimum 3 character'),
   body('columns.order')
     .isNumeric()
     .withMessage('Order should be a number')

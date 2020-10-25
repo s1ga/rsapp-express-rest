@@ -55,7 +55,8 @@ app.use(handler);
 module.exports = app;
 
 /*
-  1. handle mongo errors
-  2. clean code
-  3. validation
+  1. _id to id on columns
+  2. check validation in boards and tasks
+  3. mongoose errors
+  4. clean code
 */
