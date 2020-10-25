@@ -47,7 +47,3 @@ boardRouter.use('/:boardid/tasks', taskRouter);
 app.use(handler);
 
 module.exports = app;
-
-/*
-  1. update response
-*/

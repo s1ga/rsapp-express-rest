@@ -1,19 +1,19 @@
 const Task = require('./task.model');
 
-const getAll = async boardId => {
+const getAll = boardId => {
   return Task.find({ boardId });
 };
 
-const getById = async (boardId, id) => {
+const getById = (boardId, id) => {
   return Task.findOne({ _id: id, boardId });
 };
 
-const create = async (boardId, body) => {
+const create = (boardId, body) => {
   const { title, order, description, userId, columnId } = body;
   return Task.create({ title, order, description, userId, boardId, columnId });
 };
 
-const update = async (paramBoardId, id, body) => {
+const update = (paramBoardId, id, body) => {
   const { title, order, description, userId, boardId, columnId } = body;
 
   return Task.findOneAndUpdate(
@@ -23,7 +23,7 @@ const update = async (paramBoardId, id, body) => {
   );
 };
 
-const deleteById = async (boardId, id) => {
+const deleteById = (boardId, id) => {
   return Task.findOneAndDelete({ _id: id, boardId });
 };
 

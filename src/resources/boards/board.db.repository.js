@@ -1,25 +1,25 @@
 const Board = require('./board.model');
 const taskService = require('../tasks/task.service');
 
-const getAll = async () => {
+const getAll = () => {
   return Board.find();
 };
 
-const getById = async id => {
+const getById = id => {
   return Board.findById(id);
 };
 
-const create = async body => {
+const create = body => {
   const { title, columns } = body;
   return Board.create({ title, columns });
 };
 
-const update = async (id, body) => {
+const update = (id, body) => {
   const { title, columns } = body;
   return Board.findByIdAndUpdate(id, { title, columns }, { new: true });
 };
 
-const deleteById = async id => {
+const deleteById = id => {
   // there should be a logic of deleting a Tasks
   taskService.deleteByBoardId(id);
   return Board.findByIdAndDelete(id);
