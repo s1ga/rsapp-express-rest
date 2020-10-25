@@ -9,22 +9,6 @@ const getById = async (boardId, id) => {
 };
 
 const create = async (boardId, body) => {
-  // const { title, order, description, userId, columnId } = body;
-  // const task = new Task({
-  //   title,
-  //   order,
-  //   description,
-  //   boardId,
-  //   userId,
-  //   columnId
-  // });
-
-  // if (!task) {
-  //   throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
-  // }
-
-  // await task.save();
-  // return task;
   const { title, order, description, userId, columnId } = body;
   return Task.create({ title, order, description, userId, boardId, columnId });
 };
@@ -43,18 +27,11 @@ const deleteById = async (boardId, id) => {
 };
 
 const deleteByBoardId = async boardId => {
-  const boardTasks = await Task.find({ boardId });
-
-  boardTasks.map(i => i.remove());
+  return Task.deleteMany({ boardId });
 };
 
 const nullUserTasks = async userId => {
-  const userTasks = await Task.find({ userId });
-
-  userTasks.map(i => {
-    i.userId = null;
-    return i.save();
-  });
+  return Task.updateMany({ userId }, { userId: null });
 };
 
 module.exports = {

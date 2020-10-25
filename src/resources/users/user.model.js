@@ -25,4 +25,4 @@ userSchema.statics.toResponse = user => {
   return { id, name, login };
 };
 
-module.exports = model('User', userSchema); // User;
+module.exports = model('User', userSchema);

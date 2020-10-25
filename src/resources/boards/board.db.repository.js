@@ -20,8 +20,8 @@ const update = async (id, body) => {
 };
 
 const deleteById = async id => {
-  // there should be a logic of deleting a Task
-  await taskService.deleteByBoardId(id);
+  // there should be a logic of deleting a Tasks
+  taskService.deleteByBoardId(id);
   return Board.findByIdAndDelete(id);
 };
 

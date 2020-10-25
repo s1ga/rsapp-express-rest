@@ -15,19 +15,9 @@ const boardSchema = new Schema({
       _id: {
         type: String,
         default: uuid
-        // type: Schema.Types.ObjectId,
-        // ref: 'Tasks'
       },
-      title: {
-        type: String
-        // type: Schema.Types.String,
-        // ref: 'Tasks'
-      },
-      order: {
-        type: Number
-        // type: Schema.Types.Number,
-        // ref: 'Tasks'
-      }
+      title: String,
+      order: Number
     }
   ]
 });
