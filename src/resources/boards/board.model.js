@@ -27,10 +27,10 @@ boardSchema.method('toResponse', function toResponse() {
   let { columns } = this;
   columns = columns.toObject();
 
-  for (let i = 0; i < columns.length; i++) {
-    columns[i].id = columns[i]._id;
-    delete columns[i]._id;
-  }
+  // for (let i = 0; i < columns.length; i++) {
+  //   columns[i].id = columns[i]._id;
+  //   delete columns[i]._id;
+  // }
 
   return { id, title, columns };
 });
