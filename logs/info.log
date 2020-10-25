@@ -59,3 +59,44 @@
 2020-10-25 11:39:19 +0000 — App is running on http://localhost:4000
 2020-10-25 11:39:27 +0000 — MongoDB connected
 2020-10-25 11:39:27 +0000 — App is running on http://localhost:4000
+2020-10-25 12:25:46 +0000 — MongoDB connected
+2020-10-25 12:25:46 +0000 — App is running on http://localhost:4000
+2020-10-25 12:27:19 +0000 — MongoDB connected
+2020-10-25 12:27:19 +0000 — App is running on http://localhost:4000
+2020-10-25 12:27:55 +0000 — MongoDB connected
+2020-10-25 12:27:55 +0000 — App is running on http://localhost:4000
+2020-10-25 12:28:02 +0000 — 25/Oct/2020:12:28:02 +0000 POST 200 /boards/null/tasks — QUERY:{} — BODY:{"title":"string","order":0,"description":"string","userId":"string","boardId":"string","columnId":"string"} 114.724 ms
+
+2020-10-25 12:28:08 +0000 — Title should be minimum 3 character
+2020-10-25 12:28:08 +0000 — 25/Oct/2020:12:28:08 +0000 POST 422 /boards/null/tasks — QUERY:{} — BODY:{"title":"st","order":0,"description":"string","userId":"string","boardId":"string","columnId":"string"} 2.321 ms
+
+2020-10-25 12:28:15 +0000 — 25/Oct/2020:12:28:15 +0000 POST 200 /boards/null/tasks — QUERY:{} — BODY:{"title":"strr","order":"0","description":"string","userId":"string","boardId":"string","columnId":"string"} 77.175 ms
+
+2020-10-25 12:28:20 +0000 — Order should be a number
+2020-10-25 12:28:20 +0000 — 25/Oct/2020:12:28:20 +0000 POST 422 /boards/null/tasks — QUERY:{} — BODY:{"title":"strr","order":"as","description":"string","userId":"string","boardId":"string","columnId":"string"} 1.255 ms
+
+2020-10-25 12:29:10 +0000 — 25/Oct/2020:12:29:10 +0000 POST 200 /boards/null/tasks — QUERY:{} — BODY:{"title":"strr","order":0,"description":"string","boardId":"string","columnId":"string"} 88.111 ms
+
+2020-10-25 12:29:22 +0000 — 25/Oct/2020:12:29:22 +0000 GET 200 /boards/null/tasks — QUERY:{} — BODY:{} 311.563 ms
+
+2020-10-25 12:31:13 +0000 — MongoDB connected
+2020-10-25 12:31:13 +0000 — App is running on http://localhost:4000
+2020-10-25 12:31:18 +0000 — User Id should be exists
+2020-10-25 12:31:18 +0000 — 25/Oct/2020:12:31:18 +0000 POST 422 /boards/null/tasks — QUERY:{} — BODY:{"title":"strr","order":0,"description":"string","boardId":"string","columnId":"string"} 8.223 ms
+
+2020-10-25 12:31:32 +0000 — Unexpected string in JSON at position 85
+2020-10-25 12:31:39 +0000 — 25/Oct/2020:12:31:39 +0000 POST 200 /boards/null/tasks — QUERY:{} — BODY:{"title":"strr","order":0,"description":"string","userId":"string","boardId":"string","columnId":"string"} 119.605 ms
+
+2020-10-25 12:31:44 +0000 — Unexpected token } in JSON at position 107
+2020-10-25 12:31:52 +0000 — User Id should be exists
+2020-10-25 12:31:52 +0000 — 25/Oct/2020:12:31:52 +0000 POST 422 /boards/null/tasks — QUERY:{} — BODY:{"title":"strr","order":0,"description":"string","userId":"string","boardId":"string"} 2.243 ms
+
+2020-10-25 12:32:09 +0000 — MongoDB connected
+2020-10-25 12:32:09 +0000 — App is running on http://localhost:4000
+2020-10-25 12:32:15 +0000 — 25/Oct/2020:12:32:15 +0000 POST 200 /boards/null/tasks — QUERY:{} — BODY:{"title":"strr","order":0,"description":"string","userId":"string","columnId":"string"} 310.127 ms
+
+2020-10-25 12:32:23 +0000 — 25/Oct/2020:12:32:23 +0000 POST 200 /boards/null/tasks — QUERY:{} — BODY:{"title":"strr","order":0,"userId":"string","columnId":"string"} 94.259 ms
+
+2020-10-25 12:32:33 +0000 — Title should be minimum 3 character
+2020-10-25 12:32:33 +0000 — 25/Oct/2020:12:32:33 +0000 POST 422 /boards/null/tasks — QUERY:{} — BODY:{"order":0,"userId":"string","columnId":"string"} 1.909 ms
+

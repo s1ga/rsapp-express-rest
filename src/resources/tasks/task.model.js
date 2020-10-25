@@ -34,14 +34,4 @@ taskSchema.statics.toResponse = task => {
   return { id, title, order, description, userId, boardId, columnId };
 };
 
-// taskSchema.methods.pushToBoard = async function() {
-//   const board = await Board.findById(this.boardId);
-//   const { id: _id, title, order } = this;
-
-//   board.columns.push({ id: _id, title, order });
-
-//   await board.save();
-//   return this;
-// };
-
 module.exports = model('Task', taskSchema);

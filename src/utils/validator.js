@@ -28,7 +28,16 @@ exports.validationBoard = [
 ];
 
 exports.validationTask = [
+  body('title')
+    .isLength(3)
+    .withMessage('Title should be minimum 3 character'),
   body('order')
     .isNumeric()
-    .withMessage('Order should be a number')
+    .withMessage('Order should be a number'),
+  body('userId')
+    .isLength(1)
+    .withMessage('User Id should be exists'),
+  body('columnId')
+    .isLength(1)
+    .withMessage('Column Id should be exists')
 ];

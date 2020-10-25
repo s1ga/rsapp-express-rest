@@ -11,3 +11,10 @@
 2020-10-25 11:33:50 +0000 — Column title should be minimum 3 character
 2020-10-25 11:34:29 +0000 — Column title should be minimum 3 character
 2020-10-25 11:34:49 +0000 — Order should be a number
+2020-10-25 12:28:08 +0000 — Title should be minimum 3 character
+2020-10-25 12:28:20 +0000 — Order should be a number
+2020-10-25 12:31:18 +0000 — User Id should be exists
+2020-10-25 12:31:32 +0000 — Unexpected string in JSON at position 85
+2020-10-25 12:31:44 +0000 — Unexpected token } in JSON at position 107
+2020-10-25 12:31:52 +0000 — User Id should be exists
+2020-10-25 12:32:33 +0000 — Title should be minimum 3 character
