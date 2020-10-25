@@ -701,3 +701,15 @@ SyntaxError: Unexpected end of input
     at Module._compile (internal/modules/cjs/loader.js:1015:30)
 2020-10-25 14:36:40 +0000 — User not found
 2020-10-25 14:42:29 +0000 — User not found
+2020-10-25 14:47:36 +0000 — Bad request
+2020-10-25 14:51:05 +0000 — board is not defined
+2020-10-25 14:51:05 +0000 — board is not defined
+2020-10-25 14:51:06 +0000 — board is not defined
+2020-10-25 14:51:07 +0000 — board is not defined
+2020-10-25 14:51:07 +0000 — board is not defined
+2020-10-25 14:51:17 +0000 — Board not found
+2020-10-25 14:51:18 +0000 — Task not found
+2020-10-25 14:51:18 +0000 — Task not found
+2020-10-25 14:51:18 +0000 — Task not found
+2020-10-25 14:51:18 +0000 — Task not found
+2020-10-25 14:51:18 +0000 — Task not found

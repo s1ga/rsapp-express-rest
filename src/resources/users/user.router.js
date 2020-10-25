@@ -62,7 +62,7 @@ router.put('/:id', validationUser, async (req, res, next) => {
 
   try {
     const user = await userService.update(req.params.id, req.body);
-    console.log(user);
+
     if (!user) {
       throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
     }

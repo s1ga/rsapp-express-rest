@@ -1,5 +1,5 @@
 const User = require('./user.model');
-const taskService = require('../tasks/task.service');
+// const taskService = require('../tasks/task.service');
 
 const getAll = async () => {
   return User.find();
@@ -16,11 +16,11 @@ const create = async body => {
 
 const update = async (id, body) => {
   const { name, login, password } = body;
-  return User.updateOne({ _id: id }, { name, login, password });
+  return User.findByIdAndUpdate(id, { name, login, password });
 };
 
 const deleteById = async id => {
-  await taskService.nullUserTasks(id);
+  // await taskService.nullUserTasks(id);
   return User.findByIdAndDelete(id);
 };
 

@@ -19,6 +19,10 @@ router.get('/:id', async (req, res, next) => {
   try {
     const board = await boardService.getById(req.params.id);
 
+    if (!board) {
+      throw new SERVER_ERROR({ status: 404, message: 'Board not found' });
+    }
+
     res.status(200).json(Board.toResponse(board));
   } catch (e) {
     return next(e);
@@ -36,6 +40,10 @@ router.post('/', validationBoard, async (req, res, next) => {
 
   try {
     const board = await boardService.create(req.body);
+
+    if (!board) {
+      throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
+    }
 
     res.status(200).json(Board.toResponse(board));
   } catch (e) {
@@ -55,6 +63,10 @@ router.put('/:id', validationBoard, async (req, res, next) => {
   try {
     const board = await boardService.update(req.params.id, req.body);
 
+    if (!board) {
+      throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
+    }
+
     res.status(200).json(Board.toResponse(board));
   } catch (e) {
     return next(e);
@@ -63,7 +75,11 @@ router.put('/:id', validationBoard, async (req, res, next) => {
 
 router.delete('/:id', async (req, res, next) => {
   try {
-    await boardService.deleteById(req.params.id);
+    const board = await boardService.deleteById(req.params.id);
+
+    if (!board) {
+      throw new SERVER_ERROR({ status: 404, message: 'Board not found' });
+    }
 
     res.status(204).send('The board has been deleted');
   } catch (e) {
