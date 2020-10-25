@@ -999,3 +999,49 @@ SyntaxError: Unexpected identifier
 2020-10-25 15:56:30 +0000 — Task not found
 2020-10-25 15:56:30 +0000 — Task not found
 2020-10-25 15:56:30 +0000 — Task not found
+2020-10-25 16:06:42 +0000 — uncaughtException: Unexpected token 'delete'
+C:\github\rsapp-express-rest\src\resources\boards\board.model.js:30
+    map delete i._id
+        ^^^^^^
+
+SyntaxError: Unexpected token 'delete'
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\boards\board.db.repository.js:1:15)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\boards\board.service.js:1:20)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-25 16:06:42 +0000 — uncaughtException: Unexpected token 'delete'
+C:\github\rsapp-express-rest\src\resources\boards\board.model.js:30
+    map delete i._id
+        ^^^^^^
+
+SyntaxError: Unexpected token 'delete'
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\boards\board.db.repository.js:1:15)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\boards\board.service.js:1:20)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-25 16:09:05 +0000 — Assignment to constant variable.
+2020-10-25 16:09:19 +0000 — resBoard is not defined

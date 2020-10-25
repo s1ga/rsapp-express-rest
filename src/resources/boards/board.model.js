@@ -23,7 +23,14 @@ const boardSchema = new Schema({
 });
 
 boardSchema.statics.toResponse = board => {
-  const { id, title, columns } = board;
+  const { id, title } = board;
+  let { columns } = board;
+  columns = columns.toObject();
+
+  for (let i = 0; i < columns.length; i++) {
+    columns[i].id = columns[i]._id;
+    delete columns[i]._id;
+  }
 
   return { id, title, columns };
 };

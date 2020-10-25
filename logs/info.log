@@ -11049,3 +11049,67 @@ SyntaxError: Unexpected identifier
 2020-10-25 15:59:42 +0000 — App is running on http://localhost:4000
 2020-10-25 16:00:55 +0000 — MongoDB connected
 2020-10-25 16:00:55 +0000 — App is running on http://localhost:4000
+2020-10-25 16:02:00 +0000 — MongoDB connected
+2020-10-25 16:02:00 +0000 — App is running on http://localhost:4000
+2020-10-25 16:05:40 +0000 — MongoDB connected
+2020-10-25 16:05:40 +0000 — App is running on http://localhost:4000
+2020-10-25 16:06:01 +0000 — 25/Oct/2020:16:06:01 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"string","columns":[{"title":"string","order":0}]} 235.286 ms
+
+2020-10-25 16:06:42 +0000 — uncaughtException: Unexpected token 'delete'
+C:\github\rsapp-express-rest\src\resources\boards\board.model.js:30
+    map delete i._id
+        ^^^^^^
+
+SyntaxError: Unexpected token 'delete'
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\boards\board.db.repository.js:1:15)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\boards\board.service.js:1:20)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-25 16:06:47 +0000 — MongoDB connected
+2020-10-25 16:06:47 +0000 — App is running on http://localhost:4000
+2020-10-25 16:06:52 +0000 — 25/Oct/2020:16:06:52 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"string","columns":[{"title":"string","order":0}]} 237.394 ms
+
+2020-10-25 16:08:09 +0000 — MongoDB connected
+2020-10-25 16:08:09 +0000 — App is running on http://localhost:4000
+2020-10-25 16:08:13 +0000 — 25/Oct/2020:16:08:13 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"string","columns":[{"title":"string","order":0}]} 240.294 ms
+
+2020-10-25 16:09:02 +0000 — MongoDB connected
+2020-10-25 16:09:02 +0000 — App is running on http://localhost:4000
+2020-10-25 16:09:05 +0000 — Assignment to constant variable.
+2020-10-25 16:09:05 +0000 — 25/Oct/2020:16:09:05 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"string","columns":[{"title":"string","order":0}]} 240.401 ms
+
+2020-10-25 16:09:19 +0000 — MongoDB connected
+2020-10-25 16:09:19 +0000 — App is running on http://localhost:4000
+2020-10-25 16:09:19 +0000 — resBoard is not defined
+2020-10-25 16:09:19 +0000 — 25/Oct/2020:16:09:19 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"string","columns":[{"title":"string","order":0}]} 199.756 ms
+
+2020-10-25 16:09:34 +0000 — MongoDB connected
+2020-10-25 16:09:34 +0000 — App is running on http://localhost:4000
+2020-10-25 16:09:35 +0000 — 25/Oct/2020:16:09:35 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"string","columns":[{"title":"string","order":0}]} 222.443 ms
+
+2020-10-25 16:09:46 +0000 — MongoDB connected
+2020-10-25 16:09:46 +0000 — App is running on http://localhost:4000
+2020-10-25 16:09:47 +0000 — 25/Oct/2020:16:09:47 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"string","columns":[{"title":"string","order":0}]} 155.842 ms
+
+2020-10-25 16:09:54 +0000 — MongoDB connected
+2020-10-25 16:09:54 +0000 — App is running on http://localhost:4000
+2020-10-25 16:10:01 +0000 — MongoDB connected
+2020-10-25 16:10:01 +0000 — App is running on http://localhost:4000
+2020-10-25 16:10:51 +0000 — MongoDB connected
+2020-10-25 16:10:51 +0000 — App is running on http://localhost:4000
+2020-10-25 16:11:23 +0000 — MongoDB connected
+2020-10-25 16:11:23 +0000 — App is running on http://localhost:4000
+2020-10-25 16:11:25 +0000 — 25/Oct/2020:16:11:25 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"string","columns":[{"title":"string","order":0}]} 223.515 ms
+
