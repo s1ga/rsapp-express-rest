@@ -16,7 +16,7 @@ const create = async body => {
 
 const update = async (id, body) => {
   const { name, login, password } = body;
-  return User.findByIdAndUpdate(id, { name, login, password });
+  return User.findByIdAndUpdate(id, { name, login, password }, { new: true });
 };
 
 const deleteById = async id => {

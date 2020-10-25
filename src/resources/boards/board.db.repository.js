@@ -16,7 +16,7 @@ const create = async body => {
 
 const update = async (id, body) => {
   const { title, columns } = body;
-  return Board.findByIdAndUpdate(id, { title, columns });
+  return Board.findByIdAndUpdate(id, { title, columns }, { new: true });
 };
 
 const deleteById = async id => {

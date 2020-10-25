@@ -18,7 +18,8 @@ const update = async (paramBoardId, id, body) => {
 
   return Task.findOneAndUpdate(
     { _id: id, boardId: paramBoardId },
-    { title, order, description, userId, boardId, columnId }
+    { title, order, description, userId, boardId, columnId },
+    { new: true }
   );
 };
 
