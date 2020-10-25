@@ -12,17 +12,21 @@ const boardSchema = new Schema({
   },
   columns: [
     {
-      id: {
-        type: Schema.Types.ObjectId,
-        ref: 'Tasks'
+      _id: {
+        type: String,
+        default: uuid
+        // type: Schema.Types.ObjectId,
+        // ref: 'Tasks'
       },
       title: {
-        type: Schema.Types.String,
-        ref: 'Tasks'
+        type: String
+        // type: Schema.Types.String,
+        // ref: 'Tasks'
       },
       order: {
-        type: Schema.Types.Number,
-        ref: 'Tasks'
+        type: Number
+        // type: Schema.Types.Number,
+        // ref: 'Tasks'
       }
     }
   ]

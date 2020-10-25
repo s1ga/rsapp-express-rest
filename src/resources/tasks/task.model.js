@@ -15,26 +15,17 @@ const taskSchema = new Schema({
     required: true
   },
   description: {
-    type: String,
-    required: true
+    type: String
   },
   userId: {
-    // type: Schema.Types.ObjectId,
-    // ref: 'User',
     type: String
-    // required: true
   },
   boardId: {
-    // type: Schema.Types.ObjectId,
-    // ref: 'Board',
     type: String,
     required: true
   },
   columnId: {
-    // type: Schema.Types.ObjectId,
-    // ref: 'Column',
     type: String
-    // required: true
   }
 });
 
@@ -42,5 +33,15 @@ taskSchema.statics.toResponse = task => {
   const { id, title, order, description, userId, boardId, columnId } = task;
   return { id, title, order, description, userId, boardId, columnId };
 };
+
+// taskSchema.methods.pushToBoard = async function() {
+//   const board = await Board.findById(this.boardId);
+//   const { id: _id, title, order } = this;
+
+//   board.columns.push({ id: _id, title, order });
+
+//   await board.save();
+//   return this;
+// };
 
 module.exports = model('Task', taskSchema);

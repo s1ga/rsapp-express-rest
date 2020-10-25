@@ -1,6 +1,9 @@
 const router = require('express').Router();
 const User = require('./user.model');
 const userService = require('./user.service');
+const { validationUser } = require('../../utils/validator');
+const { validationResult } = require('express-validator');
+const SERVER_ERROR = require('../../utils/errorsHandler');
 
 router.get('/', async (req, res, next) => {
   try {
@@ -22,7 +25,15 @@ router.get('/:id', async (req, res, next) => {
   }
 });
 
-router.post('/', async (req, res, next) => {
+router.post('/', validationUser, async (req, res, next) => {
+  const errors = validationResult(req);
+
+  if (!errors.isEmpty()) {
+    return next(
+      new SERVER_ERROR({ status: 422, message: errors.array()[0].msg })
+    );
+  }
+
   try {
     const user = await userService.create(req.body);
 
@@ -32,7 +43,15 @@ router.post('/', async (req, res, next) => {
   }
 });
 
-router.put('/:id', async (req, res, next) => {
+router.put('/:id', validationUser, async (req, res, next) => {
+  const errors = validationResult(req);
+
+  if (!errors.isEmpty()) {
+    return next(
+      new SERVER_ERROR({ status: 422, message: errors.array()[0].msg })
+    );
+  }
+
   try {
     const user = await userService.update(req.params.id, req.body);
 

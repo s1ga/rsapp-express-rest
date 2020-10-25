@@ -20,6 +20,12 @@ const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
 // using json
 app.use(express.json());
 
+app.use(
+  express.urlencoded({
+    extended: true
+  })
+);
+
 // using helmet
 app.use(helmet());
 

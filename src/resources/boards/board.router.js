@@ -1,6 +1,9 @@
 const router = require('express').Router();
 const boardService = require('./board.service');
+const { validationBoard } = require('../../utils/validator');
+const { validationResult } = require('express-validator');
 const Board = require('./board.model');
+const SERVER_ERROR = require('../../utils/errorsHandler');
 
 router.get('/', async (req, res, next) => {
   try {
@@ -22,7 +25,13 @@ router.get('/:id', async (req, res, next) => {
   }
 });
 
-router.post('/', async (req, res, next) => {
+router.post('/', validationBoard, async (req, res, next) => {
+  const errors = validationResult({ req });
+
+  if (!errors.isEmpty()) {
+    return new SERVER_ERROR({ status: 422, message: errors.array()[0].msg });
+  }
+
   try {
     const board = await boardService.create(req.body);
 
@@ -32,7 +41,7 @@ router.post('/', async (req, res, next) => {
   }
 });
 
-router.put('/:id', async (req, res, next) => {
+router.put('/:id', validationBoard, async (req, res, next) => {
   try {
     const board = await boardService.update(req.params.id, req.body);
 
