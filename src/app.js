@@ -49,6 +49,5 @@ app.use(handler);
 module.exports = app;
 
 /*
-  1. _id to id on columns
-  2. update response
+  1. update response
 */

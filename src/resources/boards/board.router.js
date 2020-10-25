@@ -2,14 +2,13 @@ const router = require('express').Router();
 const boardService = require('./board.service');
 const { validationBoard } = require('../../utils/validator');
 const { validationResult } = require('express-validator');
-const Board = require('./board.model');
 const SERVER_ERROR = require('../../utils/errorsHandler');
 
 router.get('/', async (req, res, next) => {
   try {
     const boards = await boardService.getAll();
 
-    res.status(200).json(boards.map(i => Board.toResponse(i)));
+    res.status(200).json(boards.map(i => i.toResponse()));
   } catch (e) {
     return next(e);
   }
@@ -23,7 +22,7 @@ router.get('/:id', async (req, res, next) => {
       throw new SERVER_ERROR({ status: 404, message: 'Board not found' });
     }
 
-    res.status(200).json(Board.toResponse(board));
+    res.status(200).json(board.toResponse());
   } catch (e) {
     return next(e);
   }
@@ -45,7 +44,7 @@ router.post('/', validationBoard, async (req, res, next) => {
       throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
     }
 
-    res.status(200).json(Board.toResponse(board));
+    res.status(200).json(board.toResponse());
   } catch (e) {
     return next(e);
   }
@@ -67,7 +66,7 @@ router.put('/:id', validationBoard, async (req, res, next) => {
       throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
     }
 
-    res.status(200).json(Board.toResponse(board));
+    res.status(200).json(board.toResponse());
   } catch (e) {
     return next(e);
   }

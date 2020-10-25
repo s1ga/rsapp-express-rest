@@ -1045,3 +1045,4 @@ SyntaxError: Unexpected token 'delete'
     at Module._compile (internal/modules/cjs/loader.js:1015:30)
 2020-10-25 16:09:05 +0000 — Assignment to constant variable.
 2020-10-25 16:09:19 +0000 — resBoard is not defined
+2020-10-25 16:16:44 +0000 — Bad request

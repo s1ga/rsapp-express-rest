@@ -29,9 +29,9 @@ const taskSchema = new Schema({
   }
 });
 
-taskSchema.statics.toResponse = task => {
-  const { id, title, order, description, userId, boardId, columnId } = task;
+taskSchema.method('toResponse', function toResponse() {
+  const { id, title, order, description, userId, boardId, columnId } = this;
   return { id, title, order, description, userId, boardId, columnId };
-};
+});
 
 module.exports = model('Task', taskSchema);

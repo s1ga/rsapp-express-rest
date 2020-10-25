@@ -20,9 +20,9 @@ const userSchema = new Schema({
   }
 });
 
-userSchema.statics.toResponse = user => {
-  const { id, name, login } = user;
+userSchema.method('toResponse', function toResponse() {
+  const { id, name, login } = this;
   return { id, name, login };
-};
+});
 
 module.exports = model('User', userSchema);

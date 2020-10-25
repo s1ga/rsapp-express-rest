@@ -22,9 +22,9 @@ const boardSchema = new Schema({
   ]
 });
 
-boardSchema.statics.toResponse = board => {
-  const { id, title } = board;
-  let { columns } = board;
+boardSchema.method('toResponse', function toResponse() {
+  const { id, title } = this;
+  let { columns } = this;
   columns = columns.toObject();
 
   for (let i = 0; i < columns.length; i++) {
@@ -33,6 +33,6 @@ boardSchema.statics.toResponse = board => {
   }
 
   return { id, title, columns };
-};
+});
 
 module.exports = model('Board', boardSchema);

@@ -1,6 +1,5 @@
 const router = require('express').Router({ mergeParams: true });
 const taskService = require('./task.service');
-const Task = require('./task.model');
 const SERVER_ERROR = require('../../utils/errorsHandler');
 const { validationResult } = require('express-validator');
 const { validationTask } = require('../../utils/validator');
@@ -9,7 +8,7 @@ router.get('/', async (req, res, next) => {
   try {
     const tasks = await taskService.getAll(req.params.boardid);
 
-    res.status(200).json(tasks.map(i => Task.toResponse(i)));
+    res.status(200).json(tasks.map(i => i.toResponse()));
   } catch (e) {
     return next(e);
   }
@@ -23,7 +22,7 @@ router.get('/:id', async (req, res, next) => {
       throw new SERVER_ERROR({ status: 404, message: 'Task not found' });
     }
 
-    res.status(200).json(Task.toResponse(task));
+    res.status(200).json(task.toResponse());
   } catch (e) {
     return next(e);
   }
@@ -45,7 +44,7 @@ router.post('/', validationTask, async (req, res, next) => {
       throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
     }
 
-    res.status(200).json(Task.toResponse(task));
+    res.status(200).json(task.toResponse());
   } catch (e) {
     return next(e);
   }
@@ -71,7 +70,7 @@ router.put('/:id', validationTask, async (req, res, next) => {
       throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
     }
 
-    res.status(200).json(Task.toResponse(task));
+    res.status(200).json(task.toResponse());
   } catch (e) {
     return next(e);
   }

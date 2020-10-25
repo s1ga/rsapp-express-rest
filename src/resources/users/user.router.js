@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const User = require('./user.model');
 const userService = require('./user.service');
 const { validationUser } = require('../../utils/validator');
 const { validationResult } = require('express-validator');
@@ -9,7 +8,7 @@ router.get('/', async (req, res, next) => {
   try {
     const users = await userService.getAll();
 
-    res.status(200).json(users.map(i => User.toResponse(i)));
+    res.status(200).json(users.map(i => i.toResponse()));
   } catch (e) {
     return next(e);
   }
@@ -23,7 +22,7 @@ router.get('/:id', async (req, res, next) => {
       throw new SERVER_ERROR({ status: 404, message: 'User not found' });
     }
 
-    res.status(200).json(User.toResponse(user));
+    res.status(200).json(user.toResponse());
   } catch (e) {
     return next(e);
   }
@@ -45,7 +44,7 @@ router.post('/', validationUser, async (req, res, next) => {
       throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
     }
 
-    res.status(200).json(User.toResponse(user));
+    res.status(200).json(user.toResponse());
   } catch (e) {
     return next(e);
   }
@@ -67,7 +66,7 @@ router.put('/:id', validationUser, async (req, res, next) => {
       throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
     }
 
-    res.status(200).json(User.toResponse(user));
+    res.status(200).json(user.toResponse());
   } catch (e) {
     return next(e);
   }
