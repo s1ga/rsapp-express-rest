@@ -20,12 +20,6 @@ const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
 // using json
 app.use(express.json());
 
-app.use(
-  express.urlencoded({
-    extended: true
-  })
-);
-
 // using helmet
 app.use(helmet());
 
@@ -56,7 +50,7 @@ module.exports = app;
 
 /*
   1. _id to id on columns
-  2. check validation in boards and tasks
+  2. check validation in boards
   3. mongoose errors
   4. clean code
 */

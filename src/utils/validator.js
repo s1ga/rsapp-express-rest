@@ -19,10 +19,10 @@ exports.validationBoard = [
   body('title')
     .isLength(3)
     .withMessage('Board title should be minimum 3 character'),
-  body('columns.title')
+  body('columns.*.title')
     .isLength(3)
     .withMessage('Column title should be minimum 3 character'),
-  body('columns.order')
+  body('columns.*.order')
     .isNumeric()
     .withMessage('Order should be a number')
 ];
@@ -33,11 +33,5 @@ exports.validationTask = [
     .withMessage('Title should be minimum 3 character'),
   body('order')
     .isNumeric()
-    .withMessage('Order should be a number'),
-  body('userId')
-    .isLength(1)
-    .withMessage('User Id should be exists'),
-  body('columnId')
-    .isLength(1)
-    .withMessage('Column Id should be exists')
+    .withMessage('Order should be a number')
 ];
