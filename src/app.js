@@ -50,6 +50,6 @@ module.exports = app;
 
 /*
   1. _id to id on columns
-  2. mongoose errors
-  3. clean code
+  2. update response
+  3. change logic of deleteing and unassigneening
 */

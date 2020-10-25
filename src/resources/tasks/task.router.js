@@ -19,6 +19,10 @@ router.get('/:id', async (req, res, next) => {
   try {
     const task = await taskService.getById(req.params.boardid, req.params.id);
 
+    if (!task) {
+      throw new SERVER_ERROR({ status: 404, message: 'Task not found' });
+    }
+
     res.status(200).json(Task.toResponse(task));
   } catch (e) {
     return next(e);
@@ -36,6 +40,10 @@ router.post('/', validationTask, async (req, res, next) => {
 
   try {
     const task = await taskService.create(req.params.boardid, req.body);
+
+    if (!task) {
+      throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
+    }
 
     res.status(200).json(Task.toResponse(task));
   } catch (e) {
@@ -59,6 +67,10 @@ router.put('/:id', validationTask, async (req, res, next) => {
       req.body
     );
 
+    if (!task) {
+      throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
+    }
+
     res.status(200).json(Task.toResponse(task));
   } catch (e) {
     return next(e);
@@ -67,7 +79,14 @@ router.put('/:id', validationTask, async (req, res, next) => {
 
 router.delete('/:id', async (req, res, next) => {
   try {
-    await taskService.deleteById(req.params.boardid, req.params.id);
+    const task = await taskService.deleteById(
+      req.params.boardid,
+      req.params.id
+    );
+
+    if (!task) {
+      throw new SERVER_ERROR({ status: 404, message: 'Task not found' });
+    }
 
     res.status(204).send('The task has been deleted');
   } catch (e) {

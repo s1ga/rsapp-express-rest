@@ -1,75 +1,45 @@
 const Task = require('./task.model');
-const SERVER_ERROR = require('../../utils/errorsHandler');
 
 const getAll = async boardId => {
-  const tasks = await Task.find({ boardId });
-
-  return tasks;
+  return Task.find({ boardId });
 };
 
 const getById = async (boardId, id) => {
-  const task = await Task.findOne({
-    _id: id,
-    boardId
-  });
-
-  if (!task) {
-    throw new SERVER_ERROR({ status: 404, message: 'Task not found' });
-  }
-
-  return task;
+  return Task.findOne({ _id: id, boardId });
 };
 
 const create = async (boardId, body) => {
+  // const { title, order, description, userId, columnId } = body;
+  // const task = new Task({
+  //   title,
+  //   order,
+  //   description,
+  //   boardId,
+  //   userId,
+  //   columnId
+  // });
+
+  // if (!task) {
+  //   throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
+  // }
+
+  // await task.save();
+  // return task;
   const { title, order, description, userId, columnId } = body;
-  const task = new Task({
-    title,
-    order,
-    description,
-    boardId,
-    userId,
-    columnId
-  });
-
-  if (!task) {
-    throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
-  }
-
-  await task.save();
-  return task;
+  return Task.create({ title, order, description, userId, boardId, columnId });
 };
 
-const update = async (boardId, id, body) => {
-  let task = await Task.findOneAndUpdate(
-    {
-      _id: id,
-      boardId
-    },
-    body
+const update = async (paramBoardId, id, body) => {
+  const { title, order, description, userId, boardId, columnId } = body;
+
+  return Task.findOneAndUpdate(
+    { _id: id, boardId: paramBoardId },
+    { title, order, description, userId, boardId, columnId }
   );
-
-  task = await Task.findById(id);
-  if (!task) {
-    throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
-  }
-
-  return task;
 };
 
 const deleteById = async (boardId, id) => {
-  const task = await Task.findOne({
-    _id: id,
-    boardId
-  });
-
-  if (!task) {
-    throw new SERVER_ERROR({ status: 404, message: 'Task not found' });
-  }
-
-  return Task.deleteOne({
-    _id: id,
-    boardId
-  });
+  return Task.findOneAndDelete({ _id: id, boardId });
 };
 
 const deleteByBoardId = async boardId => {

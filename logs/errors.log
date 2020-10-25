@@ -713,3 +713,61 @@ SyntaxError: Unexpected end of input
 2020-10-25 14:51:18 +0000 — Task not found
 2020-10-25 14:51:18 +0000 — Task not found
 2020-10-25 14:51:18 +0000 — Task not found
+2020-10-25 14:58:02 +0000 — task is not defined
+2020-10-25 14:58:04 +0000 — task is not defined
+2020-10-25 14:59:26 +0000 — Task not found
+2020-10-25 14:59:40 +0000 — task is not defined
+2020-10-25 15:00:11 +0000 — Task not found
+2020-10-25 15:00:34 +0000 — Task not found
+2020-10-25 15:04:51 +0000 — Bad request
+2020-10-25 15:05:48 +0000 — Task not found
+2020-10-25 15:08:37 +0000 — uncaughtException: Unexpected identifier
+C:\github\rsapp-express-rest\src\resources\tasks\task.db.repository.js:29
+  return Task.create({ title, order, description, userId, boardId columnId });
+                                                                  ^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\tasks\task.service.js:1:18)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\boards\board.db.repository.js:2:21)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-25 15:08:37 +0000 — uncaughtException: Unexpected identifier
+C:\github\rsapp-express-rest\src\resources\tasks\task.db.repository.js:29
+  return Task.create({ title, order, description, userId, boardId columnId });
+                                                                  ^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\tasks\task.service.js:1:18)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\boards\board.db.repository.js:2:21)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-25 15:09:22 +0000 — Task not found
+2020-10-25 15:10:54 +0000 — Task not found
+2020-10-25 15:11:02 +0000 — Bad request
+2020-10-25 15:11:47 +0000 — Task not found
+2020-10-25 15:14:07 +0000 — Task not found
+2020-10-25 15:14:41 +0000 — Task not found
