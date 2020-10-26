@@ -115,7 +115,7 @@ const reqLogger = morgan(
 
 // server errors
 const handler = (err, req, res, next) => {
-  console.error(err);
+  logger.error(err.message);
   if (err instanceof serverError) {
     res.status(err.serverStatus).send(err.message);
   } else {
