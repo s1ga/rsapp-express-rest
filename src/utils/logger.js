@@ -15,25 +15,31 @@ const loggerFiles = {
   errorFile: {
     level: 'error',
     filename: path.resolve(__dirname, '../../', 'logs', 'errors.log'),
+    handleExceptions: true,
+    handleRejections: true,
     json: true,
-    maxFiles: 1,
+    maxFiles: 5,
     maxsize: 5242880
   },
   infoFile: {
     level: 'info',
     filename: path.resolve(__dirname, '../../', 'logs', 'info.log'),
+    handleExceptions: true,
+    handleRejections: true,
     json: true,
-    maxFiles: 1,
+    maxFiles: 5,
     maxsize: 5242880
   },
   reqFile: {
     level: 'requests',
     filename: path.resolve(__dirname, '../../', 'logs', 'requests.log'),
     json: true,
-    maxFiles: 1,
+    maxFiles: 5,
     maxsize: 5242880
   },
   console: {
+    handleExceptions: true,
+    handleRejections: true,
     colorize: true
   }
 };
@@ -49,7 +55,7 @@ const customLogger = winston.createLogger({
     })
   ),
   transports: [new winston.transports.File(loggerFiles.reqFile)],
-  exitOnError: false
+  exitOnError: true
 });
 
 // create winston logger
@@ -67,7 +73,8 @@ const logger = winston.createLogger({
     new winston.transports.File(loggerFiles.errorFile),
     new winston.transports.Console(loggerFiles.console)
   ],
-  exitOnError: false
+  exceptionHandlers: [new winston.transports.File(loggerFiles.errorFile)],
+  exitOnError: true
 });
 
 // winston logger stream for morgan
@@ -97,14 +104,14 @@ const reqLogger = morgan(
 );
 
 // uncaught and promise errors
-process
-  .on('uncaughtException', err => {
-    logger.error(`Uncaught ${err.stack}`);
-    process.exitCode = 1;
-  })
-  .on('unhandledRejection', promise => {
-    logger.error(`Promise ${promise.stack}`);
-  });
+// process
+//   .on('uncaughtException', err => {
+//     logger.error(`Uncaught ${err.stack}`);
+//     process.exitCode = 1;
+//   })
+//   .on('unhandledRejection', promise => {
+//     logger.error(`Promise ${promise.stack}`);
+//   });
 
 // server errors
 const handler = (err, req, res, next) => {

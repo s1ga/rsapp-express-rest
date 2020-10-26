@@ -1,4 +1,4 @@
-const DB = require('../../common/inMemoryDB');
+const DB = require('../../common/clientDb');
 const Task = require('./task.model');
 let dbTasks = DB.Tasks;
 const SERVER_ERROR = require('../../utils/errorsHandler');
