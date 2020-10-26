@@ -10,13 +10,11 @@ const getById = id => {
 };
 
 const create = body => {
-  const { name, login, password } = body;
-  return User.create({ name, login, password });
+  return User.create(body);
 };
 
 const update = (id, body) => {
-  const { name, login, password } = body;
-  return User.findByIdAndUpdate(id, { name, login, password }, { new: true });
+  return User.findByIdAndUpdate(id, body, { new: true });
 };
 
 const deleteById = id => {

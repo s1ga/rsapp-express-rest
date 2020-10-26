@@ -3,6 +3,7 @@ const userService = require('./user.service');
 const { validationUser } = require('../../utils/validator');
 const { validationResult } = require('express-validator');
 const SERVER_ERROR = require('../../utils/errorsHandler');
+const bcrypt = require('bcrypt');
 
 router.get('/', async (req, res, next) => {
   try {
@@ -38,7 +39,13 @@ router.post('/', validationUser, async (req, res, next) => {
   }
 
   try {
-    const user = await userService.create(req.body);
+    const { name, login, password } = req.body;
+    const hashPassword = await bcrypt.hash(password, 11);
+    const user = await userService.create({
+      name,
+      login,
+      password: hashPassword
+    });
 
     if (!user) {
       throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
@@ -60,7 +67,14 @@ router.put('/:id', validationUser, async (req, res, next) => {
   }
 
   try {
-    const user = await userService.update(req.params.id, req.body);
+    const { name, login, password } = req.body;
+    const hashPassword = await bcrypt.hash(password, 11);
+
+    const user = await userService.update(req.params.id, {
+      name,
+      login,
+      password: hashPassword
+    });
 
     if (!user) {
       throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
