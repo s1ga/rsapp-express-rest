@@ -10,6 +10,7 @@ const { reqLogger, handler } = require('./utils/logger');
 const userRouter = require('./resources/users/user.router');
 const boardRouter = require('./resources/boards/board.router');
 const taskRouter = require('./resources/tasks/task.router');
+const loginRouter = require('./resources/login/login.router');
 
 // create express app
 const app = express();
@@ -42,6 +43,7 @@ app.use('/', (req, res, next) => {
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 boardRouter.use('/:boardid/tasks', taskRouter);
+app.use('/login', loginRouter);
 
 // unhandler errors
 app.use(handler);

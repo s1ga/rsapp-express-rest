@@ -904,3 +904,110 @@ MongoError: Authentication failed.
 2020-10-27 19:53:28 +0000 — App is running on http://localhost:4000
 2020-10-27 19:53:38 +0000 — MongoDB connected
 2020-10-27 19:53:38 +0000 — App is running on http://localhost:4000
+2020-10-27 19:54:22 +0000 — MongoDB connected
+2020-10-27 19:54:22 +0000 — App is running on http://localhost:4000
+2020-10-27 19:57:49 +0000 — MongoDB connected
+2020-10-27 19:57:49 +0000 — App is running on http://localhost:4000
+2020-10-27 19:58:57 +0000 — MongoDB connected
+2020-10-27 19:58:57 +0000 — App is running on http://localhost:4000
+2020-10-27 19:59:26 +0000 — uncaughtException: app.user is not a function
+TypeError: app.user is not a function
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:46:5)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-27 19:59:28 +0000 — uncaughtException: app.user is not a function
+TypeError: app.user is not a function
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:46:5)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+2020-10-27 19:59:33 +0000 — uncaughtException: Router.use() requires a middleware function but got a Object
+TypeError: Router.use() requires a middleware function but got a Object
+    at Function.use (C:\github\rsapp-express-rest\node_modules\express\lib\router\index.js:458:13)
+    at Function.<anonymous> (C:\github\rsapp-express-rest\node_modules\express\lib\application.js:220:21)
+    at Array.forEach (<anonymous>)
+    at Function.use (C:\github\rsapp-express-rest\node_modules\express\lib\application.js:217:7)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:46:5)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\server.js:2:13)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+2020-10-27 19:59:57 +0000 — MongoDB connected
+2020-10-27 19:59:57 +0000 — App is running on http://localhost:4000
+2020-10-27 20:00:22 +0000 — 27/Oct/2020:20:00:22 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"string","password":"******"} 2.273 ms
+
+2020-10-27 20:02:32 +0000 — MongoDB connected
+2020-10-27 20:02:32 +0000 — App is running on http://localhost:4000
+2020-10-27 20:02:36 +0000 — loginService.findUser is not a function
+2020-10-27 20:02:36 +0000 — 27/Oct/2020:20:02:36 +0000 POST 500 /login — QUERY:{} — BODY:{"login":"string","password":"******"} 7.655 ms
+
+2020-10-27 20:04:22 +0000 — MongoDB connected
+2020-10-27 20:04:22 +0000 — App is running on http://localhost:4000
+2020-10-27 20:05:46 +0000 — MongoDB connected
+2020-10-27 20:05:46 +0000 — App is running on http://localhost:4000
+2020-10-27 20:05:48 +0000 — Incorrect login or password
+2020-10-27 20:05:48 +0000 — 27/Oct/2020:20:05:48 +0000 POST 403 /login — QUERY:{} — BODY:{"login":"string","password":"******"} 160.186 ms
+
+2020-10-27 20:05:58 +0000 — 27/Oct/2020:20:05:58 +0000 GET 200 /users — QUERY:{} — BODY:{} 120.605 ms
+
+2020-10-27 20:06:11 +0000 — 27/Oct/2020:20:06:11 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"siga","login":"string","password":"******"} 514.796 ms
+
+2020-10-27 20:06:18 +0000 — 27/Oct/2020:20:06:18 +0000 GET 200 /users — QUERY:{} — BODY:{} 71.260 ms
+
+2020-10-27 20:06:25 +0000 — 27/Oct/2020:20:06:25 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"string","password":"******"} 160.402 ms
+
+2020-10-27 20:10:47 +0000 — MongoDB connected
+2020-10-27 20:10:47 +0000 — App is running on http://localhost:4000
+2020-10-27 20:13:24 +0000 — MongoDB connected
+2020-10-27 20:13:24 +0000 — App is running on http://localhost:4000
+2020-10-27 20:14:22 +0000 — MongoDB connected
+2020-10-27 20:14:22 +0000 — App is running on http://localhost:4000
+2020-10-27 20:14:35 +0000 — MongoDB connected
+2020-10-27 20:14:35 +0000 — App is running on http://localhost:4000
+2020-10-27 20:14:38 +0000 — MongoDB connected
+2020-10-27 20:14:38 +0000 — App is running on http://localhost:4000
+2020-10-27 20:15:04 +0000 — 27/Oct/2020:20:15:04 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"siga","login":"s1ga","password":"********"} 528.769 ms
+
+2020-10-27 20:15:11 +0000 — 27/Oct/2020:20:15:11 +0000 GET 200 /users — QUERY:{} — BODY:{} 270.361 ms
+
+2020-10-27 20:15:27 +0000 — user is not defined
+2020-10-27 20:15:27 +0000 — Incorrect login or password
+2020-10-27 20:15:27 +0000 — 27/Oct/2020:20:15:27 +0000 POST 403 /login — QUERY:{} — BODY:{"login":"s1ga","password":"********"} 168.915 ms
+
+2020-10-27 20:16:07 +0000 — MongoDB connected
+2020-10-27 20:16:07 +0000 — App is running on http://localhost:4000
+2020-10-27 20:16:10 +0000 — Incorrect login or password
+2020-10-27 20:16:10 +0000 — 27/Oct/2020:20:16:10 +0000 POST 403 /login — QUERY:{} — BODY:{"login":"s1ga","password":"********"} 185.272 ms
+
+2020-10-27 20:16:18 +0000 — 27/Oct/2020:20:16:18 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"siga","login":"s1ga","password":"********"} 502.446 ms
+
+2020-10-27 20:16:40 +0000 — 27/Oct/2020:20:16:40 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"s1ga","password":"********"} 497.213 ms
+

@@ -790,3 +790,29 @@
 
 2020-10-27 19:37:58 +0000 — 27/Oct/2020:19:37:58 +0000 DELETE 204 /boards/55e92853-d779-4b38-90df-91591e7d0d38 — QUERY:{} — BODY:{} 61.041 ms
 
+2020-10-27 20:00:22 +0000 — 27/Oct/2020:20:00:22 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"string","password":"******"} 2.273 ms
+
+2020-10-27 20:02:36 +0000 — 27/Oct/2020:20:02:36 +0000 POST 500 /login — QUERY:{} — BODY:{"login":"string","password":"******"} 7.655 ms
+
+2020-10-27 20:05:48 +0000 — 27/Oct/2020:20:05:48 +0000 POST 403 /login — QUERY:{} — BODY:{"login":"string","password":"******"} 160.186 ms
+
+2020-10-27 20:05:58 +0000 — 27/Oct/2020:20:05:58 +0000 GET 200 /users — QUERY:{} — BODY:{} 120.605 ms
+
+2020-10-27 20:06:11 +0000 — 27/Oct/2020:20:06:11 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"siga","login":"string","password":"******"} 514.796 ms
+
+2020-10-27 20:06:18 +0000 — 27/Oct/2020:20:06:18 +0000 GET 200 /users — QUERY:{} — BODY:{} 71.260 ms
+
+2020-10-27 20:06:25 +0000 — 27/Oct/2020:20:06:25 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"string","password":"******"} 160.402 ms
+
+2020-10-27 20:15:04 +0000 — 27/Oct/2020:20:15:04 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"siga","login":"s1ga","password":"********"} 528.769 ms
+
+2020-10-27 20:15:11 +0000 — 27/Oct/2020:20:15:11 +0000 GET 200 /users — QUERY:{} — BODY:{} 270.361 ms
+
+2020-10-27 20:15:27 +0000 — 27/Oct/2020:20:15:27 +0000 POST 403 /login — QUERY:{} — BODY:{"login":"s1ga","password":"********"} 168.915 ms
+
+2020-10-27 20:16:10 +0000 — 27/Oct/2020:20:16:10 +0000 POST 403 /login — QUERY:{} — BODY:{"login":"s1ga","password":"********"} 185.272 ms
+
+2020-10-27 20:16:18 +0000 — 27/Oct/2020:20:16:18 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"siga","login":"s1ga","password":"********"} 502.446 ms
+
+2020-10-27 20:16:40 +0000 — 27/Oct/2020:20:16:40 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"s1ga","password":"********"} 497.213 ms
+
