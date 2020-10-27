@@ -49,5 +49,5 @@ app.use(handler);
 module.exports = app;
 
 /*
-  1. Отправлять в репозиторий уже выделенные объекты из req.body
+  1.
 */
