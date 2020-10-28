@@ -1,6 +1,8 @@
 const bcrypt = require('bcrypt');
 const User = require('../users/user.model');
 const { logger } = require('../../utils/logger');
+const jwt = require('jsonwebtoken');
+const { JWT_SECRET_KEY } = require('../../common/config');
 
 const findUser = async (login, password) => {
   try {
@@ -19,4 +21,16 @@ const findUser = async (login, password) => {
   }
 };
 
-module.exports = { findUser };
+const getToken = async user => {
+  try {
+    const { id, login } = user;
+    const token = jwt.sign({ id, login }, JWT_SECRET_KEY, {
+      expiresIn: '10min'
+    });
+    return token;
+  } catch (e) {
+    logger.error(e);
+  }
+};
+
+module.exports = { findUser, getToken };

@@ -188,3 +188,143 @@ TypeError: Router.use() requires a middleware function but got a Object
 2020-10-27 20:15:27 +0000 — user is not defined
 2020-10-27 20:15:27 +0000 — Incorrect login or password
 2020-10-27 20:16:10 +0000 — Incorrect login or password
+2020-10-27 20:20:09 +0000 — Incorrect login or password
+2020-10-27 20:20:09 +0000 — Incorrect login or password
+2020-10-27 20:20:09 +0000 — Incorrect login or password
+2020-10-27 20:20:09 +0000 — Task not found
+2020-10-27 20:20:09 +0000 — User not found
+2020-10-27 20:20:09 +0000 — Board not found
+2020-10-27 20:20:10 +0000 — Bad request
+2020-10-27 20:20:10 +0000 — Bad request
+2020-10-27 20:20:10 +0000 — Board not found
+2020-10-27 20:20:10 +0000 — Task not found
+2020-10-27 20:20:10 +0000 — Bad request
+2020-10-27 20:20:10 +0000 — User not found
+2020-10-27 20:20:10 +0000 — Board not found
+2020-10-27 20:20:10 +0000 — Task not found
+2020-10-27 20:20:11 +0000 — Task not found
+2020-10-27 20:20:11 +0000 — Task not found
+2020-10-27 20:20:11 +0000 — Task not found
+2020-10-27 20:20:11 +0000 — Task not found
+2020-10-27 20:20:11 +0000 — Task not found
+2020-10-28 08:39:45 +0000 — uncaughtException: Unexpected token '='
+C:\github\rsapp-express-rest\src\resources\login\login.service.js:26
+        const = { id, login } = user;
+              ^
+
+SyntaxError: Unexpected token '='
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\login\login.router.js:2:22)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-28 08:39:45 +0000 — uncaughtException: Unexpected token '='
+C:\github\rsapp-express-rest\src\resources\login\login.service.js:26
+        const = { id, login } = user;
+              ^
+
+SyntaxError: Unexpected token '='
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\login\login.router.js:2:22)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:13:21)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-10-28 08:39:52 +0000 — uncaughtException: Cannot find module './config'
+Require stack:
+- C:\github\rsapp-express-rest\src\resources\login\login.service.js
+- C:\github\rsapp-express-rest\src\resources\login\login.router.js
+- C:\github\rsapp-express-rest\src\app.js
+- C:\github\rsapp-express-rest\src\server.js
+Error: Cannot find module './config'
+Require stack:
+- C:\github\rsapp-express-rest\src\resources\login\login.service.js
+- C:\github\rsapp-express-rest\src\resources\login\login.router.js
+- C:\github\rsapp-express-rest\src\app.js
+- C:\github\rsapp-express-rest\src\server.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\login\login.service.js:5:28)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\login\login.router.js:2:22)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+2020-10-28 08:39:52 +0000 — uncaughtException: Cannot find module './config'
+Require stack:
+- C:\github\rsapp-express-rest\src\resources\login\login.service.js
+- C:\github\rsapp-express-rest\src\resources\login\login.router.js
+- C:\github\rsapp-express-rest\src\app.js
+- C:\github\rsapp-express-rest\src\server.js
+Error: Cannot find module './config'
+Require stack:
+- C:\github\rsapp-express-rest\src\resources\login\login.service.js
+- C:\github\rsapp-express-rest\src\resources\login\login.router.js
+- C:\github\rsapp-express-rest\src\app.js
+- C:\github\rsapp-express-rest\src\server.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:831:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:687:27)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\login\login.service.js:5:28)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\login\login.router.js:2:22)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+2020-10-28 08:41:40 +0000 — Incorrect login or password
+2020-10-28 08:42:31 +0000 — Incorrect login or password
+2020-10-28 08:45:52 +0000 — Incorrect login or password
+2020-10-28 08:45:52 +0000 — User not found
+2020-10-28 08:45:52 +0000 — Incorrect login or password
+2020-10-28 08:45:52 +0000 — Incorrect login or password
+2020-10-28 08:45:52 +0000 — Task not found
+2020-10-28 08:45:52 +0000 — Board not found
+2020-10-28 08:45:52 +0000 — Bad request
+2020-10-28 08:45:52 +0000 — Bad request
+2020-10-28 08:45:52 +0000 — Task not found
+2020-10-28 08:45:52 +0000 — Board not found
+2020-10-28 08:45:52 +0000 — Bad request
+2020-10-28 08:45:52 +0000 — User not found
+2020-10-28 08:45:53 +0000 — Task not found
+2020-10-28 08:45:53 +0000 — Board not found
+2020-10-28 08:45:53 +0000 — Task not found
+2020-10-28 08:45:53 +0000 — Task not found
+2020-10-28 08:45:53 +0000 — Task not found
+2020-10-28 08:45:53 +0000 — Task not found
+2020-10-28 08:45:53 +0000 — Task not found

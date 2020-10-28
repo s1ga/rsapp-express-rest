@@ -13,7 +13,15 @@ router.post('/', async (req, res, next) => {
       });
     }
 
-    res.status(200).send(user);
+    const token = await loginService.getToken(user);
+    if (!token) {
+      throw new SERVER_ERROR({
+        status: 403,
+        message: 'Incorrect login or password'
+      });
+    }
+
+    res.status(200).json({ token });
   } catch (e) {
     return next(e);
   }
