@@ -255,3 +255,41 @@
 2020-10-26 13:26:46 +0000 — Task not found
 2020-10-26 13:26:46 +0000 — Task not found
 2020-10-26 13:26:48 +0000 — Task not found
+2020-10-28 17:52:53 +0000 — Connection error Authentication failed.
+2020-10-28 17:52:53 +0000 — unhandledRejection: Authentication failed.
+MongoError: Authentication failed.
+    at MessageStream.messageHandler (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:314:20)
+    at processIncomingData (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:403:12)
+    at writeOrBuffer (_stream_writable.js:387:5)
+    at MessageStream.Writable.write (_stream_writable.js:318:11)
+    at TLSSocket.ondata (_stream_readable.js:719:22)
+    at TLSSocket.emit (events.js:314:20)
+    at addChunk (_stream_readable.js:298:12)
+    at readableAddChunk (_stream_readable.js:273:9)
+    at TLSSocket.Readable.push (_stream_readable.js:214:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+2020-10-28 17:52:53 +0000 — unhandledRejection: Authentication failed.
+MongoError: Authentication failed.
+    at MessageStream.messageHandler (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\connection.js:268:20)
+    at MessageStream.emit (events.js:314:20)
+    at processIncomingData (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (C:\github\rsapp-express-rest\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:403:12)
+    at writeOrBuffer (_stream_writable.js:387:5)
+    at MessageStream.Writable.write (_stream_writable.js:318:11)
+    at TLSSocket.ondata (_stream_readable.js:719:22)
+    at TLSSocket.emit (events.js:314:20)
+    at addChunk (_stream_readable.js:298:12)
+    at readableAddChunk (_stream_readable.js:273:9)
+    at TLSSocket.Readable.push (_stream_readable.js:214:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23)
+2020-10-28 17:54:11 +0000 — Board not found
+2020-10-28 17:54:12 +0000 — Task not found
+2020-10-28 17:54:12 +0000 — Task not found
+2020-10-28 17:54:12 +0000 — Task not found
+2020-10-28 17:54:12 +0000 — Task not found
+2020-10-28 17:54:12 +0000 — Task not found
+2020-10-28 17:54:13 +0000 — Task not found
