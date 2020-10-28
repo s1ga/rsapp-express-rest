@@ -4,8 +4,9 @@ const { validationUser } = require('../../utils/validator');
 const { validationResult } = require('express-validator');
 const SERVER_ERROR = require('../../utils/errorsHandler');
 const bcrypt = require('bcrypt');
+const auth = require('../../utils/auth');
 
-router.get('/', async (req, res, next) => {
+router.get('/', auth, async (req, res, next) => {
   try {
     const users = await userService.getAll();
 
@@ -15,7 +16,7 @@ router.get('/', async (req, res, next) => {
   }
 });
 
-router.get('/:id', async (req, res, next) => {
+router.get('/:id', auth, async (req, res, next) => {
   try {
     const user = await userService.getById(req.params.id);
 
@@ -29,7 +30,7 @@ router.get('/:id', async (req, res, next) => {
   }
 });
 
-router.post('/', validationUser, async (req, res, next) => {
+router.post('/', auth, validationUser, async (req, res, next) => {
   const errors = validationResult(req);
 
   if (!errors.isEmpty()) {
@@ -57,7 +58,7 @@ router.post('/', validationUser, async (req, res, next) => {
   }
 });
 
-router.put('/:id', validationUser, async (req, res, next) => {
+router.put('/:id', auth, validationUser, async (req, res, next) => {
   const errors = validationResult(req);
 
   if (!errors.isEmpty()) {
@@ -86,7 +87,7 @@ router.put('/:id', validationUser, async (req, res, next) => {
   }
 });
 
-router.delete('/:id', async (req, res, next) => {
+router.delete('/:id', auth, async (req, res, next) => {
   try {
     const user = await userService.deleteById(req.params.id);
 

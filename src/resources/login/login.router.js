@@ -13,7 +13,7 @@ router.post('/', async (req, res, next) => {
       });
     }
 
-    const token = await loginService.getToken(user);
+    const token = loginService.getToken(user);
     if (!token) {
       throw new SERVER_ERROR({
         status: 403,

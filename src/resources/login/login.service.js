@@ -21,12 +21,13 @@ const findUser = async (login, password) => {
   }
 };
 
-const getToken = async user => {
+const getToken = user => {
   try {
     const { id, login } = user;
     const token = jwt.sign({ id, login }, JWT_SECRET_KEY, {
       expiresIn: '10min'
     });
+
     return token;
   } catch (e) {
     logger.error(e);

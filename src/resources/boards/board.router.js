@@ -3,8 +3,9 @@ const boardService = require('./board.service');
 const { validationBoard } = require('../../utils/validator');
 const { validationResult } = require('express-validator');
 const SERVER_ERROR = require('../../utils/errorsHandler');
+const auth = require('../../utils/auth');
 
-router.get('/', async (req, res, next) => {
+router.get('/', auth, async (req, res, next) => {
   try {
     const boards = await boardService.getAll();
 
@@ -14,7 +15,7 @@ router.get('/', async (req, res, next) => {
   }
 });
 
-router.get('/:id', async (req, res, next) => {
+router.get('/:id', auth, async (req, res, next) => {
   try {
     const board = await boardService.getById(req.params.id);
 
@@ -28,7 +29,7 @@ router.get('/:id', async (req, res, next) => {
   }
 });
 
-router.post('/', validationBoard, async (req, res, next) => {
+router.post('/', auth, validationBoard, async (req, res, next) => {
   const errors = validationResult(req);
 
   if (!errors.isEmpty()) {
@@ -50,7 +51,7 @@ router.post('/', validationBoard, async (req, res, next) => {
   }
 });
 
-router.put('/:id', validationBoard, async (req, res, next) => {
+router.put('/:id', auth, validationBoard, async (req, res, next) => {
   const errors = validationResult(req);
 
   if (!errors.isEmpty()) {
@@ -72,7 +73,7 @@ router.put('/:id', validationBoard, async (req, res, next) => {
   }
 });
 
-router.delete('/:id', async (req, res, next) => {
+router.delete('/:id', auth, async (req, res, next) => {
   try {
     const board = await boardService.deleteById(req.params.id);
 
