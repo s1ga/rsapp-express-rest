@@ -3,9 +3,8 @@ const taskService = require('./task.service');
 const SERVER_ERROR = require('../../utils/errorsHandler');
 const { validationResult } = require('express-validator');
 const { validationTask } = require('../../utils/validator');
-const auth = require('../../utils/auth');
 
-router.get('/', auth, async (req, res, next) => {
+router.get('/', async (req, res, next) => {
   try {
     const tasks = await taskService.getAll(req.params.boardid);
 
@@ -15,7 +14,7 @@ router.get('/', auth, async (req, res, next) => {
   }
 });
 
-router.get('/:id', auth, async (req, res, next) => {
+router.get('/:id', async (req, res, next) => {
   try {
     const task = await taskService.getById(req.params.boardid, req.params.id);
 
@@ -29,7 +28,7 @@ router.get('/:id', auth, async (req, res, next) => {
   }
 });
 
-router.post('/', auth, validationTask, async (req, res, next) => {
+router.post('/', validationTask, async (req, res, next) => {
   const errors = validationResult(req);
 
   if (!errors.isEmpty()) {
@@ -51,7 +50,7 @@ router.post('/', auth, validationTask, async (req, res, next) => {
   }
 });
 
-router.put('/:id', auth, validationTask, async (req, res, next) => {
+router.put('/:id', validationTask, async (req, res, next) => {
   const errors = validationResult(req);
 
   if (!errors.isEmpty()) {
@@ -77,7 +76,7 @@ router.put('/:id', auth, validationTask, async (req, res, next) => {
   }
 });
 
-router.delete('/:id', auth, async (req, res, next) => {
+router.delete('/:id', async (req, res, next) => {
   try {
     const task = await taskService.deleteById(
       req.params.boardid,

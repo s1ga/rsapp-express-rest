@@ -5,6 +5,7 @@ const path = require('path');
 const YAML = require('yamljs');
 const helmet = require('helmet');
 const { reqLogger, handler } = require('./utils/logger');
+const auth = require('./utils/auth');
 
 // require routes
 const userRouter = require('./resources/users/user.router');
@@ -40,10 +41,11 @@ app.use('/', (req, res, next) => {
 });
 
 // using routes
+app.use('/login', loginRouter);
+app.use(auth);
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 boardRouter.use('/:boardid/tasks', taskRouter);
-app.use('/login', loginRouter);
 
 // unhandler errors
 app.use(handler);
