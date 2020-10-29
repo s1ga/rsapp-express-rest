@@ -51,5 +51,6 @@ app.use(handler);
 module.exports = app;
 
 /*
-  1.
+  1. refactor code
+  2. crosschek points
 */
