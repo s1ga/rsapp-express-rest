@@ -12,17 +12,15 @@ const { MONGO_CONNECTION_STRING } = require('./config');
 //   Tasks: [new Task()]
 // };
 
-const adminUser = {
-  login: 'admin',
-  password: 'admin'
-};
-bcrypt.hash(adminUser.password, 11, (err, data) => {
-  if (err) {
-    logger.error(err);
-  }
+const createAdminUser = async () => {
+  try {
+    const password = await bcrypt.hash('admin', 11);
 
-  adminUser.password = data;
-});
+    User.create({ login: 'admin', password });
+  } catch (e) {
+    logger.error(e);
+  }
+};
 
 const connectToDB = cb => {
   mongoose.connect(MONGO_CONNECTION_STRING, {
@@ -37,7 +35,7 @@ const connectToDB = cb => {
   db.once('open', () => {
     logger.log('info', 'MongoDB connected');
     db.dropDatabase();
-    User.create(adminUser);
+    createAdminUser();
     cb();
   });
 };
