@@ -31,7 +31,7 @@ const connectToDB = cb => {
   mongoose.set('useCreateIndex', true);
 
   const db = mongoose.connection;
-  db.on('error', logger.error.bind(logger, 'Connection error'));
+  db.on('error', () => logger.error('Connection error'));
   db.once('open', () => {
     logger.log('info', 'MongoDB connected');
     db.dropDatabase();

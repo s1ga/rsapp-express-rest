@@ -1,7 +1,7 @@
 const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 const User = require('../users/user.model');
 const { logger } = require('../../utils/logger');
-const jwt = require('jsonwebtoken');
 const { JWT_SECRET_KEY } = require('../../common/config');
 
 const findUser = async (login, password) => {
@@ -11,8 +11,8 @@ const findUser = async (login, password) => {
       return null;
     }
 
-    const isSame = await bcrypt.compare(password, candidate.password);
-    if (!isSame) {
+    const areSame = await bcrypt.compare(password, candidate.password);
+    if (!areSame) {
       return null;
     }
     return candidate;

@@ -15,10 +15,7 @@ router.post('/', async (req, res, next) => {
 
     const token = loginService.getToken(user);
     if (!token) {
-      throw new SERVER_ERROR({
-        status: 403,
-        message: 'Incorrect login or password'
-      });
+      throw new Error();
     }
 
     res.status(200).json({ token });

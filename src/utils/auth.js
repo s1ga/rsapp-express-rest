@@ -16,11 +16,10 @@ module.exports = function auth(req, res, next) {
   jwt.verify(token, JWT_SECRET_KEY, err => {
     if (err) {
       throw new SERVER_ERROR({
-        status: 403,
+        status: 401,
         message: 'Access token is missing or invalid'
       });
-    } else {
-      return next();
     }
+    return next();
   });
 };
