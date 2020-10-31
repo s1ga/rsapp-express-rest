@@ -4,22 +4,28 @@ const SERVER_ERROR = require('../utils/errorsHandler');
 
 module.exports = function auth(req, res, next) {
   const authHeader = req.headers.authorization;
-
-  const token = authHeader && authHeader.split(' ')[1];
-  if (!token) {
+  if (!authHeader) {
     throw new SERVER_ERROR({
       status: 401,
       message: 'Access token is missing or invalid'
     });
   }
 
-  jwt.verify(token, JWT_SECRET_KEY, err => {
-    if (err) {
-      throw new SERVER_ERROR({
-        status: 401,
-        message: 'Access token is missing or invalid'
-      });
-    }
-    return next();
-  });
+  const [type, token] = authHeader.split(' ');
+  if (type === 'Bearer' && token) {
+    jwt.verify(token, JWT_SECRET_KEY, err => {
+      if (err) {
+        throw new SERVER_ERROR({
+          status: 401,
+          message: 'Access token is missing or invalid'
+        });
+      }
+      return next();
+    });
+  } else {
+    throw new SERVER_ERROR({
+      status: 401,
+      message: 'Access token is missing or invalid'
+    });
+  }
 };

@@ -54,5 +54,4 @@ module.exports = app;
 
 /*
   1. refactor code
-  2. crosschek points
 */

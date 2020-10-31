@@ -6573,3 +6573,888 @@ SyntaxError: missing ) after argument list
 2020-10-30 14:07:40 +0000 — App is running on http://localhost:4000
 2020-10-30 14:07:45 +0000 — MongoDB connected
 2020-10-30 14:07:45 +0000 — App is running on http://localhost:4000
+2020-10-30 14:08:27 +0000 — Access token is missing or invalid
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 GET 401 /users — QUERY:{} — BODY:{} 7.988 ms
+
+2020-10-30 14:08:27 +0000 — Access token is missing or invalid
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 GET 401 /boards — QUERY:{} — BODY:{} 5.674 ms
+
+2020-10-30 14:08:27 +0000 — Access token is missing or invalid
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 GET 401 /users/123 — QUERY:{} — BODY:{} 0.694 ms
+
+2020-10-30 14:08:27 +0000 — Access token is missing or invalid
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 GET 401 /boards/12345/tasks — QUERY:{} — BODY:{} 0.712 ms
+
+2020-10-30 14:08:27 +0000 — Access token is missing or invalid
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 GET 401 /boards/12345 — QUERY:{} — BODY:{} 4.043 ms
+
+2020-10-30 14:08:27 +0000 — Access token is missing or invalid
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 POST 401 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.915 ms
+
+2020-10-30 14:08:27 +0000 — Access token is missing or invalid
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 GET 401 /boards/12345/tasks/12345 — QUERY:{} — BODY:{} 0.862 ms
+
+2020-10-30 14:08:27 +0000 — Access token is missing or invalid
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 POST 401 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.649 ms
+
+2020-10-30 14:08:27 +0000 — Access token is missing or invalid
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 PUT 401 /users/12345 — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 4.830 ms
+
+2020-10-30 14:08:27 +0000 — Access token is missing or invalid
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 POST 401 /boards/12345/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 0.552 ms
+
+2020-10-30 14:08:27 +0000 — Access token is missing or invalid
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 PUT 401 /boards/12345 — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.530 ms
+
+2020-10-30 14:08:27 +0000 — Access token is missing or invalid
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 DELETE 401 /users/12345 — QUERY:{} — BODY:{} 0.936 ms
+
+2020-10-30 14:08:27 +0000 — Access token is missing or invalid
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 PUT 401 /boards/12345/tasks/12345 — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 4.160 ms
+
+2020-10-30 14:08:27 +0000 — Access token is missing or invalid
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 DELETE 401 /boards/12345 — QUERY:{} — BODY:{} 0.797 ms
+
+2020-10-30 14:08:27 +0000 — Access token is missing or invalid
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 DELETE 401 /boards/12345/tasks/12345 — QUERY:{} — BODY:{} 1.187 ms
+
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"admin","password":"*****"} 192.275 ms
+
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"admin","password":"*****"} 243.036 ms
+
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 84.137 ms
+
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"admin","password":"*****"} 296.742 ms
+
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 171.343 ms
+
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 POST 200 /boards/a3d75180-0f90-421f-9df2-394193ae6a82/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 144.247 ms
+
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 GET 200 /users — QUERY:{} — BODY:{} 188.190 ms
+
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 GET 200 /boards — QUERY:{} — BODY:{} 99.230 ms
+
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 GET 200 /boards/a3d75180-0f90-421f-9df2-394193ae6a82/tasks — QUERY:{} — BODY:{} 99.343 ms
+
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 GET 200 /boards — QUERY:{} — BODY:{} 54.231 ms
+
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 GET 200 /boards/a3d75180-0f90-421f-9df2-394193ae6a82/tasks — QUERY:{} — BODY:{} 57.910 ms
+
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 GET 200 /boards/a3d75180-0f90-421f-9df2-394193ae6a82 — QUERY:{} — BODY:{} 68.332 ms
+
+2020-10-30 14:08:27 +0000 — 30/Oct/2020:14:08:27 +0000 GET 200 /boards/a3d75180-0f90-421f-9df2-394193ae6a82/tasks/041f30ac-9b7c-4bc7-a2c8-5f422b64207c — QUERY:{} — BODY:{} 64.308 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 176.782 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 POST 200 /boards/a3d75180-0f90-421f-9df2-394193ae6a82/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 58.641 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 66.840 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 GET 200 /users/e53326b9-6a03-4e0d-914e-2aac0821762e — QUERY:{} — BODY:{} 58.346 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 DELETE 204 /boards/a3d75180-0f90-421f-9df2-394193ae6a82/tasks/c10de467-e109-4cf4-a9a0-422a12ec39eb — QUERY:{} — BODY:{} 59.633 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 DELETE 204 /boards/71b4435b-0a0e-4242-baf5-f982dbe0daf4 — QUERY:{} — BODY:{} 61.498 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 DELETE 204 /users/e53326b9-6a03-4e0d-914e-2aac0821762e — QUERY:{} — BODY:{} 54.605 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 POST 200 /boards/a3d75180-0f90-421f-9df2-394193ae6a82/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 58.886 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 60.685 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 PUT 200 /boards/a3d75180-0f90-421f-9df2-394193ae6a82/tasks/c2f453d3-be01-443e-a38a-7ce3ea59177b — QUERY:{} — BODY:{"id":"c2f453d3-be01-443e-a38a-7ce3ea59177b","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"a3d75180-0f90-421f-9df2-394193ae6a82","columnId":null} 61.218 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 PUT 200 /boards/5e09483a-e951-4223-858e-c24e96aea066 — QUERY:{} — BODY:{"id":"5e09483a-e951-4223-858e-c24e96aea066","title":"Autotest updated board","columns":[{"title":"Backlog","order":1,"_id":"01fe5256-5187-4088-adef-79e61dbb727d"},{"title":"Sprint","order":2,"_id":"862b0685-9199-4f07-b339-c160fdf0a705"}]} 59.294 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 GET 200 /boards/a3d75180-0f90-421f-9df2-394193ae6a82/tasks/c2f453d3-be01-443e-a38a-7ce3ea59177b — QUERY:{} — BODY:{} 57.916 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 GET 200 /boards/5e09483a-e951-4223-858e-c24e96aea066 — QUERY:{} — BODY:{} 49.885 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 176.523 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 GET 200 /boards/a3d75180-0f90-421f-9df2-394193ae6a82/tasks/041f30ac-9b7c-4bc7-a2c8-5f422b64207c — QUERY:{} — BODY:{} 55.659 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 DELETE 204 /boards/5e09483a-e951-4223-858e-c24e96aea066 — QUERY:{} — BODY:{} 61.448 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 66.564 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 DELETE 204 /boards/a3d75180-0f90-421f-9df2-394193ae6a82/tasks/041f30ac-9b7c-4bc7-a2c8-5f422b64207c — QUERY:{} — BODY:{} 83.009 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 DELETE 204 /users/82e440e1-a43c-4323-85b7-73f9a19b68c4 — QUERY:{} — BODY:{} 136.663 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 DELETE 204 /boards/adffc821-8fa5-4a95-b58c-04eadffd67da — QUERY:{} — BODY:{} 59.533 ms
+
+2020-10-30 14:08:28 +0000 — Task not found
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 GET 404 /boards/a3d75180-0f90-421f-9df2-394193ae6a82/tasks/041f30ac-9b7c-4bc7-a2c8-5f422b64207c — QUERY:{} — BODY:{} 61.749 ms
+
+2020-10-30 14:08:28 +0000 — Board not found
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 GET 404 /boards/adffc821-8fa5-4a95-b58c-04eadffd67da — QUERY:{} — BODY:{} 53.456 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 DELETE 204 /boards/a3d75180-0f90-421f-9df2-394193ae6a82 — QUERY:{} — BODY:{} 59.642 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 64.873 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 177.201 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 POST 200 /boards/76b9259f-d64d-47d7-9582-2a1502684c0d/tasks — QUERY:{} — BODY:{"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"76b9259f-d64d-47d7-9582-2a1502684c0d","userId":null,"columnId":null} 53.111 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 POST 200 /boards/76b9259f-d64d-47d7-9582-2a1502684c0d/tasks — QUERY:{} — BODY:{"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"76b9259f-d64d-47d7-9582-2a1502684c0d","userId":null,"columnId":null} 57.011 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 POST 200 /boards/76b9259f-d64d-47d7-9582-2a1502684c0d/tasks — QUERY:{} — BODY:{"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"76b9259f-d64d-47d7-9582-2a1502684c0d","userId":null,"columnId":null} 64.745 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 POST 200 /boards/76b9259f-d64d-47d7-9582-2a1502684c0d/tasks — QUERY:{} — BODY:{"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"76b9259f-d64d-47d7-9582-2a1502684c0d","userId":null,"columnId":null} 68.708 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 POST 200 /boards/76b9259f-d64d-47d7-9582-2a1502684c0d/tasks — QUERY:{} — BODY:{"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"76b9259f-d64d-47d7-9582-2a1502684c0d","userId":null,"columnId":null} 63.154 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 GET 200 /boards/76b9259f-d64d-47d7-9582-2a1502684c0d/tasks/eed0954f-8fe1-414d-b802-8886af1adbfc — QUERY:{} — BODY:{} 50.152 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 GET 200 /boards/76b9259f-d64d-47d7-9582-2a1502684c0d/tasks/0e19260b-f87c-4b07-9959-a180502b9736 — QUERY:{} — BODY:{} 52.739 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 GET 200 /boards/76b9259f-d64d-47d7-9582-2a1502684c0d/tasks/23708319-ba68-402e-a1a0-3e90cce4c7bb — QUERY:{} — BODY:{} 61.358 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 GET 200 /boards/76b9259f-d64d-47d7-9582-2a1502684c0d/tasks/148a1e78-3955-44a9-8986-22d18f8a5e88 — QUERY:{} — BODY:{} 62.649 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 GET 200 /boards/76b9259f-d64d-47d7-9582-2a1502684c0d/tasks/ba7cfad2-32c9-435e-a6a9-e13e0016d5d7 — QUERY:{} — BODY:{} 61.534 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 PUT 200 /users/d3bc7c63-3d99-4ad0-b4cb-85138797c486 — QUERY:{} — BODY:{"name":"Autotest updated TEST_USER","login":"test_user","password":"*************","id":"d3bc7c63-3d99-4ad0-b4cb-85138797c486"} 170.171 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 DELETE 204 /boards/76b9259f-d64d-47d7-9582-2a1502684c0d — QUERY:{} — BODY:{} 59.919 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 GET 200 /users/d3bc7c63-3d99-4ad0-b4cb-85138797c486 — QUERY:{} — BODY:{} 52.727 ms
+
+2020-10-30 14:08:28 +0000 — Task not found
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 GET 404 /boards/76b9259f-d64d-47d7-9582-2a1502684c0d/tasks/148a1e78-3955-44a9-8986-22d18f8a5e88 — QUERY:{} — BODY:{} 51.593 ms
+
+2020-10-30 14:08:28 +0000 — Task not found
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 GET 404 /boards/76b9259f-d64d-47d7-9582-2a1502684c0d/tasks/eed0954f-8fe1-414d-b802-8886af1adbfc — QUERY:{} — BODY:{} 61.578 ms
+
+2020-10-30 14:08:28 +0000 — Task not found
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 GET 404 /boards/76b9259f-d64d-47d7-9582-2a1502684c0d/tasks/0e19260b-f87c-4b07-9959-a180502b9736 — QUERY:{} — BODY:{} 64.227 ms
+
+2020-10-30 14:08:28 +0000 — Task not found
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 GET 404 /boards/76b9259f-d64d-47d7-9582-2a1502684c0d/tasks/ba7cfad2-32c9-435e-a6a9-e13e0016d5d7 — QUERY:{} — BODY:{} 63.007 ms
+
+2020-10-30 14:08:28 +0000 — Task not found
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 GET 404 /boards/76b9259f-d64d-47d7-9582-2a1502684c0d/tasks/23708319-ba68-402e-a1a0-3e90cce4c7bb — QUERY:{} — BODY:{} 66.727 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 DELETE 204 /users/d3bc7c63-3d99-4ad0-b4cb-85138797c486 — QUERY:{} — BODY:{} 57.098 ms
+
+2020-10-30 14:08:28 +0000 — 30/Oct/2020:14:08:28 +0000 DELETE 204 /boards/dbea5479-d3b5-44bd-8ba8-9b473d52313a — QUERY:{} — BODY:{} 60.088 ms
+
+2020-10-30 14:08:29 +0000 — 30/Oct/2020:14:08:29 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 173.343 ms
+
+2020-10-30 14:08:29 +0000 — 30/Oct/2020:14:08:29 +0000 DELETE 204 /users/f5e91c2c-f92f-4ef4-a0be-8ee8df417dec — QUERY:{} — BODY:{} 59.952 ms
+
+2020-10-30 14:08:29 +0000 — 30/Oct/2020:14:08:29 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 170.028 ms
+
+2020-10-30 14:08:29 +0000 — 30/Oct/2020:14:08:29 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 59.669 ms
+
+2020-10-30 14:08:29 +0000 — 30/Oct/2020:14:08:29 +0000 POST 200 /boards/9278211a-c3cb-4590-aee2-33da194f5906/tasks — QUERY:{} — BODY:{"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"42dd5732-8328-4875-91a0-84b8088ec049","boardId":"9278211a-c3cb-4590-aee2-33da194f5906"} 50.804 ms
+
+2020-10-30 14:08:29 +0000 — 30/Oct/2020:14:08:29 +0000 POST 200 /boards/9278211a-c3cb-4590-aee2-33da194f5906/tasks — QUERY:{} — BODY:{"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"42dd5732-8328-4875-91a0-84b8088ec049","boardId":"9278211a-c3cb-4590-aee2-33da194f5906"} 56.377 ms
+
+2020-10-30 14:08:29 +0000 — 30/Oct/2020:14:08:29 +0000 DELETE 204 /users/42dd5732-8328-4875-91a0-84b8088ec049 — QUERY:{} — BODY:{} 57.926 ms
+
+2020-10-30 14:08:29 +0000 — 30/Oct/2020:14:08:29 +0000 GET 200 /boards/9278211a-c3cb-4590-aee2-33da194f5906/tasks/22cf4593-a460-4804-8afe-83bbcf65c624 — QUERY:{} — BODY:{} 63.334 ms
+
+2020-10-30 14:08:29 +0000 — 30/Oct/2020:14:08:29 +0000 GET 200 /boards/9278211a-c3cb-4590-aee2-33da194f5906/tasks/ba6e1a30-e72c-403f-8880-86def9d43ecb — QUERY:{} — BODY:{} 63.058 ms
+
+2020-10-30 14:08:29 +0000 — 30/Oct/2020:14:08:29 +0000 DELETE 204 /boards/9278211a-c3cb-4590-aee2-33da194f5906/tasks/ba6e1a30-e72c-403f-8880-86def9d43ecb — QUERY:{} — BODY:{} 52.725 ms
+
+2020-10-30 14:08:29 +0000 — 30/Oct/2020:14:08:29 +0000 DELETE 204 /boards/9278211a-c3cb-4590-aee2-33da194f5906/tasks/22cf4593-a460-4804-8afe-83bbcf65c624 — QUERY:{} — BODY:{} 58.366 ms
+
+2020-10-30 14:08:29 +0000 — 30/Oct/2020:14:08:29 +0000 DELETE 204 /boards/9278211a-c3cb-4590-aee2-33da194f5906 — QUERY:{} — BODY:{} 57.025 ms
+
+2020-10-31 20:48:10 +0000 — MongoDB connected
+2020-10-31 20:48:10 +0000 — App is running on http://localhost:4000
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 GET 401 /boards — QUERY:{} — BODY:{} 3.696 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 GET 401 /users — QUERY:{} — BODY:{} 0.968 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 GET 401 /boards/12345/tasks — QUERY:{} — BODY:{} 1.314 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 GET 401 /boards/12345 — QUERY:{} — BODY:{} 0.824 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 GET 401 /users/123 — QUERY:{} — BODY:{} 1.154 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 GET 401 /boards/12345/tasks/12345 — QUERY:{} — BODY:{} 9.664 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 401 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 1.165 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 401 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 1.135 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 401 /boards/12345/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 0.684 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 PUT 401 /boards/12345 — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 2.308 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 PUT 401 /users/12345 — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.742 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 PUT 401 /boards/12345/tasks/12345 — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 0.630 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 DELETE 401 /boards/12345 — QUERY:{} — BODY:{} 0.587 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 DELETE 401 /users/12345 — QUERY:{} — BODY:{} 0.776 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 DELETE 401 /boards/12345/tasks/12345 — QUERY:{} — BODY:{} 0.671 ms
+
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"admin","password":"*****"} 248.432 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 401 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 2.384 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 401 /boards/undefined/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 0.917 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 GET 401 /boards/undefined/tasks — QUERY:{} — BODY:{} 0.680 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 GET 401 /boards/undefined/tasks — QUERY:{} — BODY:{} 0.642 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 401 /boards/undefined/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 3.982 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 401 /boards/undefined/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 0.798 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 PUT 401 /boards/undefined/tasks/undefined — QUERY:{} — BODY:{"title":"Autotest updated task"} 0.801 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 GET 401 /boards/undefined/tasks/undefined — QUERY:{} — BODY:{} 8.947 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 DELETE 401 /boards/undefined — QUERY:{} — BODY:{} 0.652 ms
+
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"admin","password":"*****"} 307.215 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 GET 401 /users — QUERY:{} — BODY:{} 14.824 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 401 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.842 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 401 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.919 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 401 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 1.689 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 PUT 401 /users/undefined — QUERY:{} — BODY:{"name":"Autotest updated TEST_USER","login":"test_user","password":"*************"} 1.109 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 401 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.915 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 DELETE 401 /users/undefined — QUERY:{} — BODY:{} 1.325 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 401 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.661 ms
+
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"admin","password":"*****"} 410.325 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 401 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.690 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 GET 401 /boards — QUERY:{} — BODY:{} 0.753 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 GET 401 /boards — QUERY:{} — BODY:{} 1.761 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 401 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.669 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 401 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.780 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 PUT 401 /boards/undefined — QUERY:{} — BODY:{"title":"Autotest updated board"} 0.864 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 401 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.956 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 POST 401 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.921 ms
+
+2020-10-31 20:48:23 +0000 — Access token is missing or invalid
+2020-10-31 20:48:23 +0000 — 31/Oct/2020:20:48:23 +0000 DELETE 401 /boards/undefined — QUERY:{} — BODY:{} 0.705 ms
+
+2020-10-31 20:48:43 +0000 — MongoDB connected
+2020-10-31 20:48:43 +0000 — App is running on http://localhost:4000
+2020-10-31 20:53:06 +0000 — MongoDB connected
+2020-10-31 20:53:06 +0000 — App is running on http://localhost:4000
+2020-10-31 20:53:10 +0000 — MongoDB connected
+2020-10-31 20:53:10 +0000 — App is running on http://localhost:4000
+2020-10-31 20:54:15 +0000 — Cannot read property '0' of undefined
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 GET 500 /boards/12345/tasks — QUERY:{} — BODY:{} 5.745 ms
+
+2020-10-31 20:54:15 +0000 — Cannot read property '0' of undefined
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 GET 500 /boards — QUERY:{} — BODY:{} 1.091 ms
+
+2020-10-31 20:54:15 +0000 — Cannot read property '0' of undefined
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 GET 500 /users — QUERY:{} — BODY:{} 8.877 ms
+
+2020-10-31 20:54:15 +0000 — Cannot read property '0' of undefined
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 GET 500 /boards/12345/tasks/12345 — QUERY:{} — BODY:{} 0.883 ms
+
+2020-10-31 20:54:15 +0000 — Cannot read property '0' of undefined
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 GET 500 /boards/12345 — QUERY:{} — BODY:{} 1.470 ms
+
+2020-10-31 20:54:15 +0000 — Cannot read property '0' of undefined
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 500 /boards/12345/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 1.500 ms
+
+2020-10-31 20:54:15 +0000 — Cannot read property '0' of undefined
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 GET 500 /users/123 — QUERY:{} — BODY:{} 1.315 ms
+
+2020-10-31 20:54:15 +0000 — Cannot read property '0' of undefined
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 5.252 ms
+
+2020-10-31 20:54:15 +0000 — Cannot read property '0' of undefined
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 PUT 500 /boards/12345/tasks/12345 — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 0.876 ms
+
+2020-10-31 20:54:15 +0000 — Cannot read property '0' of undefined
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 500 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.564 ms
+
+2020-10-31 20:54:15 +0000 — Cannot read property '0' of undefined
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 PUT 500 /boards/12345 — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.849 ms
+
+2020-10-31 20:54:15 +0000 — Cannot read property '0' of undefined
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 DELETE 500 /boards/12345/tasks/12345 — QUERY:{} — BODY:{} 1.099 ms
+
+2020-10-31 20:54:15 +0000 — Cannot read property '0' of undefined
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 PUT 500 /users/12345 — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.550 ms
+
+2020-10-31 20:54:15 +0000 — Cannot read property '0' of undefined
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 DELETE 500 /boards/12345 — QUERY:{} — BODY:{} 1.600 ms
+
+2020-10-31 20:54:15 +0000 — Cannot read property '0' of undefined
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 DELETE 500 /users/12345 — QUERY:{} — BODY:{} 0.741 ms
+
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"admin","password":"*****"} 216.535 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 401 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.870 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 GET 401 /boards — QUERY:{} — BODY:{} 0.896 ms
+
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"admin","password":"*****"} 199.747 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 GET 401 /boards — QUERY:{} — BODY:{} 4.061 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 401 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.989 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 401 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.966 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 401 /boards/undefined/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 1.065 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 401 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.786 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 GET 401 /boards/undefined/tasks — QUERY:{} — BODY:{} 1.045 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 PUT 401 /boards/undefined — QUERY:{} — BODY:{"title":"Autotest updated board"} 0.782 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 GET 401 /boards/undefined/tasks — QUERY:{} — BODY:{} 1.238 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 401 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.837 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 401 /boards/undefined/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 0.700 ms
+
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"admin","password":"*****"} 237.200 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 401 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 3.637 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 401 /boards/undefined/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 0.631 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 GET 401 /users — QUERY:{} — BODY:{} 0.757 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 DELETE 401 /boards/undefined — QUERY:{} — BODY:{} 0.702 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 PUT 401 /boards/undefined/tasks/undefined — QUERY:{} — BODY:{"title":"Autotest updated task"} 0.676 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 401 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 3.796 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 GET 401 /boards/undefined/tasks/undefined — QUERY:{} — BODY:{} 0.608 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 401 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.707 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 DELETE 401 /boards/undefined — QUERY:{} — BODY:{} 11.367 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 401 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 1.054 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 PUT 401 /users/undefined — QUERY:{} — BODY:{"name":"Autotest updated TEST_USER","login":"test_user","password":"*************"} 8.361 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 401 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.573 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 DELETE 401 /users/undefined — QUERY:{} — BODY:{} 1.029 ms
+
+2020-10-31 20:54:15 +0000 — Access token is missing or invalid
+2020-10-31 20:54:15 +0000 — 31/Oct/2020:20:54:15 +0000 POST 401 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.724 ms
+
+2020-10-31 20:55:34 +0000 — MongoDB connected
+2020-10-31 20:55:34 +0000 — App is running on http://localhost:4000
+2020-10-31 20:55:40 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:55:40 +0000 — 31/Oct/2020:20:55:40 +0000 GET 500 /boards — QUERY:{} — BODY:{} 11.275 ms
+
+2020-10-31 20:55:40 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 GET 500 /boards/12345/tasks — QUERY:{} — BODY:{} 1.526 ms
+
+2020-10-31 20:55:41 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 GET 500 /boards/12345 — QUERY:{} — BODY:{} 8.897 ms
+
+2020-10-31 20:55:41 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 GET 500 /boards/12345/tasks/12345 — QUERY:{} — BODY:{} 10.109 ms
+
+2020-10-31 20:55:41 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 POST 500 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 0.883 ms
+
+2020-10-31 20:55:41 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 GET 500 /users — QUERY:{} — BODY:{} 1.130 ms
+
+2020-10-31 20:55:41 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 POST 500 /boards/12345/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 7.685 ms
+
+2020-10-31 20:55:41 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 PUT 500 /boards/12345 — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 2.276 ms
+
+2020-10-31 20:55:41 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 GET 500 /users/123 — QUERY:{} — BODY:{} 0.619 ms
+
+2020-10-31 20:55:41 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 PUT 500 /boards/12345/tasks/12345 — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 0.871 ms
+
+2020-10-31 20:55:41 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 DELETE 500 /boards/12345 — QUERY:{} — BODY:{} 0.603 ms
+
+2020-10-31 20:55:41 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 POST 500 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.938 ms
+
+2020-10-31 20:55:41 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 DELETE 500 /boards/12345/tasks/12345 — QUERY:{} — BODY:{} 0.998 ms
+
+2020-10-31 20:55:41 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 PUT 500 /users/12345 — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 0.608 ms
+
+2020-10-31 20:55:41 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 DELETE 500 /users/12345 — QUERY:{} — BODY:{} 8.183 ms
+
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"admin","password":"*****"} 262.546 ms
+
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"admin","password":"*****"} 360.751 ms
+
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 GET 200 /users — QUERY:{} — BODY:{} 155.433 ms
+
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"admin","password":"*****"} 449.633 ms
+
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 124.299 ms
+
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 81.526 ms
+
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 GET 200 /boards — QUERY:{} — BODY:{} 134.905 ms
+
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 220.655 ms
+
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 POST 200 /boards/d7af5f9c-c7ec-4c7b-836f-f22c8bc93348/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 90.696 ms
+
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 GET 200 /boards — QUERY:{} — BODY:{} 88.313 ms
+
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 GET 200 /users/2e342ada-549c-44c9-8f40-d21ee10dae13 — QUERY:{} — BODY:{} 88.703 ms
+
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 GET 200 /boards/d7af5f9c-c7ec-4c7b-836f-f22c8bc93348/tasks — QUERY:{} — BODY:{} 90.209 ms
+
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 GET 200 /boards/43547660-ab94-49ba-94b4-a760fd44896b — QUERY:{} — BODY:{} 61.841 ms
+
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 DELETE 204 /users/2e342ada-549c-44c9-8f40-d21ee10dae13 — QUERY:{} — BODY:{} 70.494 ms
+
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 GET 200 /boards/d7af5f9c-c7ec-4c7b-836f-f22c8bc93348/tasks — QUERY:{} — BODY:{} 69.926 ms
+
+2020-10-31 20:55:41 +0000 — 31/Oct/2020:20:55:41 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 63.913 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 GET 200 /boards/d7af5f9c-c7ec-4c7b-836f-f22c8bc93348/tasks/1ffcafe3-c237-4db4-a605-7b1749494f2d — QUERY:{} — BODY:{} 89.097 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 DELETE 204 /boards/29236647-ee48-4b5b-ad1f-97e8ebc3daa4 — QUERY:{} — BODY:{} 74.695 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 POST 200 /boards/d7af5f9c-c7ec-4c7b-836f-f22c8bc93348/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 80.404 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 194.089 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 72.641 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 DELETE 204 /boards/d7af5f9c-c7ec-4c7b-836f-f22c8bc93348/tasks/0d5ec27f-5c68-41f0-8ce8-ce7ec1220d09 — QUERY:{} — BODY:{} 72.516 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 DELETE 204 /users/580f0506-f55f-41aa-abac-248dfe479755 — QUERY:{} — BODY:{} 66.958 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 PUT 200 /boards/af4e4f7c-6530-451a-9e21-670eb60cfd67 — QUERY:{} — BODY:{"id":"af4e4f7c-6530-451a-9e21-670eb60cfd67","title":"Autotest updated board","columns":[{"title":"Backlog","order":1,"_id":"6fe9946b-5731-4985-a55a-a33ae46b9286"},{"title":"Sprint","order":2,"_id":"5b7010a2-0e0e-4c79-a7a2-6f66a474b349"}]} 71.856 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 POST 200 /boards/d7af5f9c-c7ec-4c7b-836f-f22c8bc93348/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 76.588 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 GET 200 /boards/af4e4f7c-6530-451a-9e21-670eb60cfd67 — QUERY:{} — BODY:{} 60.653 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 PUT 200 /boards/d7af5f9c-c7ec-4c7b-836f-f22c8bc93348/tasks/f24b5447-87cc-4d29-995c-d565acf6d4d4 — QUERY:{} — BODY:{"id":"f24b5447-87cc-4d29-995c-d565acf6d4d4","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"d7af5f9c-c7ec-4c7b-836f-f22c8bc93348","columnId":null} 61.876 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 DELETE 204 /boards/af4e4f7c-6530-451a-9e21-670eb60cfd67 — QUERY:{} — BODY:{} 92.439 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 188.974 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 GET 200 /boards/d7af5f9c-c7ec-4c7b-836f-f22c8bc93348/tasks/f24b5447-87cc-4d29-995c-d565acf6d4d4 — QUERY:{} — BODY:{} 68.293 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 62.298 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 GET 200 /boards/d7af5f9c-c7ec-4c7b-836f-f22c8bc93348/tasks/1ffcafe3-c237-4db4-a605-7b1749494f2d — QUERY:{} — BODY:{} 80.326 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 DELETE 204 /boards/f0181d7b-c02b-497e-bf53-74683157fe10 — QUERY:{} — BODY:{} 89.890 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 DELETE 204 /boards/d7af5f9c-c7ec-4c7b-836f-f22c8bc93348/tasks/1ffcafe3-c237-4db4-a605-7b1749494f2d — QUERY:{} — BODY:{} 89.498 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 PUT 200 /users/5077cff0-5576-4c0e-b586-7b459e8a1c95 — QUERY:{} — BODY:{"name":"Autotest updated TEST_USER","login":"test_user","password":"*************","id":"5077cff0-5576-4c0e-b586-7b459e8a1c95"} 190.216 ms
+
+2020-10-31 20:55:42 +0000 — Board not found
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 GET 404 /boards/f0181d7b-c02b-497e-bf53-74683157fe10 — QUERY:{} — BODY:{} 62.650 ms
+
+2020-10-31 20:55:42 +0000 — Task not found
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 GET 404 /boards/d7af5f9c-c7ec-4c7b-836f-f22c8bc93348/tasks/1ffcafe3-c237-4db4-a605-7b1749494f2d — QUERY:{} — BODY:{} 62.061 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 GET 200 /users/5077cff0-5576-4c0e-b586-7b459e8a1c95 — QUERY:{} — BODY:{} 82.193 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 81.762 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 DELETE 204 /boards/d7af5f9c-c7ec-4c7b-836f-f22c8bc93348 — QUERY:{} — BODY:{} 67.728 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 DELETE 204 /users/5077cff0-5576-4c0e-b586-7b459e8a1c95 — QUERY:{} — BODY:{} 71.300 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 POST 200 /boards/ca80fa79-8843-43cc-8468-c5ac780daac8/tasks — QUERY:{} — BODY:{"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"ca80fa79-8843-43cc-8468-c5ac780daac8","userId":null,"columnId":null} 72.731 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 POST 200 /boards/ca80fa79-8843-43cc-8468-c5ac780daac8/tasks — QUERY:{} — BODY:{"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"ca80fa79-8843-43cc-8468-c5ac780daac8","userId":null,"columnId":null} 76.311 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 POST 200 /boards/ca80fa79-8843-43cc-8468-c5ac780daac8/tasks — QUERY:{} — BODY:{"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"ca80fa79-8843-43cc-8468-c5ac780daac8","userId":null,"columnId":null} 87.002 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 POST 200 /boards/ca80fa79-8843-43cc-8468-c5ac780daac8/tasks — QUERY:{} — BODY:{"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"ca80fa79-8843-43cc-8468-c5ac780daac8","userId":null,"columnId":null} 90.078 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 POST 200 /boards/ca80fa79-8843-43cc-8468-c5ac780daac8/tasks — QUERY:{} — BODY:{"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"ca80fa79-8843-43cc-8468-c5ac780daac8","userId":null,"columnId":null} 132.624 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 GET 200 /boards/ca80fa79-8843-43cc-8468-c5ac780daac8/tasks/17129f9e-efb0-4b26-acf8-b5c2b3eb4f5a — QUERY:{} — BODY:{} 60.369 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 GET 200 /boards/ca80fa79-8843-43cc-8468-c5ac780daac8/tasks/5263a065-1ad7-4090-afcb-3814360d0b5d — QUERY:{} — BODY:{} 64.831 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 GET 200 /boards/ca80fa79-8843-43cc-8468-c5ac780daac8/tasks/d6ad3d73-7e47-4b00-b3ff-dd5a171a90c4 — QUERY:{} — BODY:{} 73.474 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 GET 200 /boards/ca80fa79-8843-43cc-8468-c5ac780daac8/tasks/295e8a83-d062-40aa-bc59-a58fac9e9361 — QUERY:{} — BODY:{} 76.780 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 GET 200 /boards/ca80fa79-8843-43cc-8468-c5ac780daac8/tasks/d732ad63-d06b-4dc2-b528-5bb25f903e8f — QUERY:{} — BODY:{} 78.445 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 176.894 ms
+
+2020-10-31 20:55:42 +0000 — 31/Oct/2020:20:55:42 +0000 DELETE 204 /boards/ca80fa79-8843-43cc-8468-c5ac780daac8 — QUERY:{} — BODY:{} 63.528 ms
+
+2020-10-31 20:55:43 +0000 — 31/Oct/2020:20:55:43 +0000 DELETE 204 /users/21e7b048-94a8-4c1b-8f91-4c0e55d55e5d — QUERY:{} — BODY:{} 64.578 ms
+
+2020-10-31 20:55:43 +0000 — Task not found
+2020-10-31 20:55:43 +0000 — 31/Oct/2020:20:55:43 +0000 GET 404 /boards/ca80fa79-8843-43cc-8468-c5ac780daac8/tasks/d6ad3d73-7e47-4b00-b3ff-dd5a171a90c4 — QUERY:{} — BODY:{} 61.211 ms
+
+2020-10-31 20:55:43 +0000 — Task not found
+2020-10-31 20:55:43 +0000 — 31/Oct/2020:20:55:43 +0000 GET 404 /boards/ca80fa79-8843-43cc-8468-c5ac780daac8/tasks/17129f9e-efb0-4b26-acf8-b5c2b3eb4f5a — QUERY:{} — BODY:{} 66.109 ms
+
+2020-10-31 20:55:43 +0000 — Task not found
+2020-10-31 20:55:43 +0000 — 31/Oct/2020:20:55:43 +0000 GET 404 /boards/ca80fa79-8843-43cc-8468-c5ac780daac8/tasks/295e8a83-d062-40aa-bc59-a58fac9e9361 — QUERY:{} — BODY:{} 68.934 ms
+
+2020-10-31 20:55:43 +0000 — Task not found
+2020-10-31 20:55:43 +0000 — 31/Oct/2020:20:55:43 +0000 GET 404 /boards/ca80fa79-8843-43cc-8468-c5ac780daac8/tasks/5263a065-1ad7-4090-afcb-3814360d0b5d — QUERY:{} — BODY:{} 77.437 ms
+
+2020-10-31 20:55:43 +0000 — Task not found
+2020-10-31 20:55:43 +0000 — 31/Oct/2020:20:55:43 +0000 GET 404 /boards/ca80fa79-8843-43cc-8468-c5ac780daac8/tasks/d732ad63-d06b-4dc2-b528-5bb25f903e8f — QUERY:{} — BODY:{} 76.640 ms
+
+2020-10-31 20:55:43 +0000 — 31/Oct/2020:20:55:43 +0000 DELETE 204 /boards/43547660-ab94-49ba-94b4-a760fd44896b — QUERY:{} — BODY:{} 65.139 ms
+
+2020-10-31 20:55:43 +0000 — 31/Oct/2020:20:55:43 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 181.885 ms
+
+2020-10-31 20:55:43 +0000 — 31/Oct/2020:20:55:43 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 61.397 ms
+
+2020-10-31 20:55:43 +0000 — 31/Oct/2020:20:55:43 +0000 POST 200 /boards/0ecaab6a-a512-4d9c-93bb-1622629775db/tasks — QUERY:{} — BODY:{"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"45555ece-306b-4dc1-a375-fd379f0e632d","boardId":"0ecaab6a-a512-4d9c-93bb-1622629775db"} 60.668 ms
+
+2020-10-31 20:55:43 +0000 — 31/Oct/2020:20:55:43 +0000 POST 200 /boards/0ecaab6a-a512-4d9c-93bb-1622629775db/tasks — QUERY:{} — BODY:{"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"45555ece-306b-4dc1-a375-fd379f0e632d","boardId":"0ecaab6a-a512-4d9c-93bb-1622629775db"} 63.592 ms
+
+2020-10-31 20:55:43 +0000 — 31/Oct/2020:20:55:43 +0000 DELETE 204 /users/45555ece-306b-4dc1-a375-fd379f0e632d — QUERY:{} — BODY:{} 71.976 ms
+
+2020-10-31 20:55:43 +0000 — 31/Oct/2020:20:55:43 +0000 GET 200 /boards/0ecaab6a-a512-4d9c-93bb-1622629775db/tasks/75551246-ee8d-47e5-a62b-9a103218186d — QUERY:{} — BODY:{} 61.467 ms
+
+2020-10-31 20:55:43 +0000 — 31/Oct/2020:20:55:43 +0000 GET 200 /boards/0ecaab6a-a512-4d9c-93bb-1622629775db/tasks/5bfa7d6f-79d6-423e-916c-f55566c9d8c2 — QUERY:{} — BODY:{} 65.285 ms
+
+2020-10-31 20:55:43 +0000 — 31/Oct/2020:20:55:43 +0000 DELETE 204 /boards/0ecaab6a-a512-4d9c-93bb-1622629775db/tasks/5bfa7d6f-79d6-423e-916c-f55566c9d8c2 — QUERY:{} — BODY:{} 64.841 ms
+
+2020-10-31 20:55:43 +0000 — 31/Oct/2020:20:55:43 +0000 DELETE 204 /boards/0ecaab6a-a512-4d9c-93bb-1622629775db/tasks/75551246-ee8d-47e5-a62b-9a103218186d — QUERY:{} — BODY:{} 68.308 ms
+
+2020-10-31 20:55:43 +0000 — 31/Oct/2020:20:55:43 +0000 DELETE 204 /boards/0ecaab6a-a512-4d9c-93bb-1622629775db — QUERY:{} — BODY:{} 61.281 ms
+
+2020-10-31 20:56:12 +0000 — 31/Oct/2020:20:56:12 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"admin","password":"*****"} 235.380 ms
+
+2020-10-31 20:56:26 +0000 — 31/Oct/2020:20:56:26 +0000 GET 200 /users — QUERY:{} — BODY:{} 146.161 ms
+
+2020-10-31 20:56:36 +0000 — 31/Oct/2020:20:56:36 +0000 GET 200 /boards — QUERY:{} — BODY:{} 170.749 ms
+
+2020-10-31 20:56:43 +0000 — Board not found
+2020-10-31 20:56:43 +0000 — 31/Oct/2020:20:56:43 +0000 GET 404 /boards/cdcd — QUERY:{} — BODY:{} 134.063 ms
+
+2020-10-31 20:57:26 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:57:26 +0000 — 31/Oct/2020:20:57:26 +0000 GET 500 /users — QUERY:{} — BODY:{} 1.370 ms
+
+2020-10-31 20:57:28 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:57:28 +0000 — 31/Oct/2020:20:57:28 +0000 GET 500 /users — QUERY:{} — BODY:{} 1.147 ms
+
+2020-10-31 20:57:28 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:57:28 +0000 — 31/Oct/2020:20:57:28 +0000 GET 500 /users — QUERY:{} — BODY:{} 1.287 ms
+
+2020-10-31 20:57:29 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:57:29 +0000 — 31/Oct/2020:20:57:29 +0000 GET 500 /users — QUERY:{} — BODY:{} 1.224 ms
+
+2020-10-31 20:57:29 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:57:29 +0000 — 31/Oct/2020:20:57:29 +0000 GET 500 /users — QUERY:{} — BODY:{} 1.029 ms
+
+2020-10-31 20:57:30 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:57:30 +0000 — 31/Oct/2020:20:57:30 +0000 GET 500 /users — QUERY:{} — BODY:{} 1.005 ms
+
+2020-10-31 20:57:30 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:57:30 +0000 — 31/Oct/2020:20:57:30 +0000 GET 500 /users — QUERY:{} — BODY:{} 0.931 ms
+
+2020-10-31 20:57:30 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:57:30 +0000 — 31/Oct/2020:20:57:30 +0000 GET 500 /users — QUERY:{} — BODY:{} 1.251 ms
+
+2020-10-31 20:57:31 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:57:31 +0000 — 31/Oct/2020:20:57:31 +0000 GET 500 /users — QUERY:{} — BODY:{} 1.177 ms
+
+2020-10-31 20:57:31 +0000 — Cannot read property 'split' of undefined
+2020-10-31 20:57:31 +0000 — 31/Oct/2020:20:57:31 +0000 GET 500 /users — QUERY:{} — BODY:{} 0.972 ms
+
+2020-10-31 20:58:52 +0000 — MongoDB connected
+2020-10-31 20:58:52 +0000 — App is running on http://localhost:4000
+2020-10-31 20:59:00 +0000 — Access token is missing or invalid
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 GET 401 /boards — QUERY:{} — BODY:{} 14.438 ms
+
+2020-10-31 20:59:00 +0000 — Access token is missing or invalid
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 GET 401 /boards/12345/tasks — QUERY:{} — BODY:{} 11.470 ms
+
+2020-10-31 20:59:00 +0000 — Access token is missing or invalid
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 GET 401 /boards/12345 — QUERY:{} — BODY:{} 2.659 ms
+
+2020-10-31 20:59:00 +0000 — Access token is missing or invalid
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 POST 401 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 12.693 ms
+
+2020-10-31 20:59:00 +0000 — Access token is missing or invalid
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 GET 401 /boards/12345/tasks/12345 — QUERY:{} — BODY:{} 1.365 ms
+
+2020-10-31 20:59:00 +0000 — Access token is missing or invalid
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 GET 401 /users — QUERY:{} — BODY:{} 10.348 ms
+
+2020-10-31 20:59:00 +0000 — Access token is missing or invalid
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 PUT 401 /boards/12345 — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 2.069 ms
+
+2020-10-31 20:59:00 +0000 — Access token is missing or invalid
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 POST 401 /boards/12345/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 1.111 ms
+
+2020-10-31 20:59:00 +0000 — Access token is missing or invalid
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 GET 401 /users/123 — QUERY:{} — BODY:{} 3.621 ms
+
+2020-10-31 20:59:00 +0000 — Access token is missing or invalid
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 DELETE 401 /boards/12345 — QUERY:{} — BODY:{} 1.656 ms
+
+2020-10-31 20:59:00 +0000 — Access token is missing or invalid
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 PUT 401 /boards/12345/tasks/12345 — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 23.211 ms
+
+2020-10-31 20:59:00 +0000 — Access token is missing or invalid
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 POST 401 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 4.547 ms
+
+2020-10-31 20:59:00 +0000 — Access token is missing or invalid
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 DELETE 401 /boards/12345/tasks/12345 — QUERY:{} — BODY:{} 1.398 ms
+
+2020-10-31 20:59:00 +0000 — Access token is missing or invalid
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 PUT 401 /users/12345 — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 8.284 ms
+
+2020-10-31 20:59:00 +0000 — Access token is missing or invalid
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 DELETE 401 /users/12345 — QUERY:{} — BODY:{} 1.015 ms
+
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"admin","password":"*****"} 300.465 ms
+
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"admin","password":"*****"} 335.002 ms
+
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 84.884 ms
+
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 POST 200 /login — QUERY:{} — BODY:{"login":"admin","password":"*****"} 401.062 ms
+
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 90.617 ms
+
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 POST 200 /boards/1f42bb70-058e-45f6-8895-e536b10b2417/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 118.326 ms
+
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 GET 200 /users — QUERY:{} — BODY:{} 66.124 ms
+
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 GET 200 /boards — QUERY:{} — BODY:{} 64.131 ms
+
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 GET 200 /boards/1f42bb70-058e-45f6-8895-e536b10b2417/tasks — QUERY:{} — BODY:{} 66.330 ms
+
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 GET 200 /boards — QUERY:{} — BODY:{} 64.705 ms
+
+2020-10-31 20:59:00 +0000 — 31/Oct/2020:20:59:00 +0000 GET 200 /boards/1f42bb70-058e-45f6-8895-e536b10b2417/tasks — QUERY:{} — BODY:{} 60.832 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 GET 200 /boards/1f42bb70-058e-45f6-8895-e536b10b2417 — QUERY:{} — BODY:{} 61.899 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 186.891 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 GET 200 /boards/1f42bb70-058e-45f6-8895-e536b10b2417/tasks/eb3a9c2c-bca9-4ae1-b629-48bcfe241ae3 — QUERY:{} — BODY:{} 60.645 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 64.353 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 GET 200 /users/5487af71-799b-4ead-9428-3d3254bc9037 — QUERY:{} — BODY:{} 59.177 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 POST 200 /boards/1f42bb70-058e-45f6-8895-e536b10b2417/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 70.920 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 DELETE 204 /boards/53101d54-16a3-409c-8910-ef160199ba9e — QUERY:{} — BODY:{} 61.597 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 DELETE 204 /users/5487af71-799b-4ead-9428-3d3254bc9037 — QUERY:{} — BODY:{} 74.510 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 DELETE 204 /boards/1f42bb70-058e-45f6-8895-e536b10b2417/tasks/90ec4cc9-5b6b-4602-98c3-c98baa68860e — QUERY:{} — BODY:{} 62.447 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 72.034 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 POST 200 /boards/1f42bb70-058e-45f6-8895-e536b10b2417/tasks — QUERY:{} — BODY:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null} 62.553 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 PUT 200 /boards/780d54e8-f2ba-4bea-a6d7-8f76d9b55002 — QUERY:{} — BODY:{"id":"780d54e8-f2ba-4bea-a6d7-8f76d9b55002","title":"Autotest updated board","columns":[{"title":"Backlog","order":1,"_id":"2706e879-0a48-4c1e-bf39-959b5f9ebcca"},{"title":"Sprint","order":2,"_id":"d4df3b75-57c7-43f3-b093-231b333b10ed"}]} 69.082 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 PUT 200 /boards/1f42bb70-058e-45f6-8895-e536b10b2417/tasks/8c36b1d4-9617-44b3-b8f6-08495e2c0eb8 — QUERY:{} — BODY:{"id":"8c36b1d4-9617-44b3-b8f6-08495e2c0eb8","title":"Autotest updated task","order":0,"description":"Lorem ipsum","userId":null,"boardId":"1f42bb70-058e-45f6-8895-e536b10b2417","columnId":null} 62.078 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 GET 200 /boards/780d54e8-f2ba-4bea-a6d7-8f76d9b55002 — QUERY:{} — BODY:{} 73.298 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 195.329 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 GET 200 /boards/1f42bb70-058e-45f6-8895-e536b10b2417/tasks/8c36b1d4-9617-44b3-b8f6-08495e2c0eb8 — QUERY:{} — BODY:{} 73.001 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 DELETE 204 /boards/780d54e8-f2ba-4bea-a6d7-8f76d9b55002 — QUERY:{} — BODY:{} 80.640 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 DELETE 204 /users/ba9f570b-e705-48e1-ad93-1e8dfafec614 — QUERY:{} — BODY:{} 72.012 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 GET 200 /boards/1f42bb70-058e-45f6-8895-e536b10b2417/tasks/eb3a9c2c-bca9-4ae1-b629-48bcfe241ae3 — QUERY:{} — BODY:{} 68.494 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 70.410 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 DELETE 204 /boards/1f42bb70-058e-45f6-8895-e536b10b2417/tasks/eb3a9c2c-bca9-4ae1-b629-48bcfe241ae3 — QUERY:{} — BODY:{} 61.084 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 DELETE 204 /boards/16527ad2-d454-4c02-b63f-1a5c2b5606fe — QUERY:{} — BODY:{} 71.916 ms
+
+2020-10-31 20:59:01 +0000 — Task not found
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 GET 404 /boards/1f42bb70-058e-45f6-8895-e536b10b2417/tasks/eb3a9c2c-bca9-4ae1-b629-48bcfe241ae3 — QUERY:{} — BODY:{} 64.867 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 185.737 ms
+
+2020-10-31 20:59:01 +0000 — Board not found
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 GET 404 /boards/16527ad2-d454-4c02-b63f-1a5c2b5606fe — QUERY:{} — BODY:{} 76.348 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 DELETE 204 /boards/1f42bb70-058e-45f6-8895-e536b10b2417 — QUERY:{} — BODY:{} 68.683 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 72.891 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 POST 200 /boards/375a1838-c59c-4b27-b933-4a922a9ea671/tasks — QUERY:{} — BODY:{"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"375a1838-c59c-4b27-b933-4a922a9ea671","userId":null,"columnId":null} 63.034 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 POST 200 /boards/375a1838-c59c-4b27-b933-4a922a9ea671/tasks — QUERY:{} — BODY:{"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"375a1838-c59c-4b27-b933-4a922a9ea671","userId":null,"columnId":null} 68.257 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 POST 200 /boards/375a1838-c59c-4b27-b933-4a922a9ea671/tasks — QUERY:{} — BODY:{"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"375a1838-c59c-4b27-b933-4a922a9ea671","userId":null,"columnId":null} 62.535 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 POST 200 /boards/375a1838-c59c-4b27-b933-4a922a9ea671/tasks — QUERY:{} — BODY:{"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"375a1838-c59c-4b27-b933-4a922a9ea671","userId":null,"columnId":null} 68.745 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 POST 200 /boards/375a1838-c59c-4b27-b933-4a922a9ea671/tasks — QUERY:{} — BODY:{"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"375a1838-c59c-4b27-b933-4a922a9ea671","userId":null,"columnId":null} 75.553 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 PUT 200 /users/8e35f2fd-8188-45ad-944f-6f355ba3b639 — QUERY:{} — BODY:{"name":"Autotest updated TEST_USER","login":"test_user","password":"*************","id":"8e35f2fd-8188-45ad-944f-6f355ba3b639"} 194.015 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 GET 200 /boards/375a1838-c59c-4b27-b933-4a922a9ea671/tasks/4496e400-6607-472d-8946-01a4699e1460 — QUERY:{} — BODY:{} 60.551 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 GET 200 /boards/375a1838-c59c-4b27-b933-4a922a9ea671/tasks/4dcfe28d-0893-4db8-ac5e-ba5ab4f337f3 — QUERY:{} — BODY:{} 61.095 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 GET 200 /boards/375a1838-c59c-4b27-b933-4a922a9ea671/tasks/21fa3146-aa37-45c5-a234-39818426db67 — QUERY:{} — BODY:{} 64.258 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 GET 200 /boards/375a1838-c59c-4b27-b933-4a922a9ea671/tasks/0d92ccb4-9009-4739-9308-0b3cc4b382ac — QUERY:{} — BODY:{} 64.202 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 GET 200 /boards/375a1838-c59c-4b27-b933-4a922a9ea671/tasks/a3885926-d6be-41de-9615-d1e6b7c692bf — QUERY:{} — BODY:{} 69.480 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 GET 200 /users/8e35f2fd-8188-45ad-944f-6f355ba3b639 — QUERY:{} — BODY:{} 69.847 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 DELETE 204 /boards/375a1838-c59c-4b27-b933-4a922a9ea671 — QUERY:{} — BODY:{} 61.207 ms
+
+2020-10-31 20:59:01 +0000 — 31/Oct/2020:20:59:01 +0000 DELETE 204 /users/8e35f2fd-8188-45ad-944f-6f355ba3b639 — QUERY:{} — BODY:{} 67.488 ms
+
+2020-10-31 20:59:02 +0000 — Task not found
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 GET 404 /boards/375a1838-c59c-4b27-b933-4a922a9ea671/tasks/21fa3146-aa37-45c5-a234-39818426db67 — QUERY:{} — BODY:{} 61.266 ms
+
+2020-10-31 20:59:02 +0000 — Task not found
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 GET 404 /boards/375a1838-c59c-4b27-b933-4a922a9ea671/tasks/4dcfe28d-0893-4db8-ac5e-ba5ab4f337f3 — QUERY:{} — BODY:{} 63.020 ms
+
+2020-10-31 20:59:02 +0000 — Task not found
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 GET 404 /boards/375a1838-c59c-4b27-b933-4a922a9ea671/tasks/a3885926-d6be-41de-9615-d1e6b7c692bf — QUERY:{} — BODY:{} 68.344 ms
+
+2020-10-31 20:59:02 +0000 — Task not found
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 GET 404 /boards/375a1838-c59c-4b27-b933-4a922a9ea671/tasks/0d92ccb4-9009-4739-9308-0b3cc4b382ac — QUERY:{} — BODY:{} 74.897 ms
+
+2020-10-31 20:59:02 +0000 — Task not found
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 GET 404 /boards/375a1838-c59c-4b27-b933-4a922a9ea671/tasks/4496e400-6607-472d-8946-01a4699e1460 — QUERY:{} — BODY:{} 81.719 ms
+
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 DELETE 204 /boards/df03ee6f-2db7-4b81-9aef-5fcfe4aee841 — QUERY:{} — BODY:{} 60.571 ms
+
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 177.323 ms
+
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 DELETE 204 /users/f4031b6c-b34c-491b-91cb-366f66d98d72 — QUERY:{} — BODY:{} 70.111 ms
+
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 POST 200 /users — QUERY:{} — BODY:{"name":"TEST_USER","login":"test_user","password":"*************"} 185.086 ms
+
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 POST 200 /boards — QUERY:{} — BODY:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]} 59.608 ms
+
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 POST 200 /boards/2a86cb72-96ac-4736-ba65-f602273664f0/tasks — QUERY:{} — BODY:{"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"bb329ae3-417a-4836-b7f0-6108aa5a5e58","boardId":"2a86cb72-96ac-4736-ba65-f602273664f0"} 61.338 ms
+
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 POST 200 /boards/2a86cb72-96ac-4736-ba65-f602273664f0/tasks — QUERY:{} — BODY:{"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"bb329ae3-417a-4836-b7f0-6108aa5a5e58","boardId":"2a86cb72-96ac-4736-ba65-f602273664f0"} 65.438 ms
+
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 DELETE 204 /users/bb329ae3-417a-4836-b7f0-6108aa5a5e58 — QUERY:{} — BODY:{} 69.726 ms
+
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 GET 200 /boards/2a86cb72-96ac-4736-ba65-f602273664f0/tasks/29893f33-3b6c-4f91-8a85-a93194111ff1 — QUERY:{} — BODY:{} 64.503 ms
+
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 GET 200 /boards/2a86cb72-96ac-4736-ba65-f602273664f0/tasks/c4a3a04a-c883-44c0-bde9-e8f54f0c1bee — QUERY:{} — BODY:{} 70.078 ms
+
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 DELETE 204 /boards/2a86cb72-96ac-4736-ba65-f602273664f0/tasks/c4a3a04a-c883-44c0-bde9-e8f54f0c1bee — QUERY:{} — BODY:{} 59.752 ms
+
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 DELETE 204 /boards/2a86cb72-96ac-4736-ba65-f602273664f0/tasks/29893f33-3b6c-4f91-8a85-a93194111ff1 — QUERY:{} — BODY:{} 60.769 ms
+
+2020-10-31 20:59:02 +0000 — 31/Oct/2020:20:59:02 +0000 DELETE 204 /boards/2a86cb72-96ac-4736-ba65-f602273664f0 — QUERY:{} — BODY:{} 65.453 ms
+
