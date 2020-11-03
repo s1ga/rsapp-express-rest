@@ -2103,3 +2103,402 @@ SyntaxError: missing ) after argument list
 2020-11-01 19:22:02 +0000 — Task not found
 2020-11-01 19:22:02 +0000 — Task not found
 2020-11-01 19:22:02 +0000 — Task not found
+2020-11-01 19:38:41 +0000 — Access token is missing or invalid
+2020-11-01 19:38:41 +0000 — Access token is missing or invalid
+2020-11-01 19:38:41 +0000 — Access token is missing or invalid
+2020-11-01 19:38:41 +0000 — Access token is missing or invalid
+2020-11-01 19:38:41 +0000 — Access token is missing or invalid
+2020-11-01 19:38:41 +0000 — Access token is missing or invalid
+2020-11-01 19:38:41 +0000 — Access token is missing or invalid
+2020-11-01 19:38:41 +0000 — Access token is missing or invalid
+2020-11-01 19:38:41 +0000 — Access token is missing or invalid
+2020-11-01 19:38:41 +0000 — Access token is missing or invalid
+2020-11-01 19:38:41 +0000 — Access token is missing or invalid
+2020-11-01 19:38:41 +0000 — Access token is missing or invalid
+2020-11-01 19:38:41 +0000 — Access token is missing or invalid
+2020-11-01 19:38:41 +0000 — Access token is missing or invalid
+2020-11-01 19:38:41 +0000 — Access token is missing or invalid
+2020-11-01 19:38:43 +0000 — Task not found
+2020-11-01 19:38:44 +0000 — Board not found
+2020-11-01 19:38:44 +0000 — Task not found
+2020-11-01 19:38:44 +0000 — Task not found
+2020-11-01 19:38:44 +0000 — Task not found
+2020-11-01 19:38:44 +0000 — Task not found
+2020-11-01 19:38:44 +0000 — Task not found
+2020-11-03 15:27:17 +0000 — Access token is missing or invalid
+2020-11-03 15:27:17 +0000 — Access token is missing or invalid
+2020-11-03 15:27:17 +0000 — Access token is missing or invalid
+2020-11-03 15:27:17 +0000 — Access token is missing or invalid
+2020-11-03 15:27:17 +0000 — Access token is missing or invalid
+2020-11-03 15:27:17 +0000 — Access token is missing or invalid
+2020-11-03 15:27:17 +0000 — Access token is missing or invalid
+2020-11-03 15:27:17 +0000 — Access token is missing or invalid
+2020-11-03 15:27:17 +0000 — Access token is missing or invalid
+2020-11-03 15:27:17 +0000 — Access token is missing or invalid
+2020-11-03 15:27:17 +0000 — Access token is missing or invalid
+2020-11-03 15:27:17 +0000 — Access token is missing or invalid
+2020-11-03 15:27:17 +0000 — Access token is missing or invalid
+2020-11-03 15:27:17 +0000 — Access token is missing or invalid
+2020-11-03 15:27:17 +0000 — Access token is missing or invalid
+2020-11-03 15:27:18 +0000 — Task not found
+2020-11-03 15:27:18 +0000 — Board not found
+2020-11-03 15:27:19 +0000 — Task not found
+2020-11-03 15:27:19 +0000 — Task not found
+2020-11-03 15:27:19 +0000 — Task not found
+2020-11-03 15:27:19 +0000 — Task not found
+2020-11-03 15:27:19 +0000 — Task not found
+2020-11-03 15:29:26 +0000 — User not found
+2020-11-03 15:29:44 +0000 — oops
+2020-11-03 15:30:51 +0000 — uncaughtException: Unexpected end of input
+C:\github\rsapp-express-rest\src\resources\login\login.service.js:39
+
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\login\login.router.js:2:22)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:14:21)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-11-03 15:30:51 +0000 — uncaughtException: Unexpected end of input
+C:\github\rsapp-express-rest\src\resources\login\login.service.js:39
+
+
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\login\login.router.js:2:22)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\app.js:14:21)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+2020-11-03 15:31:02 +0000 — oops
+2020-11-03 15:31:09 +0000 — Access token is missing or invalid
+2020-11-03 15:31:09 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — oops
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — oops
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — oops
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:10 +0000 — Access token is missing or invalid
+2020-11-03 15:31:23 +0000 — Access token is missing or invalid
+2020-11-03 15:31:23 +0000 — Access token is missing or invalid
+2020-11-03 15:31:23 +0000 — Access token is missing or invalid
+2020-11-03 15:31:23 +0000 — Access token is missing or invalid
+2020-11-03 15:31:23 +0000 — Access token is missing or invalid
+2020-11-03 15:31:23 +0000 — Access token is missing or invalid
+2020-11-03 15:31:23 +0000 — Access token is missing or invalid
+2020-11-03 15:31:23 +0000 — Access token is missing or invalid
+2020-11-03 15:31:23 +0000 — Access token is missing or invalid
+2020-11-03 15:31:23 +0000 — Access token is missing or invalid
+2020-11-03 15:31:23 +0000 — Access token is missing or invalid
+2020-11-03 15:31:23 +0000 — Access token is missing or invalid
+2020-11-03 15:31:23 +0000 — Access token is missing or invalid
+2020-11-03 15:31:23 +0000 — Access token is missing or invalid
+2020-11-03 15:31:23 +0000 — Access token is missing or invalid
+2020-11-03 15:31:24 +0000 — Board not found
+2020-11-03 15:31:24 +0000 — Task not found
+2020-11-03 15:31:25 +0000 — Task not found
+2020-11-03 15:31:25 +0000 — Task not found
+2020-11-03 15:31:25 +0000 — Task not found
+2020-11-03 15:31:25 +0000 — Task not found
+2020-11-03 15:31:25 +0000 — Task not found
+2020-11-03 15:40:26 +0000 — Access token is missing or invalid
+2020-11-03 15:40:26 +0000 — Access token is missing or invalid
+2020-11-03 15:40:26 +0000 — Access token is missing or invalid
+2020-11-03 15:40:26 +0000 — Access token is missing or invalid
+2020-11-03 15:40:26 +0000 — Access token is missing or invalid
+2020-11-03 15:40:26 +0000 — Access token is missing or invalid
+2020-11-03 15:40:26 +0000 — Access token is missing or invalid
+2020-11-03 15:40:26 +0000 — Access token is missing or invalid
+2020-11-03 15:40:26 +0000 — Access token is missing or invalid
+2020-11-03 15:40:26 +0000 — Access token is missing or invalid
+2020-11-03 15:40:26 +0000 — Access token is missing or invalid
+2020-11-03 15:40:26 +0000 — Access token is missing or invalid
+2020-11-03 15:40:26 +0000 — Access token is missing or invalid
+2020-11-03 15:40:26 +0000 — Access token is missing or invalid
+2020-11-03 15:40:26 +0000 — Access token is missing or invalid
+2020-11-03 15:40:28 +0000 — Task not found
+2020-11-03 15:40:28 +0000 — Board not found
+2020-11-03 15:40:29 +0000 — Task not found
+2020-11-03 15:40:29 +0000 — Task not found
+2020-11-03 15:40:29 +0000 — Task not found
+2020-11-03 15:40:29 +0000 — Task not found
+2020-11-03 15:40:29 +0000 — Task not found
+2020-11-03 15:42:40 +0000 — uncaughtException: await is only valid in async function
+C:\github\rsapp-express-rest\src\resources\users\user.db.repository.js:15
+  const salt = await bcrypt.genSalt(DEFAULT_SALT_ROUNDS);
+               ^^^^^
+
+SyntaxError: await is only valid in async function
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.service.js:1:19)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-11-03 15:42:40 +0000 — uncaughtException: await is only valid in async function
+C:\github\rsapp-express-rest\src\resources\users\user.db.repository.js:15
+  const salt = await bcrypt.genSalt(DEFAULT_SALT_ROUNDS);
+               ^^^^^
+
+SyntaxError: await is only valid in async function
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.service.js:1:19)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-11-03 15:43:27 +0000 — uncaughtException: Identifier 'body' has already been declared
+C:\github\rsapp-express-rest\src\resources\users\user.db.repository.js:16
+  const body.password = await bcrypt.hash(body.password, salt);
+        ^
+
+SyntaxError: Identifier 'body' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.service.js:1:19)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-11-03 15:43:27 +0000 — uncaughtException: Identifier 'body' has already been declared
+C:\github\rsapp-express-rest\src\resources\users\user.db.repository.js:16
+  const body.password = await bcrypt.hash(body.password, salt);
+        ^
+
+SyntaxError: Identifier 'body' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.service.js:1:19)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-11-03 15:43:54 +0000 — Access token is missing or invalid
+2020-11-03 15:43:54 +0000 — Access token is missing or invalid
+2020-11-03 15:43:54 +0000 — Access token is missing or invalid
+2020-11-03 15:43:54 +0000 — Access token is missing or invalid
+2020-11-03 15:43:54 +0000 — Access token is missing or invalid
+2020-11-03 15:43:54 +0000 — Access token is missing or invalid
+2020-11-03 15:43:54 +0000 — Access token is missing or invalid
+2020-11-03 15:43:54 +0000 — Access token is missing or invalid
+2020-11-03 15:43:54 +0000 — Access token is missing or invalid
+2020-11-03 15:43:54 +0000 — Access token is missing or invalid
+2020-11-03 15:43:54 +0000 — Access token is missing or invalid
+2020-11-03 15:43:54 +0000 — Access token is missing or invalid
+2020-11-03 15:43:54 +0000 — Access token is missing or invalid
+2020-11-03 15:43:54 +0000 — Access token is missing or invalid
+2020-11-03 15:43:54 +0000 — Access token is missing or invalid
+2020-11-03 15:43:56 +0000 — Task not found
+2020-11-03 15:43:56 +0000 — Board not found
+2020-11-03 15:43:56 +0000 — Task not found
+2020-11-03 15:43:56 +0000 — Task not found
+2020-11-03 15:43:56 +0000 — Task not found
+2020-11-03 15:43:56 +0000 — Task not found
+2020-11-03 15:43:56 +0000 — Task not found
+2020-11-03 15:44:04 +0000 — Access token is missing or invalid
+2020-11-03 15:46:48 +0000 — 
+2020-11-03 15:52:40 +0000 — uncaughtException: Identifier 'password' has already been declared
+C:\github\rsapp-express-rest\src\resources\users\user.db.repository.js:24
+  const password = await bcrypt.hash(body.password, salt);
+        ^
+
+SyntaxError: Identifier 'password' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.service.js:1:19)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-11-03 15:52:40 +0000 — uncaughtException: Identifier 'password' has already been declared
+C:\github\rsapp-express-rest\src\resources\users\user.db.repository.js:24
+  const password = await bcrypt.hash(body.password, salt);
+        ^
+
+SyntaxError: Identifier 'password' has already been declared
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.service.js:1:19)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-11-03 15:53:45 +0000 — Access token is missing or invalid
+2020-11-03 15:53:45 +0000 — Access token is missing or invalid
+2020-11-03 15:53:45 +0000 — Access token is missing or invalid
+2020-11-03 15:53:45 +0000 — Access token is missing or invalid
+2020-11-03 15:53:45 +0000 — Access token is missing or invalid
+2020-11-03 15:53:45 +0000 — Access token is missing or invalid
+2020-11-03 15:53:45 +0000 — Access token is missing or invalid
+2020-11-03 15:53:45 +0000 — Access token is missing or invalid
+2020-11-03 15:53:45 +0000 — Access token is missing or invalid
+2020-11-03 15:53:45 +0000 — Access token is missing or invalid
+2020-11-03 15:53:45 +0000 — Access token is missing or invalid
+2020-11-03 15:53:45 +0000 — Access token is missing or invalid
+2020-11-03 15:53:45 +0000 — Access token is missing or invalid
+2020-11-03 15:53:45 +0000 — Access token is missing or invalid
+2020-11-03 15:53:45 +0000 — Access token is missing or invalid
+2020-11-03 15:53:47 +0000 — Task not found
+2020-11-03 15:53:47 +0000 — Board not found
+2020-11-03 15:53:47 +0000 — Task not found
+2020-11-03 15:53:47 +0000 — Task not found
+2020-11-03 15:53:47 +0000 — Task not found
+2020-11-03 15:53:47 +0000 — Task not found
+2020-11-03 15:53:48 +0000 — Task not found
+2020-11-03 15:59:13 +0000 — uncaughtException: Unexpected token '.'
+C:\github\rsapp-express-rest\src\resources\users\user.db.repository.js:18
+    body.login,
+        ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.service.js:1:19)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-11-03 15:59:13 +0000 — uncaughtException: Unexpected token '.'
+C:\github\rsapp-express-rest\src\resources\users\user.db.repository.js:18
+    body.login,
+        ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (internal/modules/cjs/loader.js:931:16)
+    at Module._compile (internal/modules/cjs/loader.js:979:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+    at Module.load (internal/modules/cjs/loader.js:879:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:903:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\github\rsapp-express-rest\src\resources\users\user.service.js:1:19)
+    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+2020-11-03 15:59:42 +0000 — Access token is missing or invalid
+2020-11-03 16:00:01 +0000 — Access token is missing or invalid
+2020-11-03 16:01:58 +0000 — Access token is missing or invalid
+2020-11-03 16:01:58 +0000 — Access token is missing or invalid
+2020-11-03 16:01:58 +0000 — Access token is missing or invalid
+2020-11-03 16:01:58 +0000 — Access token is missing or invalid
+2020-11-03 16:01:58 +0000 — Access token is missing or invalid
+2020-11-03 16:01:58 +0000 — Access token is missing or invalid
+2020-11-03 16:01:58 +0000 — Access token is missing or invalid
+2020-11-03 16:01:58 +0000 — Access token is missing or invalid
+2020-11-03 16:01:58 +0000 — Access token is missing or invalid
+2020-11-03 16:01:58 +0000 — Access token is missing or invalid
+2020-11-03 16:01:58 +0000 — Access token is missing or invalid
+2020-11-03 16:01:58 +0000 — Access token is missing or invalid
+2020-11-03 16:01:58 +0000 — Access token is missing or invalid
+2020-11-03 16:01:58 +0000 — Access token is missing or invalid
+2020-11-03 16:01:58 +0000 — Access token is missing or invalid
+2020-11-03 16:02:01 +0000 — Task not found
+2020-11-03 16:02:01 +0000 — Board not found
+2020-11-03 16:02:02 +0000 — Task not found
+2020-11-03 16:02:02 +0000 — Task not found
+2020-11-03 16:02:02 +0000 — Task not found
+2020-11-03 16:02:02 +0000 — Task not found
+2020-11-03 16:02:02 +0000 — Task not found
+2020-11-03 16:03:27 +0000 — Access token is missing or invalid
+2020-11-03 16:03:27 +0000 — Access token is missing or invalid
+2020-11-03 16:03:27 +0000 — Access token is missing or invalid
+2020-11-03 16:03:27 +0000 — Access token is missing or invalid
+2020-11-03 16:03:27 +0000 — Access token is missing or invalid
+2020-11-03 16:03:27 +0000 — Access token is missing or invalid
+2020-11-03 16:03:27 +0000 — Access token is missing or invalid
+2020-11-03 16:03:27 +0000 — Access token is missing or invalid
+2020-11-03 16:03:27 +0000 — Access token is missing or invalid
+2020-11-03 16:03:27 +0000 — Access token is missing or invalid
+2020-11-03 16:03:27 +0000 — Access token is missing or invalid
+2020-11-03 16:03:27 +0000 — Access token is missing or invalid
+2020-11-03 16:03:27 +0000 — Access token is missing or invalid
+2020-11-03 16:03:27 +0000 — Access token is missing or invalid
+2020-11-03 16:03:27 +0000 — Access token is missing or invalid
+2020-11-03 16:03:29 +0000 — Board not found
+2020-11-03 16:03:29 +0000 — Task not found
+2020-11-03 16:03:30 +0000 — Task not found
+2020-11-03 16:03:30 +0000 — Task not found
+2020-11-03 16:03:30 +0000 — Task not found
+2020-11-03 16:03:30 +0000 — Task not found
+2020-11-03 16:03:30 +0000 — Task not found

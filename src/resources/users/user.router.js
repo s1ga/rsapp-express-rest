@@ -2,9 +2,7 @@ const router = require('express').Router();
 const userService = require('./user.service');
 const { validationUser } = require('../../utils/validator');
 const { validationResult } = require('express-validator');
-const { DEFAULT_SALT_ROUNDS } = require('../../common/config');
 const SERVER_ERROR = require('../../utils/errorsHandler');
-const bcrypt = require('bcrypt');
 
 router.get('/', async (req, res, next) => {
   try {
@@ -42,13 +40,10 @@ router.post('/', validationUser, async (req, res, next) => {
   try {
     const { name, login, password } = req.body;
 
-    const salt = await bcrypt.genSalt(DEFAULT_SALT_ROUNDS);
-    const hashPassword = await bcrypt.hash(password, salt);
-
     const user = await userService.create({
       name,
       login,
-      password: hashPassword
+      password
     });
 
     if (!user) {
@@ -73,13 +68,10 @@ router.put('/:id', validationUser, async (req, res, next) => {
   try {
     const { name, login, password } = req.body;
 
-    const salt = await bcrypt.genSalt(DEFAULT_SALT_ROUNDS);
-    const hashPassword = await bcrypt.hash(password, salt);
-
     const user = await userService.update(req.params.id, {
       name,
       login,
-      password: hashPassword
+      password
     });
 
     if (!user) {

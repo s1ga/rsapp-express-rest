@@ -14,9 +14,6 @@ router.post('/', async (req, res, next) => {
     }
 
     const token = loginService.getToken(user);
-    if (!token) {
-      throw new Error();
-    }
 
     res.status(200).json({ token });
   } catch (e) {
