@@ -5,11 +5,13 @@ const path = require('path');
 const YAML = require('yamljs');
 const helmet = require('helmet');
 const { reqLogger, handler } = require('./utils/logger');
+const auth = require('./utils/auth');
 
 // require routes
 const userRouter = require('./resources/users/user.router');
 const boardRouter = require('./resources/boards/board.router');
 const taskRouter = require('./resources/tasks/task.router');
+const loginRouter = require('./resources/login/login.router');
 
 // create express app
 const app = express();
@@ -39,6 +41,8 @@ app.use('/', (req, res, next) => {
 });
 
 // using routes
+app.use('/login', loginRouter);
+app.use(auth);
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 boardRouter.use('/:boardid/tasks', taskRouter);
@@ -47,3 +51,7 @@ boardRouter.use('/:boardid/tasks', taskRouter);
 app.use(handler);
 
 module.exports = app;
+
+/*
+  1. refactor code
+*/

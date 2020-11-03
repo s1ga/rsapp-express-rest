@@ -103,16 +103,6 @@ const reqLogger = morgan(
   }
 );
 
-// uncaught and promise errors
-// process
-//   .on('uncaughtException', err => {
-//     logger.error(`Uncaught ${err.stack}`);
-//     process.exitCode = 1;
-//   })
-//   .on('unhandledRejection', promise => {
-//     logger.error(`Promise ${promise.stack}`);
-//   });
-
 // server errors
 const handler = (err, req, res, next) => {
   logger.error(err.message);

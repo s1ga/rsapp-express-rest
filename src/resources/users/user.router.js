@@ -38,7 +38,13 @@ router.post('/', validationUser, async (req, res, next) => {
   }
 
   try {
-    const user = await userService.create(req.body);
+    const { name, login, password } = req.body;
+
+    const user = await userService.create({
+      name,
+      login,
+      password
+    });
 
     if (!user) {
       throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
@@ -60,7 +66,13 @@ router.put('/:id', validationUser, async (req, res, next) => {
   }
 
   try {
-    const user = await userService.update(req.params.id, req.body);
+    const { name, login, password } = req.body;
+
+    const user = await userService.update(req.params.id, {
+      name,
+      login,
+      password
+    });
 
     if (!user) {
       throw new SERVER_ERROR({ status: 400, message: 'Bad request' });
